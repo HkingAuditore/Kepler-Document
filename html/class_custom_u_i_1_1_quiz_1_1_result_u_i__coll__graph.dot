@@ -1,0 +1,18 @@
+digraph "CustomUI.Quiz.ResultUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.Quiz.ResultUI\n|+ GameObject panel\l+ List\< GameObject \>\l quizUis\l|+ void Restart()\l+ void Back()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +resultText" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Text\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +quizStarsGroupUI" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{CustomUI.Quiz.QuizStarsGroupUI\n|+ int _starCount\l+ List\< QuizStarUI \>\l quizStarUis\l+ int starCount\l|+ void CalculateSuccessStars()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +globalTimer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{GameManagers.GlobalTimer\n|+ float countDownTime\l+ UnityEvent countingDownEnd\lEvent\l+ UnityEvent countingDownEvent\l+ UnityEvent startCountDown\lEvent\l+ bool isPausing\l+ bool isCountDownEnd\l+ bool isCountingDown\l+ float timer\l|+ void Reset()\l+ void StartCounting()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_global_timer.html",tooltip="全局计时器"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+}

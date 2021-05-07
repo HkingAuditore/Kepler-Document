@@ -1,0 +1,8 @@
+<map id="XmlSaver.SceneLoadBase.GenerateAstralBodiesWithPrefab" name="XmlSaver.SceneLoadBase.GenerateAstralBodiesWithPrefab">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,236,145"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a3d63db3c84aef11ca64e85e99d32cbd3" title="增加追踪实体" alt="" coords="284,104,473,145"/>
+<area shape="rect" id="node3" href="$interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730" title=" " alt="" coords="521,5,708,47"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227" title=" " alt="" coords="521,71,708,112"/>
+<area shape="rect" id="node5" href="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4" title=" " alt="" coords="521,136,708,177"/>
+<area shape="rect" id="node6" href="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb" title=" " alt="" coords="521,201,708,243"/>
+</map>

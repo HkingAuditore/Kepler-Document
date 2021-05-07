@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Quiz/QuizUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_quiz_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">QuizUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_quiz_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_static_classes.html">StaticClasses</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_static_classes.html">StaticClasses</a>.<a class="code" href="namespace_static_classes_1_1_math_plus.html">MathPlus</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_quiz_u_i_8cs.html#a832e8f52fca5a678819ec96269dcb532">    9</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_astronauts_animation_8cs.html#a832e8f52fca5a678819ec96269dcb532">Random</a> = UnityEngine.Random;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html">QuizUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        [SerializeField] <span class="keyword">private</span> <span class="keywordtype">int</span> _ansPos;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        [SerializeField] <span class="keyword">private</span> <span class="keywordtype">int</span>        _gap;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abae21d02ae662588d8aae616a1d8eadd">   18</a></span>&#160;        <span class="keyword">public</span>                   Text       <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abae21d02ae662588d8aae616a1d8eadd">ansText</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1087b9e71006904b7245b1a763c074d0">   19</a></span>&#160;        <span class="keyword">public</span>                   Button     <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1087b9e71006904b7245b1a763c074d0">confirm</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abbae1be0e3c0ea1b7f524b0595daf13f">   20</a></span>&#160;        <span class="keyword">public</span>                   Text       <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abbae1be0e3c0ea1b7f524b0595daf13f">quizCondition</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">   21</a></span>&#160;        <span class="keyword">public</span>                   Slider     <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">quizSlider</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">   22</a></span>&#160;        <span class="keyword">public</span>                   <a class="code" href="class_quiz_1_1_quiz_solver.html">QuizSolver</a> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">   23</a></span>&#160;        <span class="keyword">public</span>                   <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>   <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">quizType</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">   25</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">   26</a></span>&#160;        <span class="keyword">public</span> Text       <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">title</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08">Generate</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a> = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a9c87f0727402b83f911cfc7cb1b06727">target</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">quizType</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#afe6a5a9dc52ef405cb9e74cc4865e6b1">Mass</a>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">title</a>.text = <span class="stringliteral">&quot;质量:&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Density:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">title</a>.text = <span class="stringliteral">&quot;密度:&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Gravity:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">title</a>.text = <span class="stringliteral">&quot;重力加速度:&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Radius:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">title</a>.text = <span class="stringliteral">&quot;轨道半径:&quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abbae1be0e3c0ea1b7f524b0595daf13f">quizCondition</a>.text = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd">GetQuizSentence</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            GenerateAns();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a26457b4f98b1ffa60a28345a9b8898a5">   54</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a26457b4f98b1ffa60a28345a9b8898a5">OnValueChange</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">quizType</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Mass:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#a52712beda42c4f880bda8057b24396e3">realMass</a> = ConvertSliderValue2Ans(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">quizSlider</a>.value) *</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                      Mathf.Pow(10, -<a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> * 2);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abae21d02ae662588d8aae616a1d8eadd">ansText</a>.text = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#a52712beda42c4f880bda8057b24396e3">realMass</a>.GetMantissa().ToString(<span class="stringliteral">&quot;f2&quot;</span>) + <span class="stringliteral">&quot;x10e&quot;</span> +</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                   <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#a52712beda42c4f880bda8057b24396e3">realMass</a>.GetExponent().ToString().ToSuperscript();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Density:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#a52712beda42c4f880bda8057b24396e3">realMass</a> = ConvertSliderValue2Ans(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">quizSlider</a>.value) * Mathf.PI *</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                      Mathf.Pow(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#ae8b336a5201b677eeb318362a939cd06">size</a> *</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                Mathf.Pow(10, <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd">GetK</a>(<a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.M)),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                3) * 4 /</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                      3;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abae21d02ae662588d8aae616a1d8eadd">ansText</a>.text = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">target</a>.<a class="code" href="class_space_physic_1_1_astral_body.html#ae7a7e90eaac0ad840ed7d01a934cd4ca">density</a>.ToString(<span class="stringliteral">&quot;f2&quot;</span>) + <span class="stringliteral">&quot; kg/m3&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Gravity:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Radius:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a770d163ef8a0aa92a859525d91f6a329">   84</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a770d163ef8a0aa92a859525d91f6a329">Confirm</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            var tmpAns = ConvertSliderValue2Ans(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">quizSlider</a>.value);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">quizType</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Mass:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">tmpAnswer</a> = tmpAns;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Density:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    <span class="comment">// throw new ArgumentOutOfRangeException();</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">tmpAnswer</a> = tmpAns;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="comment">// quizSolver.TmpAnswer = tmpAns;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Gravity:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Radius:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">globalTimer</a>.<a class="code" href="class_game_managers_1_1_global_timer.html#a54bfd66049c9bf7ed5c63d7023c1c4b7">isPausing</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> GenerateAns()</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            _gap    = (int) <a class="code" href="_astronauts_animation_8cs.html#a832e8f52fca5a678819ec96269dcb532">Random</a>.Range(0, <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            _gap    = (int) Mathf.Clamp(_gap, 0.1f * <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a>, 0.3f * <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            _ansPos = <a class="code" href="_astronauts_animation_8cs.html#a832e8f52fca5a678819ec96269dcb532">Random</a>.Range(0, (<span class="keywordtype">int</span>) (<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a> / _gap));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">float</span> ConvertSliderValue2Ans(<span class="keywordtype">float</span> quizSliderValue)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="comment">//TODO:干扰项设计没做</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">quizSolver</a>.<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a> + (quizSliderValue - _ansPos) * _gap;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="ttc" id="a_astronauts_animation_8cs_html_a832e8f52fca5a678819ec96269dcb532"><div class="ttname"><a href="_astronauts_animation_8cs.html#a832e8f52fca5a678819ec96269dcb532">Random</a></div><div class="ttdeci">UnityEngine.Random Random</div><div class="ttdef"><b>Definition:</b> <a href="_astronauts_animation_8cs_source.html#l00005">AstronautsAnimation.cs:5</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html">CustomUI.Quiz.QuizUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00013">QuizUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a09609816ac89a8b99a55eee6eb8cd94d"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a09609816ac89a8b99a55eee6eb8cd94d">CustomUI.Quiz.QuizUI.target</a></div><div class="ttdeci">AstralBody target</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00025">QuizUI.cs:25</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a1087b9e71006904b7245b1a763c074d0"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1087b9e71006904b7245b1a763c074d0">CustomUI.Quiz.QuizUI.confirm</a></div><div class="ttdeci">Button confirm</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00019">QuizUI.cs:19</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a1483d9f53c5009503bd5be2f196674fc"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">CustomUI.Quiz.QuizUI.quizType</a></div><div class="ttdeci">QuizType quizType</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00023">QuizUI.cs:23</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a26457b4f98b1ffa60a28345a9b8898a5"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a26457b4f98b1ffa60a28345a9b8898a5">CustomUI.Quiz.QuizUI.OnValueChange</a></div><div class="ttdeci">void OnValueChange()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00054">QuizUI.cs:54</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a453752a76e71896b1da21d92ad5301ca"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a453752a76e71896b1da21d92ad5301ca">CustomUI.Quiz.QuizUI.quizSolver</a></div><div class="ttdeci">QuizSolver quizSolver</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00022">QuizUI.cs:22</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a60fcee349065ba2727c646b217beeba1"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a60fcee349065ba2727c646b217beeba1">CustomUI.Quiz.QuizUI.title</a></div><div class="ttdeci">Text title</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00026">QuizUI.cs:26</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a770d163ef8a0aa92a859525d91f6a329"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a770d163ef8a0aa92a859525d91f6a329">CustomUI.Quiz.QuizUI.Confirm</a></div><div class="ttdeci">void Confirm()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00084">QuizUI.cs:84</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_abae21d02ae662588d8aae616a1d8eadd"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abae21d02ae662588d8aae616a1d8eadd">CustomUI.Quiz.QuizUI.ansText</a></div><div class="ttdeci">Text ansText</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00018">QuizUI.cs:18</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_abbae1be0e3c0ea1b7f524b0595daf13f"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#abbae1be0e3c0ea1b7f524b0595daf13f">CustomUI.Quiz.QuizUI.quizCondition</a></div><div class="ttdeci">Text quizCondition</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00020">QuizUI.cs:20</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_ac238c7b368d3c183e8e479fc77c48d08"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08">CustomUI.Quiz.QuizUI.Generate</a></div><div class="ttdeci">void Generate()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00029">QuizUI.cs:29</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_ad88063cdbba550f03279d10b8efdb2be"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ad88063cdbba550f03279d10b8efdb2be">CustomUI.Quiz.QuizUI.quizSlider</a></div><div class="ttdeci">Slider quizSlider</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00021">QuizUI.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a17c22f99d1d47e16c36495e605667255"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">GameManagers.GameManager.globalMassScaler</a></div><div class="ttdeci">int globalMassScaler</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00073">GameManager.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abeec4915d581418a152b1a07848333cd"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd">GameManagers.GameManager.GetK</a></div><div class="ttdeci">int GetK(PropertyUnit propertyUnit, double mass)</div><div class="ttdoc">获取缩放系数</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00175">GameManager.cs:175</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abf40b119a34ba39179bc50d5623b24f8"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">GameManagers.GameManager.globalTimer</a></div><div class="ttdeci">GlobalTimer globalTimer</div><div class="ttdoc">全局计时器</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00035">GameManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_timer_html_a54bfd66049c9bf7ed5c63d7023c1c4b7"><div class="ttname"><a href="class_game_managers_1_1_global_timer.html#a54bfd66049c9bf7ed5c63d7023c1c4b7">GameManagers.GlobalTimer.isPausing</a></div><div class="ttdeci">bool isPausing</div><div class="ttdoc">是否暂停</div><div class="ttdef"><b>Definition:</b> <a href="_global_timer_8cs_source.html#l00036">GlobalTimer.cs:36</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html_a3e01fb6652f087101e03ac1ae6687f5c"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">Quiz.QuizBase.answer</a></div><div class="ttdeci">float answer</div><div class="ttdoc">答案</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00019">QuizBase.cs:19</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html_a9c87f0727402b83f911cfc7cb1b06727"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html#a9c87f0727402b83f911cfc7cb1b06727">Quiz.QuizBase.target</a></div><div class="ttdeci">QuizAstralBody target</div><div class="ttdoc">问题目标</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00030">QuizBase.cs:31</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html">Quiz.QuizSolver</a></div><div class="ttdoc">解题管理</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00015">QuizSolver.cs:16</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a73084f4306857982062df31c553f1b7a"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">Quiz.QuizSolver.tmpAnswer</a></div><div class="ttdeci">float tmpAnswer</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00047">QuizSolver.cs:48</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_afc4ef823ad1220a4aea4f7d2f5cf23dd"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd">Quiz.QuizSolver.GetQuizSentence</a></div><div class="ttdeci">string GetQuizSentence()</div><div class="ttdoc">获取问题</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00133">QuizSolver.cs:133</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_a52712beda42c4f880bda8057b24396e3"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#a52712beda42c4f880bda8057b24396e3">SpacePhysic.AstralBody.realMass</a></div><div class="ttdeci">double realMass</div><div class="ttdoc">真实质量</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00167">AstralBody.cs:168</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_ae7a7e90eaac0ad840ed7d01a934cd4ca"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#ae7a7e90eaac0ad840ed7d01a934cd4ca">SpacePhysic.AstralBody.density</a></div><div class="ttdeci">double density</div><div class="ttdoc">密度</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00184">AstralBody.cs:185</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_ae8b336a5201b677eeb318362a939cd06"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#ae8b336a5201b677eeb318362a939cd06">SpacePhysic.AstralBody.size</a></div><div class="ttdeci">float size</div><div class="ttdoc">星球半径</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00154">AstralBody.cs:155</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_afe6a5a9dc52ef405cb9e74cc4865e6b1"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#afe6a5a9dc52ef405cb9e74cc4865e6b1">SpacePhysic.AstralBody.Mass</a></div><div class="ttdeci">float? Mass</div><div class="ttdoc">质量（缩放后）</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00088">AstralBody.cs:89</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html_ade16e26dd544e48929c02a37f01aec23"><div class="ttname"><a href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">GameManagers.PropertyUnit</a></div><div class="ttdeci">PropertyUnit</div><div class="ttdoc">单位名</div><div class="ttdef"><b>Definition:</b> <a href="_property_unit_8cs_source.html#l00006">PropertyUnit.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html_a9cdc67d3b0564ceddab5bee0913587ac"><div class="ttname"><a href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">Quiz.QuizType</a></div><div class="ttdeci">QuizType</div><div class="ttdoc">问题类型</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_type_8cs_source.html#l00006">QuizType.cs:7</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_static_classes_1_1_math_plus_html"><div class="ttname"><a href="namespace_static_classes_1_1_math_plus.html">StaticClasses.MathPlus</a></div><div class="ttdef"><b>Definition:</b> <a href="_conic_section_8cs_source.html#l00004">ConicSection.cs:5</a></div></div>
+<div class="ttc" id="anamespace_static_classes_html"><div class="ttname"><a href="namespace_static_classes.html">StaticClasses</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_object_plus_8cs_source.html#l00004">GameObjectPlus.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_a055651248895ed42efc76cb97a3ec76.html">Quiz</a></li><li class="navelem"><a class="el" href="_quiz_u_i_8cs.html">QuizUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+digraph "CustomUI.Satellite.SatelliteControllerUI.Continue"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CustomUI.Satellite.Satellite\lControllerUI.Continue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpacePhysic.GravityTracing.\lFreeze",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#a53a5ce46b114fde8399fd0379aa020ca",tooltip="冻结"];
+}

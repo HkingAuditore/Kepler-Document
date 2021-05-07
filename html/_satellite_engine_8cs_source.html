@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/Satellite/SatelliteEngine.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_satellite_engine_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SatelliteEngine.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_satellite_engine_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_satellite.html">Satellite</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_satellite_1_1_satellite_engine.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_satellite_1_1_satellite_engine.html">SatelliteEngine</a> : <a class="code" href="class_satellite_1_1_satellite_part.html">SatellitePart</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_satellite_1_1_satellite_engine.html#a255cce19ae80327feaf3047912b0b521">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_satellite_1_1_satellite_engine.html#a255cce19ae80327feaf3047912b0b521">engineStage</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_satellite_1_1_satellite_engine.html#a80f1e9cee67229bdf6e448e5546c1892">   12</a></span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="class_satellite_1_1_satellite_engine.html#a80f1e9cee67229bdf6e448e5546c1892">Awake</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="class_satellite_1_1_satellite_part.html#a931e313266b4b5f9b703ccf890772f8f">PartType</a> = <a class="code" href="namespace_satellite.html#ac3fae38af725325cf1ea78da99483eb1">SatelliteType</a>.Engine;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2">SetCurDirVelocity</a>(<span class="keywordtype">float</span> speed)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            Debug.Log(gameObject.name + <span class="stringliteral">&quot; Changing Speed!&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Debug.DrawLine(transform.position, transform.position + <a class="code" href="class_space_physic_1_1_astral_body.html#a39d83617eb73ce1685837eab733b66f6">astralBodyRigidbody</a>.velocity.normalized * speed,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           Color.green);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7">ChangeVelocity</a>(<a class="code" href="class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0">GetVelocity</a>().normalized * speed);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_engine_html"><div class="ttname"><a href="class_satellite_1_1_satellite_engine.html">Satellite.SatelliteEngine</a></div><div class="ttdoc">卫星引擎</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_engine_8cs_source.html#l00008">SatelliteEngine.cs:9</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_engine_html_a255cce19ae80327feaf3047912b0b521"><div class="ttname"><a href="class_satellite_1_1_satellite_engine.html#a255cce19ae80327feaf3047912b0b521">Satellite.SatelliteEngine.engineStage</a></div><div class="ttdeci">int engineStage</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_engine_8cs_source.html#l00010">SatelliteEngine.cs:10</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_engine_html_a80f1e9cee67229bdf6e448e5546c1892"><div class="ttname"><a href="class_satellite_1_1_satellite_engine.html#a80f1e9cee67229bdf6e448e5546c1892">Satellite.SatelliteEngine.Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_engine_8cs_source.html#l00012">SatelliteEngine.cs:12</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_engine_html_abe746f09fff6ac3d0577c2c40e9fabb2"><div class="ttname"><a href="class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2">Satellite.SatelliteEngine.SetCurDirVelocity</a></div><div class="ttdeci">void SetCurDirVelocity(float speed)</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_engine_8cs_source.html#l00017">SatelliteEngine.cs:17</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_part_html"><div class="ttname"><a href="class_satellite_1_1_satellite_part.html">Satellite.SatellitePart</a></div><div class="ttdoc">卫星部件</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_part_8cs_source.html#l00010">SatellitePart.cs:11</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_part_html_a931e313266b4b5f9b703ccf890772f8f"><div class="ttname"><a href="class_satellite_1_1_satellite_part.html#a931e313266b4b5f9b703ccf890772f8f">Satellite.SatellitePart.PartType</a></div><div class="ttdeci">SatelliteType PartType</div><div class="ttdoc">部件类型</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_part_8cs_source.html#l00024">SatellitePart.cs:24</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_a39d83617eb73ce1685837eab733b66f6"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#a39d83617eb73ce1685837eab733b66f6">SpacePhysic.AstralBody.astralBodyRigidbody</a></div><div class="ttdeci">Rigidbody astralBodyRigidbody</div><div class="ttdoc">星体的刚体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00108">AstralBody.cs:109</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_a49a47294cf00916a50c42a62cda119f0"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0">SpacePhysic.AstralBody.GetVelocity</a></div><div class="ttdeci">Vector3 GetVelocity()</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00326">AstralBody.cs:326</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html_a8c43caafe4f528c08feb450cba3c5cd7"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7">SpacePhysic.AstralBody.ChangeVelocity</a></div><div class="ttdeci">void ChangeVelocity(Vector3 velocity)</div><div class="ttdoc">调整星球速度</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00364">AstralBody.cs:364</a></div></div>
+<div class="ttc" id="anamespace_satellite_html"><div class="ttname"><a href="namespace_satellite.html">Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_8cs_source.html#l00005">Satellite.cs:6</a></div></div>
+<div class="ttc" id="anamespace_satellite_html_ac3fae38af725325cf1ea78da99483eb1"><div class="ttname"><a href="namespace_satellite.html#ac3fae38af725325cf1ea78da99483eb1">Satellite.SatelliteType</a></div><div class="ttdeci">SatelliteType</div><div class="ttdoc">卫星部件类别</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_type_8cs_source.html#l00006">SatelliteType.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_e4bf46c091109d343c0b2cd292b28858.html">Satellite</a></li><li class="navelem"><a class="el" href="_satellite_engine_8cs.html">SatelliteEngine.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

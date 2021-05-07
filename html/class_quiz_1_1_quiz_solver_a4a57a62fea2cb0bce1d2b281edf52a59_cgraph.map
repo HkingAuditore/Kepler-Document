@@ -1,0 +1,4 @@
+<map id="Quiz.QuizSolver.Start" name="Quiz.QuizSolver.Start">
+<area shape="rect" id="node1" title="是否加载完成" alt="" coords="5,13,152,39"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_global_timer.html#a64164ef67b058d49fd0f70db7e74542d" title="开始计时" alt="" coords="200,5,391,47"/>
+</map>

@@ -1,0 +1,17 @@
+digraph "SpacePhysic.GravityTracing.AddTracingTarget"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SpacePhysic.GravityTracing.\lAddTracingTarget",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="增加追踪实体"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpacePhysic.ITraceable.Get\lEnableTracing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpacePhysic.ITraceable.Get\lRigidbody",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpacePhysic.ITraceable.Get\lTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpacePhysic.ITraceable.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb",tooltip=" "];
+}

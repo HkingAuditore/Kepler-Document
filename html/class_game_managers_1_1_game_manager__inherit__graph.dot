@@ -1,0 +1,10 @@
+digraph "GameManagers.GameManager"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GameManagers.GameManager\n|+ AudioSource bgmSource\l+ int globalDistanceScaler\l+ GlobalTimer globalTimer\l+ bool isQuizEditMode\l+ Camera mainCamera\l+ List\< GameObject \>\l meshList\l+ GravityTracing orbit\l+ QuizBase quizBase\l+ SceneEditor sceneEditor\l+ SatelliteChallengeManger\l satelliteChallengeManger\l+ static GameManager\l getGameManager\l+ int globalMassScaler\l|+ CameraController GetMain\lCameraController()\l+ Mesh GetMeshAndMaterials\lFromList(int index, ref\l List\< Material \> materials)\l+ void SetAudioVolume()\l+ void CalculateMassScales()\l+ void CalculateMassScales\l(double realMass)\l+ void CalculateDistanceScale()\l+ int GetK(PropertyUnit\l propertyUnit, double mass)\l+ int GetK(PropertyUnit\l propertyUnit)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="全局管理"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

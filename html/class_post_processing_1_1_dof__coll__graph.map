@@ -1,0 +1,6 @@
+<map id="PostProcessing.Dof" name="PostProcessing.Dof">
+<area shape="rect" id="node1" title="景深效果" alt="" coords="33,301,279,437"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,154,184,231"/>
+<area shape="rect" id="node3" href="$class_post_processing_1_1_kernel_size_parameter.html" title="A volume parameter holding a KernelSize value." alt="" coords="208,147,389,239"/>
+<area shape="rect" id="node4" title=" " alt="" coords="230,5,367,97"/>
+</map>

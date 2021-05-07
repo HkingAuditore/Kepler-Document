@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/XmlSaver/SceneEditor.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_scene_editor_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SceneEditor.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene_editor_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_static_classes.html">StaticClasses</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_xml_saver.html">XmlSaver</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_xml_saver_1_1_scene_editor.html">SceneEditor</a> : <a class="code" href="class_xml_saver_1_1_scene_load_base.html">SceneLoadBase</a>&lt;AstralBody&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">   16</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_xml_saver_1_1_scene_saver.html">SceneSaver</a> <a class="code" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">saver</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#ac15ac74acf20b83d0e42666e8b9f27a9">   21</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html#ac15ac74acf20b83d0e42666e8b9f27a9">SaveScene</a>(<span class="keywordtype">string</span> sceneName)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="comment">// orbitBase.Freeze(false);</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            var xmlDoc = <a class="code" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">saver</a>.<a class="code" href="class_xml_saver_1_1_xml_saver.html#a004492bfe0f6e4074241457f1817778e">ConvertOrbit2Xml</a>(<a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">saver</a>.<a class="code" href="class_xml_saver_1_1_xml_saver.html#a51890e4e8f1a1d320f35a980aadbec6a">SaveXml</a>(xmlDoc, sceneName);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">catch</span> (Exception e)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                Console.WriteLine(e);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="comment">// GameManager.GetGameManager.CalculateScales();</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="comment">// StartCoroutine(WaitForCalculate(quizName));</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span> IEnumerator WaitForCalculate(<span class="keywordtype">string</span> quizName)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            var xmlDoc = <a class="code" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">saver</a>.<a class="code" href="class_xml_saver_1_1_xml_saver.html#a004492bfe0f6e4074241457f1817778e">ConvertOrbit2Xml</a>(<a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">saver</a>.<a class="code" href="class_xml_saver_1_1_xml_saver.html#a51890e4e8f1a1d320f35a980aadbec6a">SaveXml</a>(xmlDoc, quizName);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#a14cb3a2d32234b68336f7bd90839c443">   51</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html#a14cb3a2d32234b68336f7bd90839c443">AddAstralBody</a>(<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a> astralBody, <span class="keywordtype">bool</span> isTarget = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.Add(<span class="keyword">new</span> <a class="code" href="class_quiz_1_1_astral_body_dict.html">AstralBodyDict&lt;AstralBody&gt;</a>(astralBody.transform, astralBody, isTarget));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#a29c8846c9386092adcec6e6cebfd3852">   59</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html#a29c8846c9386092adcec6e6cebfd3852">UpdateAstralBody</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            Debug.Log(<span class="stringliteral">&quot;before update:&quot;</span> + <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.Count);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a> = <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.Where(a =&gt; a.astralBody.gameObject.CheckReference()).ToList();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Debug.Log(<span class="stringliteral">&quot;after update:&quot;</span> + <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.Count);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#aa6e5d9d78c7dcc83f801edb23406a755">   70</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html#aa6e5d9d78c7dcc83f801edb23406a755">RemoveAstralBodyDict</a>(<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a> astralBody)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a> = <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.Where(a =&gt; a.astralBody!= astralBody ).ToList();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_xml_saver_1_1_scene_editor.html#a7784e0bfaeadfa0c1a6d0f6452c7a816">   81</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html#a7784e0bfaeadfa0c1a6d0f6452c7a816">SetCore</a>(<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a> <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a31a6724d36b7ade3c8ed3d1c350148e8">core</a>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            var oriCore= this.<a class="code" href="class_xml_saver_1_1_scene_load_base.html#a31a6724d36b7ade3c8ed3d1c350148e8">core</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            this.core = <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a31a6724d36b7ade3c8ed3d1c350148e8">core</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.ForEach(ast =&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                     {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                         ast.isCore = ast.astralBody == <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a31a6724d36b7ade3c8ed3d1c350148e8">core</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                         ast.astralBody.affectedPlanets.Remove(oriCore);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                         <span class="keywordflow">if</span> (!ast.isCore)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                         {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                             ast.astralBody.affectedPlanets.Remove(core);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                             ast.astralBody.affectedPlanets.Add(core);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                         }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                         <span class="comment">// Debug.Log(ast.astralBody.gameObject.name + &quot; is target ? : &quot; + ast.isTarget);</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                         <span class="comment">// ast.isTarget = true;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                     });</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="ttc" id="aclass_quiz_1_1_astral_body_dict_html"><div class="ttname"><a href="class_quiz_1_1_astral_body_dict.html">Quiz.AstralBodyDict</a></div><div class="ttdoc">星体数据传递</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00013">AstralBodyDict.cs:14</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html">XmlSaver.SceneEditor</a></div><div class="ttdoc">场景编辑器</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00014">SceneEditor.cs:15</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_a14cb3a2d32234b68336f7bd90839c443"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#a14cb3a2d32234b68336f7bd90839c443">XmlSaver.SceneEditor.AddAstralBody</a></div><div class="ttdeci">void AddAstralBody(AstralBody astralBody, bool isTarget=false)</div><div class="ttdoc">加入星体</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00051">SceneEditor.cs:51</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_a1b6ebf8dd6318c68f4bf835dddcae6fa"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#a1b6ebf8dd6318c68f4bf835dddcae6fa">XmlSaver.SceneEditor.saver</a></div><div class="ttdeci">SceneSaver saver</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00016">SceneEditor.cs:16</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_a29c8846c9386092adcec6e6cebfd3852"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#a29c8846c9386092adcec6e6cebfd3852">XmlSaver.SceneEditor.UpdateAstralBody</a></div><div class="ttdeci">void UpdateAstralBody()</div><div class="ttdoc">更新星体组</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00059">SceneEditor.cs:59</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_a7784e0bfaeadfa0c1a6d0f6452c7a816"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#a7784e0bfaeadfa0c1a6d0f6452c7a816">XmlSaver.SceneEditor.SetCore</a></div><div class="ttdeci">void SetCore(AstralBody core)</div><div class="ttdoc">设置场景核心</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00081">SceneEditor.cs:81</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_aa6e5d9d78c7dcc83f801edb23406a755"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#aa6e5d9d78c7dcc83f801edb23406a755">XmlSaver.SceneEditor.RemoveAstralBodyDict</a></div><div class="ttdeci">void RemoveAstralBodyDict(AstralBody astralBody)</div><div class="ttdoc">移除星体</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00070">SceneEditor.cs:70</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html_ac15ac74acf20b83d0e42666e8b9f27a9"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html#ac15ac74acf20b83d0e42666e8b9f27a9">XmlSaver.SceneEditor.SaveScene</a></div><div class="ttdeci">void SaveScene(string sceneName)</div><div class="ttdoc">保存场景</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00021">SceneEditor.cs:21</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_load_base_html"><div class="ttname"><a href="class_xml_saver_1_1_scene_load_base.html">XmlSaver.SceneLoadBase</a></div><div class="ttdoc">存档加载管理</div><div class="ttdef"><b>Definition:</b> <a href="_scene_load_base_8cs_source.html#l00016">SceneLoadBase.cs:17</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_load_base_html_a08321bc1b921cbf8885ed46952f21927"><div class="ttname"><a href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">XmlSaver.SceneLoadBase&lt; AstralBody &gt;::astralBodiesDict</a></div><div class="ttdeci">List&lt; AstralBodyDict&lt; T &gt; &gt; astralBodiesDict</div><div class="ttdoc">场景星球集合</div><div class="ttdef"><b>Definition:</b> <a href="_scene_load_base_8cs_source.html#l00029">SceneLoadBase.cs:29</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_load_base_html_a31a6724d36b7ade3c8ed3d1c350148e8"><div class="ttname"><a href="class_xml_saver_1_1_scene_load_base.html#a31a6724d36b7ade3c8ed3d1c350148e8">XmlSaver.SceneLoadBase&lt; AstralBody &gt;::core</a></div><div class="ttdeci">T core</div><div class="ttdoc">核心</div><div class="ttdef"><b>Definition:</b> <a href="_scene_load_base_8cs_source.html#l00038">SceneLoadBase.cs:38</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_saver_html"><div class="ttname"><a href="class_xml_saver_1_1_scene_saver.html">XmlSaver.SceneSaver</a></div><div class="ttdoc">场景保存</div><div class="ttdef"><b>Definition:</b> <a href="_scene_saver_8cs_source.html#l00008">SceneSaver.cs:9</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_xml_saver_html_a004492bfe0f6e4074241457f1817778e"><div class="ttname"><a href="class_xml_saver_1_1_xml_saver.html#a004492bfe0f6e4074241457f1817778e">XmlSaver.XmlSaver.ConvertOrbit2Xml</a></div><div class="ttdeci">virtual XmlDocument ConvertOrbit2Xml(List&lt; AstralBodyDict&lt; T &gt;&gt; astOrbit)</div><div class="ttdoc">将星体群转为XML文档</div><div class="ttdef"><b>Definition:</b> <a href="_xml_saver_8cs_source.html#l00285">XmlSaver.cs:285</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_xml_saver_html_a51890e4e8f1a1d320f35a980aadbec6a"><div class="ttname"><a href="class_xml_saver_1_1_xml_saver.html#a51890e4e8f1a1d320f35a980aadbec6a">XmlSaver.XmlSaver.SaveXml</a></div><div class="ttdeci">virtual void SaveXml(XmlDocument doc, string fileName)</div><div class="ttdoc">保存XML</div><div class="ttdef"><b>Definition:</b> <a href="_xml_saver_8cs_source.html#l00047">XmlSaver.cs:47</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_static_classes_html"><div class="ttname"><a href="namespace_static_classes.html">StaticClasses</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_object_plus_8cs_source.html#l00004">GameObjectPlus.cs:5</a></div></div>
+<div class="ttc" id="anamespace_xml_saver_html"><div class="ttname"><a href="namespace_xml_saver.html">XmlSaver</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_data_dict_8cs_source.html#l00004">AstralBodyDataDict.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_6a96a9fcda5a0297b9ee3503237ef481.html">XmlSaver</a></li><li class="navelem"><a class="el" href="_scene_editor_8cs.html">SceneEditor.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

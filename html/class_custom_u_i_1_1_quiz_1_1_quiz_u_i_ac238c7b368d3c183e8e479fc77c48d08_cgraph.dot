@@ -1,0 +1,19 @@
+digraph "CustomUI.Quiz.QuizUI.Generate"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CustomUI.Quiz.QuizUI.Generate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quiz.QuizSolver.GetQuizSentence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd",tooltip="获取问题"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quiz.QuizAstralBody.GetQuiz\lConditionString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50",tooltip="获取星球条件文本"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GameManagers.GameManager.GetK",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd",tooltip="获取缩放系数"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GameManagers.GameManager.\lCalculateMassScales",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f",tooltip="计算质量缩放"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpacePhysic.AstralBody.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0",tooltip=" "];
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomPostProcessing/Dof.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_dof_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dof.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_dof_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine.Rendering.PostProcessing;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespace_post_processing.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_post_processing.html">PostProcessing</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    [Serializable]</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    [PostProcess(typeof(DofRenderer), PostProcessEvent.AfterStack,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                 <span class="stringliteral">&quot;Custom/Dof Custom&quot;</span>)]</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html">   14</a></span>&#160;    <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code" href="class_post_processing_1_1_dof.html">Dof</a> : PostProcessEffectSettings</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        [Range(0.05f, 32f)]</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        [Tooltip(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <span class="stringliteral">&quot;Ratio of aperture (known as f-stop or f-number). The smaller the value is, the shallower the depth of field is.&quot;</span>)]</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html#a07f32ee8427d9573fe8ff12bb760eac6">   23</a></span>&#160;        <span class="keyword">public</span> FloatParameter <a class="code" href="class_post_processing_1_1_dof.html#a07f32ee8427d9573fe8ff12bb760eac6">aperture</a> = <span class="keyword">new</span> FloatParameter {value = 5.6f};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        [Range(1f, 300f)]</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        [Tooltip(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="stringliteral">&quot;Distance between the lens and the film. The larger the value is, the shallower the depth of field is.&quot;</span>)]</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html#adc03f1b9009e50a42e702dfd9bdbf4e1">   32</a></span>&#160;        <span class="keyword">public</span> FloatParameter <a class="code" href="class_post_processing_1_1_dof.html#adc03f1b9009e50a42e702dfd9bdbf4e1">focalLength</a> = <span class="keyword">new</span> FloatParameter {value = 50f};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        [UnityEngine.Rendering.PostProcessing.Min(0.1f)] [Tooltip(<span class="stringliteral">&quot;Distance to the point of focus.&quot;</span>)]</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html#a30cdb04497c37710c3114335ee63ba93">   38</a></span>&#160;        <span class="keyword">public</span> FloatParameter <a class="code" href="class_post_processing_1_1_dof.html#a30cdb04497c37710c3114335ee63ba93">focusDistance</a> = <span class="keyword">new</span> FloatParameter {value = 10f};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        [DisplayName(<span class="stringliteral">&quot;Max Blur Size&quot;</span>)]</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        [Tooltip(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="stringliteral">&quot;Convolution kernel size of the bokeh filter, which determines the maximum radius of bokeh. It also affects performances (the larger the kernel is, the longer the GPU time is required).&quot;</span>)]</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html#a7f74f6b3ce81473ce12772805af0b088">   48</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_post_processing_1_1_kernel_size_parameter.html">KernelSizeParameter</a> <a class="code" href="class_post_processing_1_1_dof.html#a7f74f6b3ce81473ce12772805af0b088">kernelSize</a> = <span class="keyword">new</span> <a class="code" href="class_post_processing_1_1_kernel_size_parameter.html">KernelSizeParameter</a> {value = <a class="code" href="namespace_post_processing.html#a3d8b50f8d61e756741c2215c859ab231">KernelSize</a>.Medium};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_post_processing_1_1_dof.html#aec0c40ec027858c8bfb5c5ccd0dba8e5">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code" href="class_post_processing_1_1_dof.html#aec0c40ec027858c8bfb5c5ccd0dba8e5">IsEnabledAndSupported</a>(PostProcessRenderContext context)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> enabled.value</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                &amp;&amp; SystemInfo.graphicsShaderLevel &gt;= 35;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html"><div class="ttname"><a href="class_post_processing_1_1_dof.html">PostProcessing.Dof</a></div><div class="ttdoc">景深效果</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00014">Dof.cs:15</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html_a07f32ee8427d9573fe8ff12bb760eac6"><div class="ttname"><a href="class_post_processing_1_1_dof.html#a07f32ee8427d9573fe8ff12bb760eac6">PostProcessing.Dof.aperture</a></div><div class="ttdeci">FloatParameter aperture</div><div class="ttdoc">The ratio of the aperture (known as f-stop or f-number). The smaller the value is,...</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00023">Dof.cs:23</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html_a30cdb04497c37710c3114335ee63ba93"><div class="ttname"><a href="class_post_processing_1_1_dof.html#a30cdb04497c37710c3114335ee63ba93">PostProcessing.Dof.focusDistance</a></div><div class="ttdeci">FloatParameter focusDistance</div><div class="ttdoc">The distance to the point of focus.</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00038">Dof.cs:38</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html_a7f74f6b3ce81473ce12772805af0b088"><div class="ttname"><a href="class_post_processing_1_1_dof.html#a7f74f6b3ce81473ce12772805af0b088">PostProcessing.Dof.kernelSize</a></div><div class="ttdeci">KernelSizeParameter kernelSize</div><div class="ttdoc">The convolution kernel size of the bokeh filter, which determines the maximum radius of bokeh....</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00048">Dof.cs:48</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html_adc03f1b9009e50a42e702dfd9bdbf4e1"><div class="ttname"><a href="class_post_processing_1_1_dof.html#adc03f1b9009e50a42e702dfd9bdbf4e1">PostProcessing.Dof.focalLength</a></div><div class="ttdeci">FloatParameter focalLength</div><div class="ttdoc">The distance between the lens and the film. The larger the value is, the shallower the depth of field...</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00032">Dof.cs:32</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_dof_html_aec0c40ec027858c8bfb5c5ccd0dba8e5"><div class="ttname"><a href="class_post_processing_1_1_dof.html#aec0c40ec027858c8bfb5c5ccd0dba8e5">PostProcessing.Dof.IsEnabledAndSupported</a></div><div class="ttdeci">override bool IsEnabledAndSupported(PostProcessRenderContext context)</div><div class="ttdoc">Returns true if the effect is currently enabled and supported.</div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00055">Dof.cs:55</a></div></div>
+<div class="ttc" id="aclass_post_processing_1_1_kernel_size_parameter_html"><div class="ttname"><a href="class_post_processing_1_1_kernel_size_parameter.html">PostProcessing.KernelSizeParameter</a></div><div class="ttdoc">A volume parameter holding a KernelSize value.</div><div class="ttdef"><b>Definition:</b> <a href="_kernel_size_parameter_8cs_source.html#l00010">KernelSizeParameter.cs:11</a></div></div>
+<div class="ttc" id="anamespace_post_processing_html"><div class="ttname"><a href="namespace_post_processing.html">PostProcessing</a></div><div class="ttdef"><b>Definition:</b> <a href="_dof_8cs_source.html#l00005">Dof.cs:6</a></div></div>
+<div class="ttc" id="anamespace_post_processing_html_a3d8b50f8d61e756741c2215c859ab231"><div class="ttname"><a href="namespace_post_processing.html#a3d8b50f8d61e756741c2215c859ab231">PostProcessing.KernelSize</a></div><div class="ttdeci">KernelSize</div><div class="ttdoc">Convolution kernel size for the Depth of Field effect.</div><div class="ttdef"><b>Definition:</b> <a href="_kernel_size_8cs_source.html#l00006">KernelSize.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_f3ed3afbdeb59a3b1ba1b4934c18a14d.html">CustomPostProcessing</a></li><li class="navelem"><a class="el" href="_dof_8cs.html">Dof.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="Quiz.QuizAstralBody.GetQuizConditionString" name="Quiz.QuizAstralBody.GetQuizConditionString">
+<area shape="rect" id="node1" title="获取星球条件文本" alt="" coords="5,35,201,76"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd" title="获取缩放系数" alt="" coords="249,13,487,39"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0" title=" " alt="" coords="272,64,464,105"/>
+<area shape="rect" id="node3" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="535,5,741,47"/>
+</map>

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Quiz/QuizLineUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_quiz_line_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">QuizLineUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_quiz_line_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEngine.SceneManagement;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html">QuizLineUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span>         <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">name</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ae41e99e5c4865856b35b91ed5f297d36">   13</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html">QuizListUI</a>     <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ae41e99e5c4865856b35b91ed5f297d36">quizListUI</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a6c490949901ad2aeaa65cfc0b8959ef1">   14</a></span>&#160;        <span class="keyword">public</span> Text           <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a6c490949901ad2aeaa65cfc0b8959ef1">quizName</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">   15</a></span>&#160;        <span class="keyword">public</span> Text           <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">quizType</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ad1dc76958bde79786f5f6ab3c7f9c205">   16</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_quiz_1_1_quiz_base_struct.html">QuizBaseStruct</a> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ad1dc76958bde79786f5f6ab3c7f9c205">quizStruct</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Generate();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a894b5ca9aab4f5db14135f3f544dbe4f">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a894b5ca9aab4f5db14135f3f544dbe4f">OnClick</a>()</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a9066e7c20081ae795b72db549a4e6c30">sceneName</a> = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">name</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">LoadSceneInLoadingScene</a>(<span class="stringliteral">&quot;QuizTest&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a58e75913eb17bbf151be7d2207ea73a3">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a58e75913eb17bbf151be7d2207ea73a3">Delete</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ae41e99e5c4865856b35b91ed5f297d36">quizListUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646">DeleteQuiz</a>(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">name</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Generate()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a6c490949901ad2aeaa65cfc0b8959ef1">quizName</a>.text = <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">name</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ad1dc76958bde79786f5f6ab3c7f9c205">quizStruct</a>.<a class="code" href="class_quiz_1_1_quiz_base_struct.html#af8bd7170fa409ae64f8068b177c7832a">quizType</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Mass:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">quizType</a>.text = <span class="stringliteral">&quot;质量问题&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Density:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">quizType</a>.text = <span class="stringliteral">&quot;密度问题&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Gravity:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">quizType</a>.text = <span class="stringliteral">&quot;重力问题&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Radius:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">quizType</a>.text = <span class="stringliteral">&quot;轨道问题&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html">CustomUI.Quiz.QuizLineUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00010">QuizLineUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_a58e75913eb17bbf151be7d2207ea73a3"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a58e75913eb17bbf151be7d2207ea73a3">CustomUI.Quiz.QuizLineUI.Delete</a></div><div class="ttdeci">void Delete()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00029">QuizLineUI.cs:29</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_a65a16d2bc0dea4bbdf1cc7e9d04ab7dc"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a65a16d2bc0dea4bbdf1cc7e9d04ab7dc">CustomUI.Quiz.QuizLineUI.quizType</a></div><div class="ttdeci">Text quizType</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00015">QuizLineUI.cs:15</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_a6c490949901ad2aeaa65cfc0b8959ef1"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a6c490949901ad2aeaa65cfc0b8959ef1">CustomUI.Quiz.QuizLineUI.quizName</a></div><div class="ttdeci">Text quizName</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00014">QuizLineUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_a894b5ca9aab4f5db14135f3f544dbe4f"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a894b5ca9aab4f5db14135f3f544dbe4f">CustomUI.Quiz.QuizLineUI.OnClick</a></div><div class="ttdeci">void OnClick()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00023">QuizLineUI.cs:23</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_acbdef27a1bfe1faa3f59383843d2c8c7"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#acbdef27a1bfe1faa3f59383843d2c8c7">CustomUI.Quiz.QuizLineUI.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00012">QuizLineUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_ad1dc76958bde79786f5f6ab3c7f9c205"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ad1dc76958bde79786f5f6ab3c7f9c205">CustomUI.Quiz.QuizLineUI.quizStruct</a></div><div class="ttdeci">QuizBaseStruct quizStruct</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00016">QuizLineUI.cs:16</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html_ae41e99e5c4865856b35b91ed5f297d36"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#ae41e99e5c4865856b35b91ed5f297d36">CustomUI.Quiz.QuizLineUI.quizListUI</a></div><div class="ttdeci">QuizListUI quizListUI</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00013">QuizLineUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html">CustomUI.Quiz.QuizListUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00008">QuizListUI.cs:9</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_ad56b0e6c597dbaa557e79be3f30b7646"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646">CustomUI.Quiz.QuizListUI.DeleteQuiz</a></div><div class="ttdeci">void DeleteQuiz(string quizName)</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00051">QuizListUI.cs:51</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html">GameManagers.GlobalTransfer</a></div><div class="ttdoc">全局信息传递</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00009">GlobalTransfer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0a67c1504ad9ccb391ff92e6deab988d"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">GameManagers.GlobalTransfer.LoadSceneInLoadingScene</a></div><div class="ttdeci">void LoadSceneInLoadingScene(string nextLoadSceneName)</div><div class="ttdoc">在Loading场景中加载新场景</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00052">GlobalTransfer.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0b2b5712e982e961220041cef7aa4a39"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">GameManagers.GlobalTransfer.getGlobalTransfer</a></div><div class="ttdeci">static GlobalTransfer getGlobalTransfer</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00025">GlobalTransfer.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a9066e7c20081ae795b72db549a4e6c30"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a9066e7c20081ae795b72db549a4e6c30">GameManagers.GlobalTransfer.sceneName</a></div><div class="ttdeci">string sceneName</div><div class="ttdoc">问题名称</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00021">GlobalTransfer.cs:21</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_struct_html"><div class="ttname"><a href="class_quiz_1_1_quiz_base_struct.html">Quiz.QuizBaseStruct</a></div><div class="ttdoc">问题信息存储</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_struct_8cs_source.html#l00009">QuizBaseStruct.cs:10</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_struct_html_af8bd7170fa409ae64f8068b177c7832a"><div class="ttname"><a href="class_quiz_1_1_quiz_base_struct.html#af8bd7170fa409ae64f8068b177c7832a">Quiz.QuizBaseStruct.quizType</a></div><div class="ttdeci">QuizType quizType</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_struct_8cs_source.html#l00011">QuizBaseStruct.cs:11</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html_a9cdc67d3b0564ceddab5bee0913587ac"><div class="ttname"><a href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">Quiz.QuizType</a></div><div class="ttdeci">QuizType</div><div class="ttdoc">问题类型</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_type_8cs_source.html#l00006">QuizType.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_a055651248895ed42efc76cb97a3ec76.html">Quiz</a></li><li class="navelem"><a class="el" href="_quiz_line_u_i_8cs.html">QuizLineUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

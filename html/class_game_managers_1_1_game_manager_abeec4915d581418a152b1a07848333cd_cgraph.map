@@ -1,0 +1,4 @@
+<map id="GameManagers.GameManager.GetK" name="GameManagers.GameManager.GetK">
+<area shape="rect" id="node1" title="获取缩放系数" alt="" coords="5,13,243,39"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="291,5,497,47"/>
+</map>

@@ -1,0 +1,19 @@
+digraph "CustomUI.Quiz.VarLineUI.OnEditEnd"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CustomUI.Quiz.VarLineUI.\lOnEditEnd",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GameManagers.GameManager.\lCalculateMassScales",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f",tooltip="计算质量缩放"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpacePhysic.AstralBody.Change\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7",tooltip="调整星球速度"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpacePhysic.AstralBody.Get\lPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#aedfd2eada72ec832dde5a2d3aea31583",tooltip="委屈位置"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpacePhysic.AstralBody.Get\lTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a879cbf857765e818349e4069e7bd4064",tooltip="获取坐标"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpacePhysic.AstralBody.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0",tooltip=" "];
+}

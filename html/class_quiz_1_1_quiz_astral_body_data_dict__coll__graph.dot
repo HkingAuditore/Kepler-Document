@@ -1,0 +1,14 @@
+digraph "Quiz.QuizAstralBodyDataDict"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Quiz.QuizAstralBodyDataDict\n|+ bool isMassPublic\l+ bool isVelocityPublic\l+ bool isAngularVelocityPublic\l+ bool isPeriodPublic\l+ bool isRadiusPublic\l+ bool isGravityPublic\l+ bool isSizePublic\l+ float t\l+ bool isTPublic\l+ bool isTarget\l|+  QuizAstralBodyDataDict\l(Transform transform,\l QuizAstralBody astralBody,\l bool isTarget, bool isCore)\l+  QuizAstralBodyDataDict\l(AstralBodyDataDict\< QuizAstral\lBody \> quizAstralBodyDict)\l+  QuizAstralBodyDataDict()\l+ static QuizAstralBodyData\lDict FromAstralBodyDict\l(XmlSaver.AstralBodyDataDict\l\< Quiz.QuizAstralBody \> dataDict)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="问题星体数据存储"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{XmlSaver::AstralBodyData\lDict\< QuizAstralBody \>\n|+ Vector3 position\l+ double mass\l+ double density\l+ float originalSize\l+ float affectRadius\l+ Vector3 oriVelocity\l+ float period\l+ float radius\l+ int meshNum\l+ bool enableAffect\l+ bool enableTracing\l+ bool isCore\l|+  AstralBodyDataDict()\l+  AstralBodyDataDict\l(Transform transform,\l T astralBody, bool isCore)\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_astral_body_data_dict.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",fontsize="10",style="solid",label=" \< QuizAstralBody \>" ,fontname="Helvetica"];
+  Node3 [label="{XmlSaver.AstralBodyDataDict\< T \>\n|+ Vector3 position\l+ double mass\l+ double density\l+ float originalSize\l+ float affectRadius\l+ Vector3 oriVelocity\l+ float period\l+ float radius\l+ int meshNum\l+ bool enableAffect\l+ bool enableTracing\l+ bool isCore\l|+  AstralBodyDataDict()\l+  AstralBodyDataDict\l(Transform transform,\l T astralBody, bool isCore)\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_astral_body_data_dict.html",tooltip="星体数据存储"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{IAstralBodyDictale\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_xml_saver_1_1_i_astral_body_dictale.html",tooltip="星体可序列化"];
+}

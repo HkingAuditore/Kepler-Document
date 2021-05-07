@@ -1,0 +1,10 @@
+digraph "CustomUI.AstralBodyEditor.OrbitPanelUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.AstralBodyEditor.\lOrbitPanelUI\n|+ AstralBody _astralBody\l+ Text angle\l+ GameObject contentPanel\l+ Text eccentricity\l+ Text focalLength\l+ Text geoCenter\l+ bool isConicSection\l+ Text k\l+ Text majorAxis\l+ Text minorAxis\l+ GameObject nullPanel\l+ OrbitGraphUI orbitGraphUI\l+ Text period\l+ AstralBody astralBody\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

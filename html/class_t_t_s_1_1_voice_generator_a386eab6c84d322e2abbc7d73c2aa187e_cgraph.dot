@@ -1,0 +1,15 @@
+digraph "TTS.VoiceGenerator.GetAudioAsync"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TTS.VoiceGenerator.GetAudio\lAsync",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TTS.VoiceGenerator.OnAudio\lLoadAndPaly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_t_s_1_1_voice_generator.html#a5115e727e80297900deb37320de59777",tooltip="UnityWebRequest 加载音频播放"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="msc.MSCDLL.QTTSAudioGet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmsc_1_1_m_s_c_d_l_l.html#ad8c7281a280e43c222964b1b2116800e",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="msc.MSCDLL.QTTSSessionEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmsc_1_1_m_s_c_d_l_l.html#a9aa03b08e5fc36c3d827355177dcc471",tooltip=" "];
+}

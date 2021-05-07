@@ -1,0 +1,11 @@
+<map id="SpacePhysic.AstralBody.ChangeVelocity" name="SpacePhysic.AstralBody.ChangeVelocity">
+<area shape="rect" id="node1" title="调整星球速度" alt="" coords="528,141,743,182"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a5c1d5bbbcd247e49603f2d702f9118b0" title=" " alt="" coords="256,56,480,83"/>
+<area shape="rect" id="node5" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#adfa12854be919178096c58aa61e50ff6" title=" " alt="" coords="281,107,455,149"/>
+<area shape="rect" id="node7" href="$class_space_physic_1_1_astral_body.html#a3b5424b4233b532ccb0252d526c013ea" title="设置环绕速度" alt="" coords="273,173,463,214"/>
+<area shape="rect" id="node9" href="$class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2" title=" " alt="" coords="286,238,450,279"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_astral_body.html#a5c4a08f896e60482463982c87c812143" title=" " alt="" coords="19,5,195,32"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html#af558a0166f9d5bfad6fd918b3656aef0" title=" " alt="" coords="7,56,206,83"/>
+<area shape="rect" id="node6" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#aac47d0852e69724a11cc6c9979eeda9a" title=" " alt="" coords="19,107,194,149"/>
+<area shape="rect" id="node8" href="$class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html#ae725dd8edcb3a54922e3aa289b7ddccf" title=" " alt="" coords="5,173,208,229"/>
+</map>

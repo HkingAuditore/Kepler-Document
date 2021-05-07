@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/GameManagers/GameManager.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_game_manager_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameManager.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_manager_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_camera.html">CustomCamera</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_satellite.html">Satellite</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_static_classes.html">StaticClasses</a>.<a class="code" href="namespace_static_classes_1_1_math_plus.html">MathPlus</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> UnityEngine.Serialization;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_xml_saver.html">XmlSaver</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_game_managers.html">GameManagers</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a> : MonoBehaviour</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        [SerializeField] <span class="keyword">private</span> <a class="code" href="class_custom_camera_1_1_camera_controller.html">CameraController</a> _mainCameraController;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a40c720d47580973aadb902364ccd55bb">   25</a></span>&#160;        <span class="keyword">public</span> AudioSource <a class="code" href="class_game_managers_1_1_game_manager.html#a40c720d47580973aadb902364ccd55bb">bgmSource</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">   30</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">   35</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_game_managers_1_1_global_timer.html">GlobalTimer</a> <a class="code" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">globalTimer</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#aaadf7ec867489869c57413fc63354eb0">   40</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_game_managers_1_1_game_manager.html#aaadf7ec867489869c57413fc63354eb0">isQuizEditMode</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">   45</a></span>&#160;        <span class="keyword">public</span> Camera <a class="code" href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">mainCamera</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#ab1f70d0e264145411196241c9769550c">   50</a></span>&#160;        <span class="keyword">public</span> List&lt;GameObject&gt; <a class="code" href="class_game_managers_1_1_game_manager.html#ab1f70d0e264145411196241c9769550c">meshList</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">   55</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_space_physic_1_1_gravity_tracing.html">GravityTracing</a> <a class="code" href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">orbit</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#af27b32463a090f133355d75b766729f8">   60</a></span>&#160;        [FormerlySerializedAs(<span class="stringliteral">&quot;quizEditor&quot;</span>)] <span class="keyword">public</span> <a class="code" href="class_quiz_1_1_quiz_base.html">QuizBase</a> <a class="code" href="class_game_managers_1_1_game_manager.html#af27b32463a090f133355d75b766729f8">quizBase</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a35da4f03ad9711611b8037f65b46ee75">   62</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_xml_saver_1_1_scene_editor.html">SceneEditor</a> <a class="code" href="class_game_managers_1_1_game_manager.html#a35da4f03ad9711611b8037f65b46ee75">sceneEditor</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">   67</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_satellite_1_1_satellite_challenge_manger.html">SatelliteChallengeManger</a> <a class="code" href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">satelliteChallengeManger</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        [SerializeField]<span class="keyword">private</span> <span class="keywordtype">int</span> _globalMassScaler;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">   71</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a> <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">get</span> =&gt; _globalMassScaler;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">private</span> <span class="keyword">set</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                _globalMassScaler    = value;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a> = 3 + (-_globalMassScaler - 11) / 2;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Awake()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a> = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html#ac8f8081c813dd5f6357a45811d9b211a">SetAudioVolume</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a2c1bc733911849829b72baa6ee33d8e7">   97</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_camera_1_1_camera_controller.html">CameraController</a> <a class="code" href="class_game_managers_1_1_game_manager.html#a2c1bc733911849829b72baa6ee33d8e7">GetMainCameraController</a>()</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">return</span> _mainCameraController;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a533229970107442afda3694f6292ae29">  108</a></span>&#160;        <span class="keyword">public</span> Mesh <a class="code" href="class_game_managers_1_1_game_manager.html#a533229970107442afda3694f6292ae29">GetMeshAndMaterialsFromList</a>(<span class="keywordtype">int</span> index, ref List&lt;Material&gt; materials)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            materials = <a class="code" href="class_game_managers_1_1_game_manager.html#ab1f70d0e264145411196241c9769550c">meshList</a>[index].GetComponent&lt;Renderer&gt;().sharedMaterials.ToList();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_managers_1_1_game_manager.html#ab1f70d0e264145411196241c9769550c">meshList</a>[index].GetComponent&lt;MeshFilter&gt;().sharedMesh;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#ac8f8081c813dd5f6357a45811d9b211a">  117</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_game_managers_1_1_game_manager.html#ac8f8081c813dd5f6357a45811d9b211a">SetAudioVolume</a>()</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html#a40c720d47580973aadb902364ccd55bb">bgmSource</a>.volume = <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a32fe8e1329f959b4cae1a93b9fa03344">audioVolume</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">        #region 单位</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _getNum;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f">  129</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f">CalculateMassScales</a>()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span> (_getNum == 0)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                var coreBody = <a class="code" href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">orbit</a>.transform.Find(<span class="stringliteral">&quot;Core&quot;</span>).GetComponent&lt;<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>&gt;();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f">CalculateMassScales</a>(coreBody.realMass);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a3365f656b45483140cb6f35dc2725129">  143</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_game_managers_1_1_game_manager.html#a3365f656b45483140cb6f35dc2725129">CalculateMassScales</a>(<span class="keywordtype">double</span> realMass)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            var e = MathPlus.GetExponent(realMass);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            Debug.Log(<span class="stringliteral">&quot;e:&quot;</span>                    + e);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            var offset = Mathf.Clamp(e, 2, 3) - e;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            Debug.Log(<span class="stringliteral">&quot;offset:&quot;</span> + offset);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            var smallerScaler = Mathf.FloorToInt(offset / 2f);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            var biggerScaler  = Mathf.CeilToInt(offset  / 2f);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> = e &lt;= 26 ? smallerScaler : biggerScaler;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            Debug.Log(<span class="stringliteral">&quot;global Scaler:&quot;</span> + <a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="comment">// Debug.Log(&quot;globalMassScaler&quot; + globalMassScaler);</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#a7a47da5b8a39db9cfa7307f6b4c1e44b">  161</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_game_managers_1_1_game_manager.html#a7a47da5b8a39db9cfa7307f6b4c1e44b">CalculateDistanceScale</a>()</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            var coreBody = <a class="code" href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">orbit</a>.transform.Find(<span class="stringliteral">&quot;Core&quot;</span>).GetComponent&lt;<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>&gt;();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            var rBody    = <a class="code" href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">orbit</a>.transform.GetChild(1).GetComponent&lt;<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>&gt;();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            var distance = Vector3.Distance(coreBody.transform.position, coreBody.transform.position);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd">  175</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd">GetK</a>(<a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a> propertyUnit, <span class="keywordtype">double</span> mass)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordtype">int</span> k;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">switch</span> (propertyUnit)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.M:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    <span class="comment">// k = 7;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    k = 1 + 2 * <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.Kg:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    <span class="comment">// k = 26;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    <span class="keywordflow">if</span> (_getNum == 0)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        <a class="code" href="class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f">CalculateMassScales</a>(mass);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        _getNum++;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    k = <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> * 2;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    Debug.Log(<span class="stringliteral">&quot;k:&quot;</span> + k);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.S:</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    k = 3 + (-<a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> - <a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a> * 3);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(nameof(propertyUnit), propertyUnit, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> k;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="class_game_managers_1_1_game_manager.html#ac9da3551a45fbb455843454327bccdff">  214</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_game_managers_1_1_game_manager.html#ac9da3551a45fbb455843454327bccdff">GetK</a>(<a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a> propertyUnit)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordtype">int</span> k;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">switch</span> (propertyUnit)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.M:</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                    <span class="comment">// k = 7;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                    k = <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a> * 2;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.Kg:</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    <span class="comment">// // k = 26;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                    <span class="comment">// if (_getNum == 0)</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="comment">// {</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <span class="comment">//     CalculateScales(mass);</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <span class="comment">// }</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    k = <a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> * 2;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    <span class="comment">// Debug.Log(&quot;k:&quot; + k);</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">PropertyUnit</a>.S:</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    k = 3 + (-<a class="code" href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">globalMassScaler</a> - <a class="code" href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">globalDistanceScaler</a> * 3);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(nameof(propertyUnit), propertyUnit, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">return</span> k;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_camera_1_1_camera_controller_html"><div class="ttname"><a href="class_custom_camera_1_1_camera_controller.html">CustomCamera.CameraController</a></div><div class="ttdoc">相机控制</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00010">CameraController.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a17c22f99d1d47e16c36495e605667255"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a17c22f99d1d47e16c36495e605667255">GameManagers.GameManager.globalMassScaler</a></div><div class="ttdeci">int globalMassScaler</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00073">GameManager.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a2c1bc733911849829b72baa6ee33d8e7"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a2c1bc733911849829b72baa6ee33d8e7">GameManagers.GameManager.GetMainCameraController</a></div><div class="ttdeci">CameraController GetMainCameraController()</div><div class="ttdoc">获取主相机控制器</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00097">GameManager.cs:97</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a3365f656b45483140cb6f35dc2725129"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a3365f656b45483140cb6f35dc2725129">GameManagers.GameManager.CalculateMassScales</a></div><div class="ttdeci">void CalculateMassScales(double realMass)</div><div class="ttdoc">计算质量缩放</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00143">GameManager.cs:143</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a35da4f03ad9711611b8037f65b46ee75"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a35da4f03ad9711611b8037f65b46ee75">GameManagers.GameManager.sceneEditor</a></div><div class="ttdeci">SceneEditor sceneEditor</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00062">GameManager.cs:62</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a40c720d47580973aadb902364ccd55bb"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a40c720d47580973aadb902364ccd55bb">GameManagers.GameManager.bgmSource</a></div><div class="ttdeci">AudioSource bgmSource</div><div class="ttdoc">音源</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00025">GameManager.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a4eaac2fe33f81698d32e636d4eff35e3"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a4eaac2fe33f81698d32e636d4eff35e3">GameManagers.GameManager.orbit</a></div><div class="ttdeci">GravityTracing orbit</div><div class="ttdoc">引力步进执行对象</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00055">GameManager.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a533229970107442afda3694f6292ae29"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a533229970107442afda3694f6292ae29">GameManagers.GameManager.GetMeshAndMaterialsFromList</a></div><div class="ttdeci">Mesh GetMeshAndMaterialsFromList(int index, ref List&lt; Material &gt; materials)</div><div class="ttdoc">获取模型Mesh与材质</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00108">GameManager.cs:108</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a630d5bc034889e5ea896ccdacc923caa"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">GameManagers.GameManager.mainCamera</a></div><div class="ttdeci">Camera mainCamera</div><div class="ttdoc">主相机</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00045">GameManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a684a1a83ee6be8691255692e9fbb1aae"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">GameManagers.GameManager.satelliteChallengeManger</a></div><div class="ttdeci">SatelliteChallengeManger satelliteChallengeManger</div><div class="ttdoc">卫星挑战管理对象</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00067">GameManager.cs:67</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a7a47da5b8a39db9cfa7307f6b4c1e44b"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a7a47da5b8a39db9cfa7307f6b4c1e44b">GameManagers.GameManager.CalculateDistanceScale</a></div><div class="ttdeci">void CalculateDistanceScale()</div><div class="ttdoc">计算距离缩放</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00161">GameManager.cs:161</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_aaadf7ec867489869c57413fc63354eb0"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#aaadf7ec867489869c57413fc63354eb0">GameManagers.GameManager.isQuizEditMode</a></div><div class="ttdeci">bool isQuizEditMode</div><div class="ttdoc">是否为问题模式</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00040">GameManager.cs:40</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_ab1f70d0e264145411196241c9769550c"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#ab1f70d0e264145411196241c9769550c">GameManagers.GameManager.meshList</a></div><div class="ttdeci">List&lt; GameObject &gt; meshList</div><div class="ttdoc">模型列表</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00050">GameManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_ab809f66044771ece537c01978381610f"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f">GameManagers.GameManager.CalculateMassScales</a></div><div class="ttdeci">void CalculateMassScales()</div><div class="ttdoc">计算质量缩放</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00129">GameManager.cs:129</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abb56379bf5c1da4a6120a5b964fe2ba1"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abb56379bf5c1da4a6120a5b964fe2ba1">GameManagers.GameManager.globalDistanceScaler</a></div><div class="ttdeci">int globalDistanceScaler</div><div class="ttdoc">全局缩放量</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00030">GameManager.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abeec4915d581418a152b1a07848333cd"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd">GameManagers.GameManager.GetK</a></div><div class="ttdeci">int GetK(PropertyUnit propertyUnit, double mass)</div><div class="ttdoc">获取缩放系数</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00175">GameManager.cs:175</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abf40b119a34ba39179bc50d5623b24f8"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">GameManagers.GameManager.globalTimer</a></div><div class="ttdeci">GlobalTimer globalTimer</div><div class="ttdoc">全局计时器</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00035">GameManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_ac8f8081c813dd5f6357a45811d9b211a"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#ac8f8081c813dd5f6357a45811d9b211a">GameManagers.GameManager.SetAudioVolume</a></div><div class="ttdeci">void SetAudioVolume()</div><div class="ttdoc">设置音量</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00117">GameManager.cs:117</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_ac9da3551a45fbb455843454327bccdff"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#ac9da3551a45fbb455843454327bccdff">GameManagers.GameManager.GetK</a></div><div class="ttdeci">int GetK(PropertyUnit propertyUnit)</div><div class="ttdoc">获取缩放系数</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00214">GameManager.cs:214</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_af27b32463a090f133355d75b766729f8"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#af27b32463a090f133355d75b766729f8">GameManagers.GameManager.quizBase</a></div><div class="ttdeci">QuizBase quizBase</div><div class="ttdoc">问题管理对象</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00060">GameManager.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_timer_html"><div class="ttname"><a href="class_game_managers_1_1_global_timer.html">GameManagers.GlobalTimer</a></div><div class="ttdoc">全局计时器</div><div class="ttdef"><b>Definition:</b> <a href="_global_timer_8cs_source.html#l00009">GlobalTimer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html">GameManagers.GlobalTransfer</a></div><div class="ttdoc">全局信息传递</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00009">GlobalTransfer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0b2b5712e982e961220041cef7aa4a39"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">GameManagers.GlobalTransfer.getGlobalTransfer</a></div><div class="ttdeci">static GlobalTransfer getGlobalTransfer</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00025">GlobalTransfer.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a32fe8e1329f959b4cae1a93b9fa03344"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a32fe8e1329f959b4cae1a93b9fa03344">GameManagers.GlobalTransfer.audioVolume</a></div><div class="ttdeci">float audioVolume</div><div class="ttdoc">获取音量</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00030">GlobalTransfer.cs:31</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html">Quiz.QuizBase</a></div><div class="ttdoc">问题管理</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00012">QuizBase.cs:13</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_challenge_manger_html"><div class="ttname"><a href="class_satellite_1_1_satellite_challenge_manger.html">Satellite.SatelliteChallengeManger</a></div><div class="ttdoc">航天挑战管理</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_challenge_manger_8cs_source.html#l00011">SatelliteChallengeManger.cs:12</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_gravity_tracing_html"><div class="ttname"><a href="class_space_physic_1_1_gravity_tracing.html">SpacePhysic.GravityTracing</a></div><div class="ttdoc">引力追踪</div><div class="ttdef"><b>Definition:</b> <a href="_gravity_tracing_8cs_source.html#l00014">GravityTracing.cs:15</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_editor_html"><div class="ttname"><a href="class_xml_saver_1_1_scene_editor.html">XmlSaver.SceneEditor</a></div><div class="ttdoc">场景编辑器</div><div class="ttdef"><b>Definition:</b> <a href="_scene_editor_8cs_source.html#l00014">SceneEditor.cs:15</a></div></div>
+<div class="ttc" id="anamespace_custom_camera_html"><div class="ttname"><a href="namespace_custom_camera.html">CustomCamera</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00005">CameraController.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html_ade16e26dd544e48929c02a37f01aec23"><div class="ttname"><a href="namespace_game_managers.html#ade16e26dd544e48929c02a37f01aec23">GameManagers.PropertyUnit</a></div><div class="ttdeci">PropertyUnit</div><div class="ttdoc">单位名</div><div class="ttdef"><b>Definition:</b> <a href="_property_unit_8cs_source.html#l00006">PropertyUnit.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_satellite_html"><div class="ttname"><a href="namespace_satellite.html">Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_8cs_source.html#l00005">Satellite.cs:6</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_static_classes_1_1_math_plus_html"><div class="ttname"><a href="namespace_static_classes_1_1_math_plus.html">StaticClasses.MathPlus</a></div><div class="ttdef"><b>Definition:</b> <a href="_conic_section_8cs_source.html#l00004">ConicSection.cs:5</a></div></div>
+<div class="ttc" id="anamespace_static_classes_html"><div class="ttname"><a href="namespace_static_classes.html">StaticClasses</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_object_plus_8cs_source.html#l00004">GameObjectPlus.cs:5</a></div></div>
+<div class="ttc" id="anamespace_xml_saver_html"><div class="ttname"><a href="namespace_xml_saver.html">XmlSaver</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_data_dict_8cs_source.html#l00004">AstralBodyDataDict.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_5abdc14bdca786c61ca76d4f478e2729.html">GameManagers</a></li><li class="navelem"><a class="el" href="_game_manager_8cs.html">GameManager.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

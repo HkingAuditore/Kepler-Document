@@ -1,0 +1,8 @@
+digraph "StaticClasses.MathPlus.ConicSection"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{StaticClasses.MathPlus.Conic\lSection\n|+ float a\l+ float angle\l+ float b\l+ float c\l+ float d\l+ float e\l+ float eccentricity\l+ float f\l+ float focalLength\l+ Vector2 geoCenter\l+ bool isEllipse\l+ float semiMajorAxis\l+ float semiMinorAxis\l|+  ConicSection(float\l a, float b, float c,\l float d, float e, float f)\l+  ConicSection(float\l a, float b, float c,\l float theta, Vector2\l geoCenter)\l+ float[] GetY(float x)\l+ float[] GetX(float y)\l+ Vector2 GetPolarPos\l(float ag)\l+ float GetT(float m)\l+ override string ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="圆锥曲线"];
+}

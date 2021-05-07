@@ -1,0 +1,6 @@
+<map id="Quiz.QuizAstralBody" name="Quiz.QuizAstralBody">
+<area shape="rect" id="node1" title="问题中的星体" alt="" coords="47,1033,261,1448"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="47,263,261,985"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,71,116,149"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="141,5,354,215"/>
+</map>

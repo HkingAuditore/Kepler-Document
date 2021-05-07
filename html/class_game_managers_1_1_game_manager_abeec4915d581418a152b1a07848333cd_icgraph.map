@@ -1,0 +1,8 @@
+<map id="GameManagers.GameManager.GetK" name="GameManagers.GameManager.GetK">
+<area shape="rect" id="node1" title="获取缩放系数" alt="" coords="797,78,1035,105"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a13a5ee93bb01019b6b62111ce696f9b2" title="保持当前速度方向调整速度" alt="" coords="535,5,749,47"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50" title="获取星球条件文本" alt="" coords="544,71,740,112"/>
+<area shape="rect" id="node6" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a26457b4f98b1ffa60a28345a9b8898a5" title=" " alt="" coords="539,136,745,177"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd" title="获取问题" alt="" coords="264,78,487,105"/>
+<area shape="rect" id="node5" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08" title=" " alt="" coords="5,78,216,105"/>
+</map>

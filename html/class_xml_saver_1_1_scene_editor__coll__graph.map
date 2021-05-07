@@ -1,0 +1,10 @@
+<map id="XmlSaver.SceneEditor" name="XmlSaver.SceneEditor">
+<area shape="rect" id="node1" title="场景编辑器" alt="" coords="252,2121,445,2331"/>
+<area shape="rect" id="node2" href="$class_xml_saver_1_1_scene_load_base.html" title=" " alt="" coords="89,1615,371,2059"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_load_base.html" title="存档加载管理" alt="" coords="27,998,308,1427"/>
+<area shape="rect" id="node4" title=" " alt="" coords="143,5,253,83"/>
+<area shape="rect" id="node5" href="$class_space_physic_1_1_gravity_tracing.html" title="引力追踪" alt="" coords="88,323,308,620"/>
+<area shape="rect" id="node8" href="$class_xml_saver_1_1_xml_saver.html" title="存档保存" alt="" coords="332,132,648,811"/>
+<area shape="rect" id="node6" href="$class_xml_saver_1_1_scene_saver.html" title="场景保存" alt="" coords="405,1798,553,1875"/>
+<area shape="rect" id="node7" href="$class_xml_saver_1_1_xml_saver.html" title=" " alt="" coords="332,873,648,1552"/>
+</map>

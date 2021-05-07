@@ -1,0 +1,77 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$interface_custom_post_processing_1_1_i_render_tex_outer.html" title="RenderTexture输出接口" alt="" coords="5,103,212,145"/>
+<area shape="rect" id="node2" href="$class_custom_camera_1_1_layer_camera.html" title="层级相机管理" alt="" coords="273,132,466,159"/>
+<area shape="rect" id="node3" href="$class_custom_post_processing_1_1_outline_catcher.html" title="描边抓取" alt="" coords="529,411,733,453"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="27,31,190,57"/>
+<area shape="rect" id="node5" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="286,31,453,57"/>
+<area shape="rect" id="node6" href="$class_quiz_1_1_quiz_astral_body.html" title="问题中的星体" alt="" coords="559,5,703,32"/>
+<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_part.html" title="卫星部件" alt="" coords="559,56,703,83"/>
+<area shape="rect" id="node8" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="792,31,952,57"/>
+<area shape="rect" id="node10" href="$class_satellite_1_1_satellite_parachute.html" title="卫星降落伞" alt="" coords="783,81,961,108"/>
+<area shape="rect" id="node9" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="1009,31,1156,57"/>
+<area shape="rect" id="node11" title=" " alt="" coords="53,1765,164,1792"/>
+<area shape="rect" id="node12" href="$class_animation_1_1_astronauts_animation.html" title="宇航员动画机" alt="" coords="267,655,472,681"/>
+<area shape="rect" id="node13" href="$class_bloom_effect.html" title=" " alt="" coords="323,705,415,732"/>
+<area shape="rect" id="node14" href="$class_custom_camera_1_1_camera_controller.html" title="相机控制" alt="" coords="261,756,477,783"/>
+<area shape="rect" id="node15" href="$class_custom_post_processing_1_1_custom_post_processing_base.html" title="自定义后处理" alt="" coords="265,807,473,849"/>
+<area shape="rect" id="node18" href="$class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_add_u_i.html" title=" " alt="" coords="277,873,462,914"/>
+<area shape="rect" id="node19" href="$class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html" title=" " alt="" coords="277,938,462,979"/>
+<area shape="rect" id="node21" href="$class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_placement_u_i.html" title=" " alt="" coords="277,1003,462,1045"/>
+<area shape="rect" id="node22" href="$class_custom_u_i_1_1_astral_body_editor_1_1_mesh_editor.html" title=" " alt="" coords="277,1069,462,1110"/>
+<area shape="rect" id="node23" href="$class_custom_u_i_1_1_astral_body_editor_1_1_orbit_graph_u_i.html" title=" " alt="" coords="277,1134,462,1175"/>
+<area shape="rect" id="node24" href="$class_custom_u_i_1_1_astral_body_editor_1_1_orbit_panel_u_i.html" title=" " alt="" coords="277,1199,462,1241"/>
+<area shape="rect" id="node25" href="$class_custom_u_i_1_1_astral_body_editor_1_1_position_editor_u_i.html" title=" " alt="" coords="277,1265,462,1306"/>
+<area shape="rect" id="node26" href="$class_custom_u_i_1_1_astral_body_editor_1_1_star_style_setting_u_i.html" title=" " alt="" coords="277,1330,462,1371"/>
+<area shape="rect" id="node27" href="$class_custom_u_i_1_1_astral_body_editor_1_1_velocity_editor_u_i.html" title=" " alt="" coords="277,1395,462,1437"/>
+<area shape="rect" id="node28" href="$class_custom_u_i_1_1_global_timer_u_i.html" title=" " alt="" coords="287,1461,451,1488"/>
+<area shape="rect" id="node29" href="$class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html" title=" " alt="" coords="268,1512,471,1539"/>
+<area shape="rect" id="node30" href="$class_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i.html" title=" " alt="" coords="270,1563,469,1589"/>
+<area shape="rect" id="node31" href="$class_custom_u_i_1_1_lab_mode_u_i.html" title=" " alt="" coords="295,1613,443,1640"/>
+<area shape="rect" id="node32" href="$class_custom_u_i_1_1_length_u_i.html" title=" " alt="" coords="302,1664,437,1691"/>
+<area shape="rect" id="node33" href="$class_custom_u_i_1_1_main_u_i.html" title=" " alt="" coords="308,1715,431,1741"/>
+<area shape="rect" id="node34" href="$class_custom_u_i_1_1_physic_scene_u_i.html" title=" " alt="" coords="283,1765,455,1792"/>
+<area shape="rect" id="node35" href="$class_custom_u_i_1_1_quiz_1_1_quiz_edit_u_i.html" title=" " alt="" coords="281,1816,457,1843"/>
+<area shape="rect" id="node36" href="$class_custom_u_i_1_1_quiz_1_1_quiz_editor_u_i.html" title=" " alt="" coords="276,1867,463,1893"/>
+<area shape="rect" id="node37" href="$class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html" title=" " alt="" coords="281,1917,458,1944"/>
+<area shape="rect" id="node38" href="$class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html" title=" " alt="" coords="282,1968,457,1995"/>
+<area shape="rect" id="node39" href="$class_custom_u_i_1_1_quiz_1_1_quiz_star_u_i.html" title=" " alt="" coords="281,2019,458,2045"/>
+<area shape="rect" id="node40" href="$class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html" title=" " alt="" coords="260,2069,479,2096"/>
+<area shape="rect" id="node41" href="$class_custom_u_i_1_1_quiz_1_1_quiz_test_u_i.html" title=" " alt="" coords="280,2120,459,2147"/>
+<area shape="rect" id="node42" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html" title=" " alt="" coords="293,2171,446,2197"/>
+<area shape="rect" id="node43" href="$class_custom_u_i_1_1_quiz_1_1_result_u_i.html" title=" " alt="" coords="288,2221,451,2248"/>
+<area shape="rect" id="node44" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html" title=" " alt="" coords="284,2272,455,2299"/>
+<area shape="rect" id="node45" href="$class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html" title=" " alt="" coords="279,2323,460,2365"/>
+<area shape="rect" id="node46" href="$class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html" title=" " alt="" coords="279,2389,460,2430"/>
+<area shape="rect" id="node47" href="$class_custom_u_i_1_1_satellite_1_1_satellite_u_i.html" title=" " alt="" coords="273,2455,466,2481"/>
+<area shape="rect" id="node48" href="$class_custom_u_i_1_1_selector_u_i.html" title=" " alt="" coords="298,2505,441,2532"/>
+<area shape="rect" id="node49" href="$class_custom_u_i_1_1_setting_u_i.html" title=" " alt="" coords="301,2556,437,2583"/>
+<area shape="rect" id="node50" href="$class_custom_u_i_1_1_test_mode_u_i.html" title=" " alt="" coords="293,2607,445,2633"/>
+<area shape="rect" id="node51" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_clip_u_i.html" title=" " alt="" coords="284,2658,455,2699"/>
+<area shape="rect" id="node52" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_manager_u_i.html" title=" " alt="" coords="284,2723,455,2765"/>
+<area shape="rect" id="node54" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_u_i.html" title=" " alt="" coords="278,2789,461,2816"/>
+<area shape="rect" id="node56" href="$class_custom_u_i_1_1_u_i_manager.html" title=" " alt="" coords="297,2840,442,2867"/>
+<area shape="rect" id="node57" href="$class_custom_u_i_1_1_vector_u_i.html" title=" " alt="" coords="303,2891,436,2917"/>
+<area shape="rect" id="node58" href="$class_deferred_fog_effect.html" title=" " alt="" coords="307,2941,432,2968"/>
+<area shape="rect" id="node59" href="$class_depth_of_field_effect.html" title=" " alt="" coords="304,2992,435,3019"/>
+<area shape="rect" id="node60" href="$class_emissive_oscillator.html" title=" " alt="" coords="305,3043,434,3069"/>
+<area shape="rect" id="node61" href="$class_g_p_u_instancing_test.html" title=" " alt="" coords="302,3093,437,3120"/>
+<area shape="rect" id="node62" href="$class_game_managers_1_1_game_manager.html" title="全局管理" alt="" coords="268,3144,471,3171"/>
+<area shape="rect" id="node63" href="$class_game_managers_1_1_global_timer.html" title="全局计时器" alt="" coords="276,3195,463,3221"/>
+<area shape="rect" id="node64" href="$class_game_managers_1_1_global_transfer.html" title="全局信息传递" alt="" coords="269,3245,470,3272"/>
+<area shape="rect" id="node65" href="$class_init_1_1_init.html" title="Init场景管理" alt="" coords="339,3296,399,3323"/>
+<area shape="rect" id="node66" href="$class_loading_1_1_loading_manager.html" title="加载管理" alt="" coords="286,3347,453,3373"/>
+<area shape="rect" id="node67" href="$class_quiz_1_1_transformer.html" title="问题传输（已弃用）" alt="" coords="309,183,430,209"/>
+<area shape="rect" id="node68" href="$class_satellite_1_1_satellite.html" title="卫星整体" alt="" coords="309,233,429,260"/>
+<area shape="rect" id="node69" href="$class_satellite_1_1_satellite_challenge_manger.html" title="航天挑战管理" alt="" coords="281,285,458,326"/>
+<area shape="rect" id="node70" href="$class_satellite_1_1_satellite_controller.html" title="卫星控制器" alt="" coords="282,351,457,377"/>
+<area shape="rect" id="node71" href="$class_space_physic_1_1_gravity_tracing.html" title="引力追踪" alt="" coords="277,401,462,428"/>
+<area shape="rect" id="node72" href="$class_t_t_s_1_1_voice_generator.html" title="语音合成" alt="" coords="300,452,439,479"/>
+<area shape="rect" id="node73" href="$class_tangent_space_visualizer.html" title=" " alt="" coords="288,503,451,529"/>
+<area shape="rect" id="node74" href="$class_xml_saver_1_1_scene_load_base.html" title="存档加载管理" alt="" coords="267,553,472,580"/>
+<area shape="rect" id="node75" href="$class_xml_saver_1_1_xml_saver.html" title="存档保存" alt="" coords="288,604,451,631"/>
+<area shape="rect" id="node16" href="$class_custom_camera_1_1_camera_layer_mixer.html" title="相机图像混合" alt="" coords="534,775,727,817"/>
+<area shape="rect" id="node17" href="$class_custom_post_processing_1_1_camera_mixer.html" title="相机输出混合" alt="" coords="527,841,735,882"/>
+<area shape="rect" id="node20" href="$class_custom_u_i_1_1_quiz_1_1_astral_body_editor_quiz_u_i.html" title=" " alt="" coords="541,938,720,979"/>
+<area shape="rect" id="node53" href="$class_custom_u_i_1_1_tutorial_1_1_multi_tutorial_manager_u_i.html" title=" " alt="" coords="531,2721,730,2762"/>
+<area shape="rect" id="node55" href="$class_custom_u_i_1_1_tutorial_1_1_satellite_tutorial_u_i.html" title=" " alt="" coords="543,2786,719,2827"/>
+</map>

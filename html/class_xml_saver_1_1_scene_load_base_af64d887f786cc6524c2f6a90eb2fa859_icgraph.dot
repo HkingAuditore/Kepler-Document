@@ -1,0 +1,13 @@
+digraph "XmlSaver.SceneLoadBase.AstralBodyDataDictProcessHandler"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="XmlSaver.SceneLoadBase.Astral\lBodyDataDictProcessHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="星体数据处理委托"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XmlSaver.SceneLoadBase.Generate\lAstralBodiesWithoutPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a0048dec421f94641813fb6ed80eca811",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XmlSaver.SceneLoadBase.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a858d37d11500dd956eb9c45a5509dc3c",tooltip=" "];
+}

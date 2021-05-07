@@ -1,0 +1,5 @@
+<map id="CustomUI.AstralBodyEditor.AstralBodyEditorUI.SetVelocityInCircle" name="CustomUI.AstralBodyEditor.AstralBodyEditorUI.SetVelocityInCircle">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,61"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a3b5424b4233b532ccb0252d526c013ea" title="设置环绕速度" alt="" coords="256,13,447,54"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7" title="调整星球速度" alt="" coords="495,13,709,54"/>
+</map>

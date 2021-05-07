@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/Quiz/QuizSolver.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_quiz_solver_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">QuizSolver.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_quiz_solver_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> System.Text;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_u_i.html">CustomUI</a>.<a class="code" href="namespace_custom_u_i_1_1_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> UnityEngine.Events;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_quiz.html">Quiz</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html">   15</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_quiz_1_1_quiz_solver.html">QuizSolver</a> : <a class="code" href="class_quiz_1_1_quiz_base.html">QuizBase</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a28bb98cd0c0b4d62090795bceb123e4a">   20</a></span>&#160;        <span class="keyword">public</span> UnityEvent <a class="code" href="class_quiz_1_1_quiz_solver.html#a28bb98cd0c0b4d62090795bceb123e4a">answerEvent</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a7aee1fb725f396198837d63370b25641">   22</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html">QuizUI</a> <a class="code" href="class_quiz_1_1_quiz_solver.html#a7aee1fb725f396198837d63370b25641">quizUI</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a49b1a4b2cec603004daa32a33ac2f8c6">   27</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#a49b1a4b2cec603004daa32a33ac2f8c6">radiusOffset</a> = .2f;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">   32</a></span>&#160;        <span class="keyword">public</span> UnityEvent <a class="code" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">resultEvent</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#aeb3bf4998dadf9c0c117fc175fc45926">   37</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#aeb3bf4998dadf9c0c117fc175fc45926">waitTime</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> <a class="code" href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Reason</a> _reason;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">float</span>  _tmpAnswer;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a05486c47887a0d5a7608cf935685e35e">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#a05486c47887a0d5a7608cf935685e35e">isRight</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">   47</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">tmpAnswer</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">get</span> =&gt; _tmpAnswer;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">set</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                _tmpAnswer            = value;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a18f141b573fb43f542f88d90c2884a9b">orbitBase</a>.isShowOrbit = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                FinishQuiz(_tmpAnswer.Equals(<a class="code" href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">answer</a>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="class_quiz_1_1_quiz_solver.html#a28bb98cd0c0b4d62090795bceb123e4a">answerEvent</a>.Invoke();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a24e22f924ebc7128b63906fb57871a0d">   62</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Reason</a> <a class="code" href="class_quiz_1_1_quiz_solver.html#a24e22f924ebc7128b63906fb57871a0d">reason</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">get</span> =&gt; _reason;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">set</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                _reason = value;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">if</span> (_reason == <a class="code" href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Reason</a>.Crash)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <a class="code" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">resultEvent</a>.Invoke();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#af9b606c983566d10199979e10e7afdde">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#af9b606c983566d10199979e10e7afdde">isAnswered</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#a4a57a62fea2cb0bce1d2b281edf52a59">   75</a></span>&#160;        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#a4a57a62fea2cb0bce1d2b281edf52a59">Start</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            base.Start();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="class_quiz_1_1_quiz_solver.html#a7aee1fb725f396198837d63370b25641">quizUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">quizType</a> = <a class="code" href="class_quiz_1_1_quiz_base.html#af7a0d12c26d4b66b008c3624b943a47a">quizType</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">globalTimer</a>.<a class="code" href="class_game_managers_1_1_global_timer.html#a6a54e706143c24764259f1c759c87675">countingDownEndEvent</a>.AddListener(() =&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="class_quiz_1_1_quiz_solver.html#a24e22f924ebc7128b63906fb57871a0d">reason</a> = <a class="code" href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Reason</a>.Overtime;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">resultEvent</a>.Invoke();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            });</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">globalTimer</a>.<a class="code" href="class_game_managers_1_1_global_timer.html#a64164ef67b058d49fd0f70db7e74542d">StartCounting</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">resultEvent</a>.AddListener(() =&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                        <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">globalTimer</a>.<a class="code" href="class_game_managers_1_1_global_timer.html#a54bfd66049c9bf7ed5c63d7023c1c4b7">isPausing</a> = <span class="keyword">true</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                   );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            StartCoroutine(WaitUntilQuizAstralBodyLoadDone());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a18f141b573fb43f542f88d90c2884a9b">orbitBase</a>.isShowOrbit = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        IEnumerator WaitUntilQuizAstralBodyLoadDone()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitUntil(() =&gt; <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.All(a =&gt; a.astralBody.isLoadDone));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="class_quiz_1_1_quiz_solver.html#a7aee1fb725f396198837d63370b25641">quizUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08">Generate</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FinishQuiz(<span class="keywordtype">bool</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#a05486c47887a0d5a7608cf935685e35e">isRight</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>.ForEach(pair =&gt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                     {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                         pair.astralBody.oriRadius =</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                             Vector3.Distance(pair.astralBody.transform.position,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                              <a class="code" href="class_quiz_1_1_quiz_base.html#a9c87f0727402b83f911cfc7cb1b06727">target</a>.transform.position);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                         <span class="comment">// Debug.Log(&quot;Test Result Ori Radius:&quot; + pair.astralBody.oriRadius);</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                     });</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a18f141b573fb43f542f88d90c2884a9b">orbitBase</a>.Freeze(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            StartCoroutine(WaitForAnswer(<a class="code" href="class_quiz_1_1_quiz_solver.html#aeb3bf4998dadf9c0c117fc175fc45926">waitTime</a>));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">private</span> IEnumerator WaitForAnswer(<span class="keywordtype">float</span> time)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(time);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            Debug.Log(<span class="stringliteral">&quot;Test Result:Time out&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_quiz_1_1_quiz_solver.html#a05486c47887a0d5a7608cf935685e35e">isRight</a>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                Debug.Log(<span class="stringliteral">&quot;Test Result: Right!&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <a class="code" href="class_quiz_1_1_quiz_solver.html#a24e22f924ebc7128b63906fb57871a0d">reason</a> = <a class="code" href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Reason</a>.Right;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">resultEvent</a>.Invoke();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd">  133</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd">GetQuizSentence</a>()</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            var stringBuilder = <span class="keyword">new</span> StringBuilder(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            var centerString  = <a class="code" href="class_quiz_1_1_quiz_base.html#a9c87f0727402b83f911cfc7cb1b06727">target</a>.<a class="code" href="class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50">GetQuizConditionString</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">if</span> (centerString != <span class="keyword">null</span>) stringBuilder.Append(<span class="stringliteral">&quot;中心星体的&quot;</span> + centerString + <span class="stringliteral">&quot;；&quot;</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            var i = 1;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_quiz_1_1_astral_body_dict.html">AstralBodyDict&lt;QuizAstralBody&gt;</a> dict <span class="keywordflow">in</span> <a class="code" href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">astralBodiesDict</a>)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <a class="code" href="class_quiz_1_1_quiz_astral_body_dict.html">QuizAstralBodyDict</a> quizDict = (<a class="code" href="class_quiz_1_1_quiz_astral_body_dict.html">QuizAstralBodyDict</a>) dict;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">if</span> (quizDict.<a class="code" href="class_quiz_1_1_quiz_astral_body_dict.html#ae06df9d79265d84ab9e5d329d3deb2f8">isTarget</a>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                var orbitString = dict.<a class="code" href="class_quiz_1_1_astral_body_dict.html#ae13ec28bdcec2096d314226fec1bcdff">astralBody</a>.GetQuizConditionString();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">if</span> (orbitString != <span class="keyword">null</span>) stringBuilder.Append(<span class="stringliteral">&quot;绕转星体&quot;</span> + i + <span class="stringliteral">&quot;的&quot;</span> + orbitString + <span class="stringliteral">&quot;；&quot;</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="comment">// Debug.Log(&quot;mass:&quot; + dict.astralBody.realMass);</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            stringBuilder.Remove(stringBuilder.Length - 1, 1);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            stringBuilder.Append(<span class="stringliteral">&quot;。请求出&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="class_quiz_1_1_quiz_base.html#af7a0d12c26d4b66b008c3624b943a47a">quizType</a>)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Mass:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    stringBuilder.Append(<span class="stringliteral">&quot;中心天体的质量。&quot;</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Density:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    stringBuilder.Append(<span class="stringliteral">&quot;中心天体的密度。&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Gravity:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    stringBuilder.Append(<span class="stringliteral">&quot;中心天体的重力加速度。&quot;</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">QuizType</a>.Radius:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    stringBuilder.Append(<span class="stringliteral">&quot;轨道半径。&quot;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">return</span> stringBuilder.ToString();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html">CustomUI.Quiz.QuizUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00013">QuizUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_a1483d9f53c5009503bd5be2f196674fc"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a1483d9f53c5009503bd5be2f196674fc">CustomUI.Quiz.QuizUI.quizType</a></div><div class="ttdeci">QuizType quizType</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00023">QuizUI.cs:23</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_u_i_html_ac238c7b368d3c183e8e479fc77c48d08"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08">CustomUI.Quiz.QuizUI.Generate</a></div><div class="ttdeci">void Generate()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_u_i_8cs_source.html#l00029">QuizUI.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_abf40b119a34ba39179bc50d5623b24f8"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#abf40b119a34ba39179bc50d5623b24f8">GameManagers.GameManager.globalTimer</a></div><div class="ttdeci">GlobalTimer globalTimer</div><div class="ttdoc">全局计时器</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00035">GameManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_timer_html_a54bfd66049c9bf7ed5c63d7023c1c4b7"><div class="ttname"><a href="class_game_managers_1_1_global_timer.html#a54bfd66049c9bf7ed5c63d7023c1c4b7">GameManagers.GlobalTimer.isPausing</a></div><div class="ttdeci">bool isPausing</div><div class="ttdoc">是否暂停</div><div class="ttdef"><b>Definition:</b> <a href="_global_timer_8cs_source.html#l00036">GlobalTimer.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_timer_html_a64164ef67b058d49fd0f70db7e74542d"><div class="ttname"><a href="class_game_managers_1_1_global_timer.html#a64164ef67b058d49fd0f70db7e74542d">GameManagers.GlobalTimer.StartCounting</a></div><div class="ttdeci">void StartCounting()</div><div class="ttdoc">开始计时</div><div class="ttdef"><b>Definition:</b> <a href="_global_timer_8cs_source.html#l00085">GlobalTimer.cs:85</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_timer_html_a6a54e706143c24764259f1c759c87675"><div class="ttname"><a href="class_game_managers_1_1_global_timer.html#a6a54e706143c24764259f1c759c87675">GameManagers.GlobalTimer.countingDownEndEvent</a></div><div class="ttdeci">UnityEvent countingDownEndEvent</div><div class="ttdoc">倒计时完成事件</div><div class="ttdef"><b>Definition:</b> <a href="_global_timer_8cs_source.html#l00019">GlobalTimer.cs:19</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_astral_body_dict_html"><div class="ttname"><a href="class_quiz_1_1_astral_body_dict.html">Quiz.AstralBodyDict&lt; QuizAstralBody &gt;</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_astral_body_dict_html_ae13ec28bdcec2096d314226fec1bcdff"><div class="ttname"><a href="class_quiz_1_1_astral_body_dict.html#ae13ec28bdcec2096d314226fec1bcdff">Quiz.AstralBodyDict.astralBody</a></div><div class="ttdeci">T astralBody</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00016">AstralBodyDict.cs:16</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_astral_body_dict_html"><div class="ttname"><a href="class_quiz_1_1_quiz_astral_body_dict.html">Quiz.QuizAstralBodyDict</a></div><div class="ttdoc">问题星体传递</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_astral_body_dict_8cs_source.html#l00008">QuizAstralBodyDict.cs:9</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_astral_body_dict_html_ae06df9d79265d84ab9e5d329d3deb2f8"><div class="ttname"><a href="class_quiz_1_1_quiz_astral_body_dict.html#ae06df9d79265d84ab9e5d329d3deb2f8">Quiz.QuizAstralBodyDict.isTarget</a></div><div class="ttdeci">bool isTarget</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_astral_body_dict_8cs_source.html#l00010">QuizAstralBodyDict.cs:10</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_astral_body_html_a4aa95a8b5358b10d4b3d7220469f6c50"><div class="ttname"><a href="class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50">Quiz.QuizAstralBody.GetQuizConditionString</a></div><div class="ttdeci">string GetQuizConditionString()</div><div class="ttdoc">获取星球条件文本</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_astral_body_8cs_source.html#l00226">QuizAstralBody.cs:226</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html">Quiz.QuizBase</a></div><div class="ttdoc">问题管理</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00012">QuizBase.cs:13</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html_a3e01fb6652f087101e03ac1ae6687f5c"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html#a3e01fb6652f087101e03ac1ae6687f5c">Quiz.QuizBase.answer</a></div><div class="ttdeci">float answer</div><div class="ttdoc">答案</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00019">QuizBase.cs:19</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html_a9c87f0727402b83f911cfc7cb1b06727"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html#a9c87f0727402b83f911cfc7cb1b06727">Quiz.QuizBase.target</a></div><div class="ttdeci">QuizAstralBody target</div><div class="ttdoc">问题目标</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00030">QuizBase.cs:31</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_base_html_af7a0d12c26d4b66b008c3624b943a47a"><div class="ttname"><a href="class_quiz_1_1_quiz_base.html#af7a0d12c26d4b66b008c3624b943a47a">Quiz.QuizBase.quizType</a></div><div class="ttdeci">QuizType quizType</div><div class="ttdoc">问题类型</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_base_8cs_source.html#l00024">QuizBase.cs:24</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html">Quiz.QuizSolver</a></div><div class="ttdoc">解题管理</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00015">QuizSolver.cs:16</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a05486c47887a0d5a7608cf935685e35e"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a05486c47887a0d5a7608cf935685e35e">Quiz.QuizSolver.isRight</a></div><div class="ttdeci">bool isRight</div><div class="ttdoc">回答是否正确</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00045">QuizSolver.cs:45</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a24e22f924ebc7128b63906fb57871a0d"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a24e22f924ebc7128b63906fb57871a0d">Quiz.QuizSolver.reason</a></div><div class="ttdeci">Reason reason</div><div class="ttdoc">结果</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00062">QuizSolver.cs:63</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a28bb98cd0c0b4d62090795bceb123e4a"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a28bb98cd0c0b4d62090795bceb123e4a">Quiz.QuizSolver.answerEvent</a></div><div class="ttdeci">UnityEvent answerEvent</div><div class="ttdoc">回答事件</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00020">QuizSolver.cs:20</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a49b1a4b2cec603004daa32a33ac2f8c6"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a49b1a4b2cec603004daa32a33ac2f8c6">Quiz.QuizSolver.radiusOffset</a></div><div class="ttdeci">float radiusOffset</div><div class="ttdoc">容错范围</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00027">QuizSolver.cs:27</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a4a57a62fea2cb0bce1d2b281edf52a59"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a4a57a62fea2cb0bce1d2b281edf52a59">Quiz.QuizSolver.Start</a></div><div class="ttdeci">override void Start()</div><div class="ttdoc">是否加载完成</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00075">QuizSolver.cs:75</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a73084f4306857982062df31c553f1b7a"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a73084f4306857982062df31c553f1b7a">Quiz.QuizSolver.tmpAnswer</a></div><div class="ttdeci">float tmpAnswer</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00047">QuizSolver.cs:48</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a7aee1fb725f396198837d63370b25641"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a7aee1fb725f396198837d63370b25641">Quiz.QuizSolver.quizUI</a></div><div class="ttdeci">QuizUI quizUI</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00022">QuizSolver.cs:22</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_a95f608c97b69654d8057402cb25e9026"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#a95f608c97b69654d8057402cb25e9026">Quiz.QuizSolver.resultEvent</a></div><div class="ttdeci">UnityEvent resultEvent</div><div class="ttdoc">结果事件</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00032">QuizSolver.cs:32</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_aeb3bf4998dadf9c0c117fc175fc45926"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#aeb3bf4998dadf9c0c117fc175fc45926">Quiz.QuizSolver.waitTime</a></div><div class="ttdeci">float waitTime</div><div class="ttdoc">检查等待时间</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00037">QuizSolver.cs:37</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_af9b606c983566d10199979e10e7afdde"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#af9b606c983566d10199979e10e7afdde">Quiz.QuizSolver.isAnswered</a></div><div class="ttdeci">bool isAnswered</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00073">QuizSolver.cs:73</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_solver_html_afc4ef823ad1220a4aea4f7d2f5cf23dd"><div class="ttname"><a href="class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd">Quiz.QuizSolver.GetQuizSentence</a></div><div class="ttdeci">string GetQuizSentence()</div><div class="ttdoc">获取问题</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_solver_8cs_source.html#l00133">QuizSolver.cs:133</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_load_base_html_a08321bc1b921cbf8885ed46952f21927"><div class="ttname"><a href="class_xml_saver_1_1_scene_load_base.html#a08321bc1b921cbf8885ed46952f21927">XmlSaver.SceneLoadBase&lt; QuizAstralBody &gt;::astralBodiesDict</a></div><div class="ttdeci">List&lt; AstralBodyDict&lt; T &gt; &gt; astralBodiesDict</div><div class="ttdoc">场景星球集合</div><div class="ttdef"><b>Definition:</b> <a href="_scene_load_base_8cs_source.html#l00029">SceneLoadBase.cs:29</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_load_base_html_a18f141b573fb43f542f88d90c2884a9b"><div class="ttname"><a href="class_xml_saver_1_1_scene_load_base.html#a18f141b573fb43f542f88d90c2884a9b">XmlSaver.SceneLoadBase&lt; QuizAstralBody &gt;::orbitBase</a></div><div class="ttdeci">GravityTracing orbitBase</div><div class="ttdoc">轨道</div><div class="ttdef"><b>Definition:</b> <a href="_scene_load_base_8cs_source.html#l00056">SceneLoadBase.cs:56</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html_a9cdc67d3b0564ceddab5bee0913587ac"><div class="ttname"><a href="namespace_quiz.html#a9cdc67d3b0564ceddab5bee0913587ac">Quiz.QuizType</a></div><div class="ttdeci">QuizType</div><div class="ttdoc">问题类型</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_type_8cs_source.html#l00006">QuizType.cs:7</a></div></div>
+<div class="ttc" id="anamespace_quiz_html_ae878c1a16167ecdad7b2bdb5c5b0ee29"><div class="ttname"><a href="namespace_quiz.html#ae878c1a16167ecdad7b2bdb5c5b0ee29">Quiz.Reason</a></div><div class="ttdeci">Reason</div><div class="ttdoc">问题结果</div><div class="ttdef"><b>Definition:</b> <a href="_reason_8cs_source.html#l00006">Reason.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_b7f45de5f194a222ccdfb8016eeb5bfe.html">Quiz</a></li><li class="navelem"><a class="el" href="_quiz_solver_8cs.html">QuizSolver.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

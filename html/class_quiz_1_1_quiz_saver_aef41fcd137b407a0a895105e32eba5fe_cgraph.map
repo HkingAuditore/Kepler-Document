@@ -1,0 +1,4 @@
+<map id="Quiz.QuizSaver.LoadXml" name="Quiz.QuizSaver.LoadXml">
+<area shape="rect" id="node1" title="读取XML文件" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" href="$class_xml_saver_1_1_xml_saver.html#a054551363204272b7f5434a132e5835c" title="加载XML" alt="" coords="219,5,404,32"/>
+</map>

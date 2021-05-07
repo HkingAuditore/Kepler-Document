@@ -1,0 +1,10 @@
+<map id="Satellite.SatelliteController" name="Satellite.SatelliteController">
+<area shape="rect" id="node1" title="卫星控制器" alt="" coords="5,1108,180,1229"/>
+<area shape="rect" id="node2" title=" " alt="" coords="164,71,275,149"/>
+<area shape="rect" id="node3" href="$class_satellite_1_1_satellite.html" title="卫星整体" alt="" coords="129,565,310,686"/>
+<area shape="rect" id="node7" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="335,264,549,987"/>
+<area shape="rect" id="node4" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="222,1507,393,1599"/>
+<area shape="rect" id="node5" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="346,1351,509,1457"/>
+<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_part.html" title="卫星部件" alt="" coords="351,1049,520,1288"/>
+<area shape="rect" id="node8" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="335,5,549,215"/>
+</map>

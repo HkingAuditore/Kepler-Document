@@ -1,0 +1,6 @@
+<map id="Quiz.QuizAstralBodyDataDict" name="Quiz.QuizAstralBodyDataDict">
+<area shape="rect" id="node1" title="问题星体数据存储" alt="" coords="5,824,229,1195"/>
+<area shape="rect" id="node2" href="$class_xml_saver_1_1_astral_body_data_dict.html" title=" " alt="" coords="29,477,205,775"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_astral_body_data_dict.html" title="星体数据存储" alt="" coords="5,132,229,415"/>
+<area shape="rect" id="node4" href="$interface_xml_saver_1_1_i_astral_body_dictale.html" title="星体可序列化" alt="" coords="53,5,182,83"/>
+</map>

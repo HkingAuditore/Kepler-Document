@@ -1,0 +1,7 @@
+<map id="SpacePhysic.ITraceable.GetAffectedPlanets" name="SpacePhysic.ITraceable.GetAffectedPlanets">
+<area shape="rect" id="node1" title=" " alt="" coords="708,39,895,80"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a02741a5f2ab9b583440a9ebba2e2d685" title="获取轨道圆锥曲线" alt="" coords="471,39,660,80"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_astral_body.html#a41716d9876ed4fb8cbb1913d83982d2d" title="更新独立天体数据" alt="" coords="233,5,423,47"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_astral_body.html#a03a56d66cf7a3c2fbbea70a297229e76" title="更新天体数据" alt="" coords="233,71,423,112"/>
+<area shape="rect" id="node5" href="$class_quiz_1_1_quiz_astral_body.html#a5a3cf8e859c9f5592c2a2c17f3b814a1" title=" " alt="" coords="5,71,185,112"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Satellite.SatellitePart.Separate" name="Satellite.SatellitePart.Separate">
+<area shape="rect" id="node1" title="分离" alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node2" href="$class_satellite_1_1_satellite_part.html#a6fd8f697b0f55923612fe23c671b706f" title="分离连接到该部分的特定关节" alt="" coords="201,5,349,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CustomCamera.LayerCamera" name="CustomCamera.LayerCamera">
+<area shape="rect" id="node1" title="层级相机管理" alt="" coords="43,131,273,208"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,83"/>
+<area shape="rect" id="node3" href="$interface_custom_post_processing_1_1_i_render_tex_outer.html" title="RenderTexture输出接口" alt="" coords="141,5,370,83"/>
+</map>

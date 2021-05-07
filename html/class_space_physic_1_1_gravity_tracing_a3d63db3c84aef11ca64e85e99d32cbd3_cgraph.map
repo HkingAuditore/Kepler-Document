@@ -1,0 +1,7 @@
+<map id="SpacePhysic.GravityTracing.AddTracingTarget" name="SpacePhysic.GravityTracing.AddTracingTarget">
+<area shape="rect" id="node1" title="增加追踪实体" alt="" coords="5,104,195,145"/>
+<area shape="rect" id="node2" href="$interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730" title=" " alt="" coords="243,5,429,47"/>
+<area shape="rect" id="node3" href="$interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227" title=" " alt="" coords="243,71,429,112"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4" title=" " alt="" coords="243,136,429,177"/>
+<area shape="rect" id="node5" href="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb" title=" " alt="" coords="243,201,429,243"/>
+</map>

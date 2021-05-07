@@ -1,0 +1,15 @@
+digraph "Quiz.QuizBase.LoadScene"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Quiz.QuizBase.LoadScene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quiz.QuizSaver.ConvertXml2\lSceneBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_saver.html#a84ca11181f95abe30a8659dc75587dc6",tooltip="将XML转为问题"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quiz.QuizSaver.LoadXml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_saver.html#aef41fcd137b407a0a895105e32eba5fe",tooltip="读取XML文件"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XmlSaver.XmlSaver.LoadXml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_xml_saver.html#a054551363204272b7f5434a132e5835c",tooltip="加载XML"];
+}

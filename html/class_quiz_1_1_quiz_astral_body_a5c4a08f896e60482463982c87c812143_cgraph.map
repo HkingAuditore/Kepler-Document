@@ -1,0 +1,6 @@
+<map id="Quiz.QuizAstralBody.Start" name="Quiz.QuizAstralBody.Start">
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,181,69"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a5c1d5bbbcd247e49603f2d702f9118b0" title=" " alt="" coords="229,42,453,69"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7" title="调整星球速度" alt="" coords="505,5,720,47"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html#a3b69f3ac1f1c3b789f3d9102cdb2a80c" title=" " alt="" coords="501,71,724,98"/>
+</map>

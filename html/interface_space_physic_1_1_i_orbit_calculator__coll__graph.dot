@@ -1,0 +1,8 @@
+digraph "SpacePhysic.IOrbitCalculator"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SpacePhysic.IOrbitCalculator\n|+ List\< Vector3 \> OrbitPoints\l|+ Vector3 CalculateOrbit\l(int t, int totalNumber)\l+ void DrawOrbit(LineRenderer\l lineRenderer, int totalNumber)\l+ void GenerateOrbit()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="桂东计算接口"];
+}

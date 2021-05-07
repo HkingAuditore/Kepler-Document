@@ -1,0 +1,5 @@
+<map id="Quiz.QuizBaseStruct" name="Quiz.QuizBaseStruct">
+<area shape="rect" id="node1" title="问题信息存储" alt="" coords="39,345,184,423"/>
+<area shape="rect" id="node2" href="$class_xml_saver_1_1_scene_base_struct.html" title=" " alt="" coords="13,175,210,296"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_base_struct.html" title="场景信息存储" alt="" coords="5,5,217,112"/>
+</map>

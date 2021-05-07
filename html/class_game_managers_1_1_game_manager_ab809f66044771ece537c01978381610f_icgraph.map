@@ -1,0 +1,13 @@
+<map id="GameManagers.GameManager.CalculateMassScales" name="GameManagers.GameManager.CalculateMassScales">
+<area shape="rect" id="node1" title="计算质量缩放" alt="" coords="1083,195,1289,236"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd" title="获取缩放系数" alt="" coords="797,111,1035,138"/>
+<area shape="rect" id="node8" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#adfa12854be919178096c58aa61e50ff6" title=" " alt="" coords="829,165,1003,207"/>
+<area shape="rect" id="node10" href="$class_quiz_1_1_quiz_base.html#a62bd75950b67b8daa323ace19bc8cc7c" title="是否加载完成" alt="" coords="845,231,987,258"/>
+<area shape="rect" id="node11" href="$class_xml_saver_1_1_scene_load_base.html#a858d37d11500dd956eb9c45a5509dc3c" title=" " alt="" coords="813,282,1019,309"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html#a13a5ee93bb01019b6b62111ce696f9b2" title="保持当前速度方向调整速度" alt="" coords="535,5,749,47"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50" title="获取星球条件文本" alt="" coords="544,71,740,112"/>
+<area shape="rect" id="node7" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#a26457b4f98b1ffa60a28345a9b8898a5" title=" " alt="" coords="539,136,745,177"/>
+<area shape="rect" id="node5" href="$class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd" title="获取问题" alt="" coords="264,78,487,105"/>
+<area shape="rect" id="node6" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08" title=" " alt="" coords="5,78,216,105"/>
+<area shape="rect" id="node9" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#aac47d0852e69724a11cc6c9979eeda9a" title=" " alt="" coords="555,201,729,243"/>
+</map>

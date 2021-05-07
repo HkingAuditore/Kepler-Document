@@ -1,0 +1,8 @@
+<map id="CustomUI.Lab.LabSceneLineUI" name="CustomUI.Lab.LabSceneLineUI">
+<area shape="rect" id="node1" title=" " alt="" coords="133,359,335,436"/>
+<area shape="rect" id="node5" href="$class_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i.html" title=" " alt="" coords="5,499,204,620"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,197,116,274"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_base_struct.html" title=" " alt="" coords="141,175,327,296"/>
+<area shape="rect" id="node4" href="$class_xml_saver_1_1_scene_base_struct.html" title="场景信息存储" alt="" coords="128,5,340,112"/>
+<area shape="rect" id="node6" title=" " alt="" coords="352,197,399,274"/>
+</map>

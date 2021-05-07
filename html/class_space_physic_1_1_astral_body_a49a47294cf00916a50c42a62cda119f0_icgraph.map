@@ -1,0 +1,14 @@
+<map id="SpacePhysic.AstralBody.GetVelocity" name="SpacePhysic.AstralBody.GetVelocity">
+<area shape="rect" id="node1" title=" " alt="" coords="797,188,989,229"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a13a5ee93bb01019b6b62111ce696f9b2" title="保持当前速度方向调整速度" alt="" coords="535,5,749,47"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50" title="获取星球条件文本" alt="" coords="544,71,740,112"/>
+<area shape="rect" id="node6" href="$class_satellite_1_1_satellite.html#a82630d95c2e9c227668c31e362e84003" title="获取速度" alt="" coords="546,137,738,163"/>
+<area shape="rect" id="node7" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#adfa12854be919178096c58aa61e50ff6" title=" " alt="" coords="555,188,729,229"/>
+<area shape="rect" id="node9" href="$class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2" title=" " alt="" coords="560,253,724,295"/>
+<area shape="rect" id="node10" href="$class_quiz_1_1_quiz_astral_body.html#a41716d9876ed4fb8cbb1913d83982d2d" title="更新独立天体数据" alt="" coords="547,319,737,360"/>
+<area shape="rect" id="node11" href="$class_quiz_1_1_quiz_astral_body.html#a03a56d66cf7a3c2fbbea70a297229e76" title="更新天体数据" alt="" coords="547,384,737,425"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd" title="获取问题" alt="" coords="264,78,487,105"/>
+<area shape="rect" id="node5" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08" title=" " alt="" coords="5,78,216,105"/>
+<area shape="rect" id="node8" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#aac47d0852e69724a11cc6c9979eeda9a" title=" " alt="" coords="288,188,463,229"/>
+<area shape="rect" id="node12" href="$class_quiz_1_1_quiz_astral_body.html#a5a3cf8e859c9f5592c2a2c17f3b814a1" title=" " alt="" coords="285,384,465,425"/>
+</map>

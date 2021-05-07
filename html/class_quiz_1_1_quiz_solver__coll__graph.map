@@ -1,0 +1,12 @@
+<map id="Quiz.QuizSolver" name="Quiz.QuizSolver">
+<area shape="rect" id="node1" title="解题管理" alt="" coords="78,2351,259,2545"/>
+<area shape="rect" id="node7" href="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html" title=" " alt="" coords="259,2637,422,2773"/>
+<area shape="rect" id="node2" href="$class_quiz_1_1_quiz_base.html" title="问题管理" alt="" coords="21,2063,302,2301"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_load_base.html" title=" " alt="" coords="21,1541,302,2000"/>
+<area shape="rect" id="node4" href="$class_xml_saver_1_1_scene_load_base.html" title="存档加载管理" alt="" coords="21,1049,302,1479"/>
+<area shape="rect" id="node5" title=" " alt="" coords="190,71,301,149"/>
+<area shape="rect" id="node6" href="$class_space_physic_1_1_gravity_tracing.html" title="引力追踪" alt="" coords="82,477,302,774"/>
+<area shape="rect" id="node9" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="378,264,593,987"/>
+<area shape="rect" id="node8" title=" " alt="" coords="429,2409,476,2487"/>
+<area shape="rect" id="node10" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="379,5,592,215"/>
+</map>

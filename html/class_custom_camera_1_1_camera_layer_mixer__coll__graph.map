@@ -1,0 +1,9 @@
+<map id="CustomCamera.CameraLayerMixer" name="CustomCamera.CameraLayerMixer">
+<area shape="rect" id="node1" title="相机图像混合" alt="" coords="81,817,311,953"/>
+<area shape="rect" id="node2" href="$class_custom_post_processing_1_1_custom_post_processing_base.html" title="自定义后处理" alt="" coords="5,132,195,239"/>
+<area shape="rect" id="node6" href="$class_custom_post_processing_1_1_camera_mixer.html" title="相机输出混合" alt="" coords="81,589,311,755"/>
+<area shape="rect" id="node7" href="$class_custom_post_processing_1_1_outline_catcher.html" title="描边抓取" alt="" coords="128,288,357,527"/>
+<area shape="rect" id="node3" title=" " alt="" coords="245,5,355,83"/>
+<area shape="rect" id="node4" href="$class_custom_camera_1_1_layer_camera.html" title="层级相机管理" alt="" coords="381,369,611,446"/>
+<area shape="rect" id="node5" href="$interface_custom_post_processing_1_1_i_render_tex_outer.html" title="RenderTexture输出接口" alt="" coords="224,147,453,224"/>
+</map>

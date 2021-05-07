@@ -1,0 +1,12 @@
+digraph "CustomUI.AstralBodyEditor.AstralBodyEditorUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.AstralBodyEditor.\lAstralBodyEditorUI\n|+ GameObject editorPanel\l+ VectorUI forceUI\l+ GravityTracing gravityTracing\l+ bool isEnableEdit\l+ bool isEnableEditorPanel\l+ List\< LengthUI \> lengthUIList\l+ GameObject mainPanel\l+ GameObject normalPanel\l+ OrbitPanelUI orbitPanelUI\l+ PositionEditorUI position\lEditorUI\l+ StarStyleSettingUI\l styleSheetPanel\l+ List\< VarLineUI \> varLineUis\l+ VelocityEditorUI velocity\lEditorUI\l+ VectorUI velocityUI\l+ AstralBody astralBody\l|+ void EditVelocity()\l+ void OpenConicSectionPanel()\l+ virtual void SetVelocity\lInCircle()\l+ void ClosePanel()\l+ void MainToStyleSheet()\l+ void StyleSheetToMain()\l# virtual void OnEnable()\l# virtual void OnAstralBody\lSet()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{CustomUI.Quiz.AstralBody\lEditorQuizUI\n|+ Toggle isThisTarget\l|+ override void SetVelocity\lInCircle()\l+ void SetToTarget()\l# override void OnEnable()\l# override void OnAstralBody\lSet()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_astral_body_editor_quiz_u_i.html",tooltip=" "];
+}

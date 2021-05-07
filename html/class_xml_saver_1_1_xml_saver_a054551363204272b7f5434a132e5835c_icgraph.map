@@ -1,0 +1,6 @@
+<map id="XmlSaver.XmlSaver.LoadXml" name="XmlSaver.XmlSaver.LoadXml">
+<area shape="rect" id="node1" title="加载XML" alt="" coords="636,5,821,32"/>
+<area shape="rect" id="node2" href="$class_quiz_1_1_quiz_saver.html#aef41fcd137b407a0a895105e32eba5fe" title="读取XML文件" alt="" coords="423,5,588,32"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_base.html#a89bc488d570a05d7dea68aae8b9f7541" title=" " alt="" coords="196,5,375,32"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_base.html#a62bd75950b67b8daa323ace19bc8cc7c" title="是否加载完成" alt="" coords="5,5,148,32"/>
+</map>

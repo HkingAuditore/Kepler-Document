@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/SpacePhysic/ITraceable.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_i_traceable_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ITraceable.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_traceable_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_space_physic.html">SpacePhysic</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_space_physic_1_1_i_traceable.html">ITraceable</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4">   11</a></span>&#160;        Transform        <a class="code" href="interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4">GetTransform</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a68b217c21b2a26e2a508c62a9f5ceb91">   12</a></span>&#160;        Vector3          <a class="code" href="interface_space_physic_1_1_i_traceable.html#a68b217c21b2a26e2a508c62a9f5ceb91">GetPosition</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a4ee40158431b4a5b980d8a7b84cc5efc">   13</a></span>&#160;        GameObject       <a class="code" href="interface_space_physic_1_1_i_traceable.html#a4ee40158431b4a5b980d8a7b84cc5efc">GetGameObject</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730">   14</a></span>&#160;        <span class="keywordtype">bool</span>             <a class="code" href="interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730">GetEnableTracing</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a7a61c09595bedc638b0268d8277e8873">   15</a></span>&#160;        <span class="keywordtype">float</span>            <a class="code" href="interface_space_physic_1_1_i_traceable.html#a7a61c09595bedc638b0268d8277e8873">GetMass</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227">   16</a></span>&#160;        Rigidbody        <a class="code" href="interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227">GetRigidbody</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb">   17</a></span>&#160;        Vector3          <a class="code" href="interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb">GetVelocity</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213">   18</a></span>&#160;        List&lt;AstralBody&gt; <a class="code" href="interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213">GetAffectedPlanets</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_space_physic_1_1_i_traceable.html#a2923e80653f97deda6311bdd8f154250">   20</a></span>&#160;        <a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a> <a class="code" href="interface_space_physic_1_1_i_traceable.html#a2923e80653f97deda6311bdd8f154250">GetAstralBody</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html">SpacePhysic.ITraceable</a></div><div class="ttdoc">可追踪接口</div><div class="ttdef"><b>Definition:</b> <a href="_i_traceable_8cs_source.html#l00009">ITraceable.cs:10</a></div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a2923e80653f97deda6311bdd8f154250"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a2923e80653f97deda6311bdd8f154250">SpacePhysic.ITraceable.GetAstralBody</a></div><div class="ttdeci">AstralBody GetAstralBody()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a4ee40158431b4a5b980d8a7b84cc5efc"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a4ee40158431b4a5b980d8a7b84cc5efc">SpacePhysic.ITraceable.GetGameObject</a></div><div class="ttdeci">GameObject GetGameObject()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a53c8890effec964fa2245908e79016c4"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4">SpacePhysic.ITraceable.GetTransform</a></div><div class="ttdeci">Transform GetTransform()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a68b217c21b2a26e2a508c62a9f5ceb91"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a68b217c21b2a26e2a508c62a9f5ceb91">SpacePhysic.ITraceable.GetPosition</a></div><div class="ttdeci">Vector3 GetPosition()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a7a61c09595bedc638b0268d8277e8873"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a7a61c09595bedc638b0268d8277e8873">SpacePhysic.ITraceable.GetMass</a></div><div class="ttdeci">float GetMass()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_a8c908476fbe6acf4aaf2e7594537dddb"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb">SpacePhysic.ITraceable.GetVelocity</a></div><div class="ttdeci">Vector3 GetVelocity()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_aa78b28ab82f702a832d0004bd13eb227"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227">SpacePhysic.ITraceable.GetRigidbody</a></div><div class="ttdeci">Rigidbody GetRigidbody()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_ac1691c3526225e0c42f1cfc696605730"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730">SpacePhysic.ITraceable.GetEnableTracing</a></div><div class="ttdeci">bool GetEnableTracing()</div></div>
+<div class="ttc" id="ainterface_space_physic_1_1_i_traceable_html_af984b78fd839b5b3d34758ca05353213"><div class="ttname"><a href="interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213">SpacePhysic.ITraceable.GetAffectedPlanets</a></div><div class="ttdeci">List&lt; AstralBody &gt; GetAffectedPlanets()</div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_ea3f29ee0a4c0f38d8b95c65003e2308.html">SpacePhysic</a></li><li class="navelem"><a class="el" href="_i_traceable_8cs.html">ITraceable.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

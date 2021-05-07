@@ -1,0 +1,17 @@
+digraph "SpacePhysic.GravityTracing.Freeze"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SpacePhysic.GravityTracing.\lFreeze",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="冻结"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CustomUI.Satellite.Satellite\lControllerUI.Continue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#add893770a0c54e569b670e3ce1a4a659",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CustomUI.Quiz.VarLineUI.\lOnDragEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#a5eaf2bb457a91b6390057fff45d2ce1b",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CustomUI.Quiz.VarLineUI.\lOnInputFieldDrag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#a57aaf9932620b22bd425a28c4fd360ec",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CustomUI.Satellite.Satellite\lControllerUI.Pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#acb472db54118ab12c4b85beaccb32e8c",tooltip=" "];
+}

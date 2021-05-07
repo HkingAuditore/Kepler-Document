@@ -1,0 +1,8 @@
+digraph "msc.MSCDLL"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{msc.MSCDLL\n||+ static int MSPLogin\l(string usr, string\l pwd, string parameters)\l+ static int MSPLogout()\l+ static IntPtr QISRSession\lBegin(string grammarList,\l string _params, ref int\l errorCode)\l+ static int QISRAudioWrite\l(IntPtr sessionID, byte\l[] waveData, uint waveLen,\l AudioStatus audioStatus,\l ref EpStatus epStatus, ref\l RecogStatus recogStatus)\l+ static IntPtr QISRGetResult\l(IntPtr sessionID, ref RecogStatus\l rsltStatus, int waitTime, ref\l int errorCode)\l+ static int QISRSessionEnd\l(IntPtr sessionID, string hints)\l+ static int QISRBuildGrammar\l(IntPtr grammarType, string\l grammarContent, uint grammarLength,\l string _params, GrammarCallBack\l callback, IntPtr userData)\l+ delegate int GrammarCall\lBack(int errorCode, string\l info, object udata)\l+ static IntPtr QISRUpload\lData(string sessionID,\l string dataName, byte\l[] userData, uint lenght,\l string paramValue, ref int\l errorCode)\l+ delegate int ivw_ntf\l_handler(string sessionID,\l int msg, int param1, int\l param2, IntPtr info, IntPtr\l userData)\l和 10 更多...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

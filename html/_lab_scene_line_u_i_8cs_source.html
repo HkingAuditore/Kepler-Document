@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Lab/LabSceneLineUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_lab_scene_line_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LabSceneLineUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lab_scene_line_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_u_i.html">CustomUI</a>.<a class="code" href="namespace_custom_u_i_1_1_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> UnityEngine.SceneManagement;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_xml_saver.html">XmlSaver</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_custom_u_i_1_1_lab.html">   12</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_lab.html">CustomUI.Lab</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html">LabSceneLineUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a89f7ba10b37bf3c4544f94aa304c0ac8">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span>            <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a89f7ba10b37bf3c4544f94aa304c0ac8">name</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0239318206688fbb5466c0121394430d">   17</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i.html">LabSceneListUI</a>    <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0239318206688fbb5466c0121394430d">labSceneListUI</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0b9cd51efd756f37d5ffcb559f4cebe4">   18</a></span>&#160;        <span class="keyword">public</span> Text              <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0b9cd51efd756f37d5ffcb559f4cebe4">sceneName</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a22f3e9433861591819d67a1c2d71401f">   19</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_xml_saver_1_1_scene_base_struct.html">SceneBaseStruct&lt;AstralBody&gt;</a> <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a22f3e9433861591819d67a1c2d71401f">sceneStruct</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            StartCoroutine(WaitForNameLoad());</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        IEnumerator WaitForNameLoad()</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitUntil(() =&gt; this.name != <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            Generate();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0a61ad5fd5b250be9321e61bea240832">   32</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0a61ad5fd5b250be9321e61bea240832">OnClick</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a9066e7c20081ae795b72db549a4e6c30">sceneName</a> = <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a89f7ba10b37bf3c4544f94aa304c0ac8">name</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">LoadSceneInLoadingScene</a>(<span class="stringliteral">&quot;PhysicScene&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Generate()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0b9cd51efd756f37d5ffcb559f4cebe4">sceneName</a>.text = <a class="code" href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a89f7ba10b37bf3c4544f94aa304c0ac8">name</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html">CustomUI.Lab.LabSceneLineUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00014">LabSceneLineUI.cs:15</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html_a0239318206688fbb5466c0121394430d"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0239318206688fbb5466c0121394430d">CustomUI.Lab.LabSceneLineUI.labSceneListUI</a></div><div class="ttdeci">LabSceneListUI labSceneListUI</div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00017">LabSceneLineUI.cs:17</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html_a0a61ad5fd5b250be9321e61bea240832"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0a61ad5fd5b250be9321e61bea240832">CustomUI.Lab.LabSceneLineUI.OnClick</a></div><div class="ttdeci">void OnClick()</div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00032">LabSceneLineUI.cs:32</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html_a0b9cd51efd756f37d5ffcb559f4cebe4"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0b9cd51efd756f37d5ffcb559f4cebe4">CustomUI.Lab.LabSceneLineUI.sceneName</a></div><div class="ttdeci">Text sceneName</div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00018">LabSceneLineUI.cs:18</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html_a22f3e9433861591819d67a1c2d71401f"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a22f3e9433861591819d67a1c2d71401f">CustomUI.Lab.LabSceneLineUI.sceneStruct</a></div><div class="ttdeci">SceneBaseStruct&lt; AstralBody &gt; sceneStruct</div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00019">LabSceneLineUI.cs:19</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i_html_a89f7ba10b37bf3c4544f94aa304c0ac8"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a89f7ba10b37bf3c4544f94aa304c0ac8">CustomUI.Lab.LabSceneLineUI.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00016">LabSceneLineUI.cs:16</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i.html">CustomUI.Lab.LabSceneListUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_list_u_i_8cs_source.html#l00010">LabSceneListUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html">GameManagers.GlobalTransfer</a></div><div class="ttdoc">全局信息传递</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00009">GlobalTransfer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0a67c1504ad9ccb391ff92e6deab988d"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">GameManagers.GlobalTransfer.LoadSceneInLoadingScene</a></div><div class="ttdeci">void LoadSceneInLoadingScene(string nextLoadSceneName)</div><div class="ttdoc">在Loading场景中加载新场景</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00052">GlobalTransfer.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0b2b5712e982e961220041cef7aa4a39"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">GameManagers.GlobalTransfer.getGlobalTransfer</a></div><div class="ttdeci">static GlobalTransfer getGlobalTransfer</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00025">GlobalTransfer.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a9066e7c20081ae795b72db549a4e6c30"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a9066e7c20081ae795b72db549a4e6c30">GameManagers.GlobalTransfer.sceneName</a></div><div class="ttdeci">string sceneName</div><div class="ttdoc">问题名称</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00021">GlobalTransfer.cs:21</a></div></div>
+<div class="ttc" id="aclass_xml_saver_1_1_scene_base_struct_html"><div class="ttname"><a href="class_xml_saver_1_1_scene_base_struct.html">XmlSaver.SceneBaseStruct&lt; AstralBody &gt;</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_lab_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_lab.html">CustomUI.Lab</a></div><div class="ttdef"><b>Definition:</b> <a href="_lab_scene_line_u_i_8cs_source.html#l00012">LabSceneLineUI.cs:13</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_xml_saver_html"><div class="ttname"><a href="namespace_xml_saver.html">XmlSaver</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_data_dict_8cs_source.html#l00004">AstralBodyDataDict.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_9a2e78f13643aa43ba93cbcf02f2c784.html">Lab</a></li><li class="navelem"><a class="el" href="_lab_scene_line_u_i_8cs.html">LabSceneLineUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

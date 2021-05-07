@@ -1,0 +1,11 @@
+<map id="Quiz.QuizBase.Start" name="Quiz.QuizBase.Start">
+<area shape="rect" id="node1" title="是否加载完成" alt="" coords="5,111,148,138"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="196,5,403,47"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_base.html#a844c34a243886e8781983ee0f1175a5e" title=" " alt="" coords="199,71,400,112"/>
+<area shape="rect" id="node5" href="$class_quiz_1_1_quiz_base.html#a3e740a3e02b0fb33f66f30ca27d3becc" title=" " alt="" coords="199,136,400,177"/>
+<area shape="rect" id="node6" href="$class_quiz_1_1_quiz_base.html#a89bc488d570a05d7dea68aae8b9f7541" title=" " alt="" coords="210,202,389,229"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_astral_body.html#af25864e2c8217ca7ceb12af2d6221a5a" title=" " alt="" coords="451,71,640,112"/>
+<area shape="rect" id="node7" href="$class_quiz_1_1_quiz_saver.html#a84ca11181f95abe30a8659dc75587dc6" title="将XML转为问题" alt="" coords="452,165,639,207"/>
+<area shape="rect" id="node8" href="$class_quiz_1_1_quiz_saver.html#aef41fcd137b407a0a895105e32eba5fe" title="读取XML文件" alt="" coords="463,231,628,258"/>
+<area shape="rect" id="node9" href="$class_xml_saver_1_1_xml_saver.html#a054551363204272b7f5434a132e5835c" title="加载XML" alt="" coords="688,231,873,258"/>
+</map>

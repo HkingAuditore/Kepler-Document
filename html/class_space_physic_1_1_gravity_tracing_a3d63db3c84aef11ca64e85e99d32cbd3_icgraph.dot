@@ -1,0 +1,18 @@
+digraph "SpacePhysic.GravityTracing.AddTracingTarget"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SpacePhysic.GravityTracing.\lAddTracingTarget",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="增加追踪实体"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpacePhysic.GravityTracing.\lAwake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#ac99527254282cd4e726c6b6822256583",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XmlSaver.SceneLoadBase.Generate\lAstralBodiesWithoutPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a0048dec421f94641813fb6ed80eca811",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XmlSaver.SceneLoadBase.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a858d37d11500dd956eb9c45a5509dc3c",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="XmlSaver.SceneLoadBase.Generate\lAstralBodiesWithPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a0a4b9b672c83faa8953a3ea9e89886de",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

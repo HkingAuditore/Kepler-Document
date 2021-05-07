@@ -1,0 +1,13 @@
+<map id="XmlSaver.SceneLoadBase.Start" name="XmlSaver.SceneLoadBase.Start">
+<area shape="rect" id="node1" title=" " alt="" coords="5,145,212,171"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="272,39,479,80"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_load_base.html#a0048dec421f94641813fb6ed80eca811" title=" " alt="" coords="260,169,491,211"/>
+<area shape="rect" id="node10" href="$class_xml_saver_1_1_scene_load_base.html#a0a4b9b672c83faa8953a3ea9e89886de" title=" " alt="" coords="260,104,491,145"/>
+<area shape="rect" id="node11" href="$class_xml_saver_1_1_scene_load_base.html#add21a8421c2f0287aca508f1fa61d120" title=" " alt="" coords="272,235,479,276"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_gravity_tracing.html#a3d63db3c84aef11ca64e85e99d32cbd3" title="增加追踪实体" alt="" coords="550,104,739,145"/>
+<area shape="rect" id="node9" href="$class_xml_saver_1_1_scene_load_base.html#af64d887f786cc6524c2f6a90eb2fa859" title="星体数据处理委托" alt="" coords="539,169,751,211"/>
+<area shape="rect" id="node5" href="$interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730" title=" " alt="" coords="799,5,985,47"/>
+<area shape="rect" id="node6" href="$interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227" title=" " alt="" coords="799,71,985,112"/>
+<area shape="rect" id="node7" href="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4" title=" " alt="" coords="799,136,985,177"/>
+<area shape="rect" id="node8" href="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb" title=" " alt="" coords="799,201,985,243"/>
+</map>

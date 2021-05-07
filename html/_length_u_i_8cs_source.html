@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/LengthUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_length_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LengthUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_length_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> Dreamteck.Splines;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i.html">CustomUI</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_length_u_i.html">LengthUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">   12</a></span>&#160;        <span class="keyword">public</span>  <a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>       <a class="code" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">astralBody</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html#af80b2850c5d1711a008def37a9fe813f">   13</a></span>&#160;        <span class="keyword">public</span>  LengthCalculator <a class="code" href="class_custom_u_i_1_1_length_u_i.html#af80b2850c5d1711a008def37a9fe813f">lengthCalculator</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">   14</a></span>&#160;        <span class="keyword">public</span>  SplineComputer   <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html#a2cf24f4eb64e4f4babc7afcde8bb8cba">   15</a></span>&#160;        <span class="keyword">public</span>  Text             <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a2cf24f4eb64e4f4babc7afcde8bb8cba">lengthText</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">   16</a></span>&#160;        <span class="keyword">public</span>  <a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>       <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">targetAstralBody</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> Camera           _camera;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            ShowLength();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            _camera = <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">mainCamera</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            InitLength();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDisable()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            RemoveLength();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> InitLength()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            _camera = <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">mainCamera</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            var nodeOri = <a class="code" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">astralBody</a>.gameObject.GetComponent&lt;Node&gt;();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (nodeOri == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                nodeOri = <a class="code" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">astralBody</a>.gameObject.AddComponent&lt;Node&gt;();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            nodeOri.transformNormals  = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            nodeOri.transformSize     = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            nodeOri.transformTangents = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            var nodeTarget = <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">targetAstralBody</a>.gameObject.AddComponent&lt;Node&gt;();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            nodeTarget.transformNormals  = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            nodeTarget.transformSize     = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            nodeTarget.transformTangents = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>.SetPoints(<span class="keyword">new</span>[]</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                   {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                       <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0)),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                       <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0))</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                   });</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            nodeOri.AddConnection(<a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>, 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">// Debug.Log(nodeOri.HasConnection(lengthSpline, 0));</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            nodeTarget.AddConnection(<a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>, 1);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>.Rebuild();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> RemoveLength()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">lengthSpline</a>.SetPoints(<span class="keyword">new</span> SplinePoint[] { });</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Destroy(<a class="code" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">astralBody</a>.gameObject.GetComponent&lt;Node&gt;());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            Destroy(<a class="code" href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">targetAstralBody</a>.gameObject.GetComponent&lt;Node&gt;());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ShowLength()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            var tmpScreenPos =</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                _camera.WorldToScreenPoint((<a class="code" href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">astralBody</a>.transform.position + <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">targetAstralBody</a>.transform.position) * .5f);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// Debug.Log(this.gameObject.name + &quot; : &quot; + tmpScreenPos);</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a2cf24f4eb64e4f4babc7afcde8bb8cba">lengthText</a>.transform.position = <span class="keyword">new</span> Vector3(Mathf.Clamp(tmpScreenPos.x, 60, Screen.width  - 60),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                        Mathf.Clamp(tmpScreenPos.y, 20, Screen.height - 20),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                        0);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="class_custom_u_i_1_1_length_u_i.html#a2cf24f4eb64e4f4babc7afcde8bb8cba">lengthText</a>.text = <span class="stringliteral">&quot;距离:&quot;</span> + (<a class="code" href="class_custom_u_i_1_1_length_u_i.html#af80b2850c5d1711a008def37a9fe813f">lengthCalculator</a>.length * 1000).ToString(<span class="stringliteral">&quot;f2&quot;</span>) + <span class="stringliteral">&quot; km&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html">CustomUI.LengthUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00010">LengthUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html_a2cf24f4eb64e4f4babc7afcde8bb8cba"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html#a2cf24f4eb64e4f4babc7afcde8bb8cba">CustomUI.LengthUI.lengthText</a></div><div class="ttdeci">Text lengthText</div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00015">LengthUI.cs:15</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html_a516e373812fdd4ce5c54f1cf9a667827"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html#a516e373812fdd4ce5c54f1cf9a667827">CustomUI.LengthUI.lengthSpline</a></div><div class="ttdeci">SplineComputer lengthSpline</div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00014">LengthUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html_a75ed9e478196f0f8601a5c4681f550c1"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html#a75ed9e478196f0f8601a5c4681f550c1">CustomUI.LengthUI.targetAstralBody</a></div><div class="ttdeci">AstralBody targetAstralBody</div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00016">LengthUI.cs:16</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html_ac9d25021b87bf9a617d16b40f58be7d2"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html#ac9d25021b87bf9a617d16b40f58be7d2">CustomUI.LengthUI.astralBody</a></div><div class="ttdeci">AstralBody astralBody</div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00012">LengthUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_length_u_i_html_af80b2850c5d1711a008def37a9fe813f"><div class="ttname"><a href="class_custom_u_i_1_1_length_u_i.html#af80b2850c5d1711a008def37a9fe813f">CustomUI.LengthUI.lengthCalculator</a></div><div class="ttdeci">LengthCalculator lengthCalculator</div><div class="ttdef"><b>Definition:</b> <a href="_length_u_i_8cs_source.html#l00013">LengthUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a630d5bc034889e5ea896ccdacc923caa"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">GameManagers.GameManager.mainCamera</a></div><div class="ttdeci">Camera mainCamera</div><div class="ttdoc">主相机</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00045">GameManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="_length_u_i_8cs.html">LengthUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

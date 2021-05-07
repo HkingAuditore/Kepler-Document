@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/SelectorUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_selector_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SelectorUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_selector_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_camera.html">CustomCamera</a>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_post_processing.html">CustomPostProcessing</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_u_i.html">CustomUI</a>.<a class="code" href="namespace_custom_u_i_1_1_astral_body_editor.html">AstralBodyEditor</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i.html">CustomUI</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_selector_u_i.html">SelectorUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#aafeff44686697c901b0829708fd028ef">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span>               <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#aafeff44686697c901b0829708fd028ef">_isLocked</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">   13</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html">AstralBodyEditorUI</a> <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#a65db83d206236938a1457608830a61db">   14</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html">OutlineCatcher</a>     <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a65db83d206236938a1457608830a61db">outlineCatcher</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="comment">// public  List&lt;GameObject&gt; selectedGameObjects = new List&lt;GameObject&gt;();</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">   17</a></span>&#160;        <span class="keyword">public</span>  GameObject       <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_custom_camera_1_1_camera_controller.html">CameraController</a> _cameraController;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> Camera           _mainCamera;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">   21</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">isLocked</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">get</span> =&gt; <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#aafeff44686697c901b0829708fd028ef">_isLocked</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">set</span> =&gt; <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#aafeff44686697c901b0829708fd028ef">_isLocked</a> = value;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            _mainCamera       = <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">mainCamera</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            _cameraController = <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a2c1bc733911849829b72baa6ee33d8e7">GetMainCameraController</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_selector_u_i.html#a58f02efc3e19e7821c5bb1bee1db20dc">   33</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a58f02efc3e19e7821c5bb1bee1db20dc">Update</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">isLocked</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                HighlightSelect();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                FocusOn();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                CancelFocus();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> HighlightSelect()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            var        ray = _mainCamera.ScreenPointToRay(Input.mousePosition);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            RaycastHit hitInfo;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// Debug.DrawRay(ray.origin,ray.direction,Color.green);</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (Physics.Raycast(ray, out hitInfo, 1000, (1 &lt;&lt; 20) | (1 &lt;&lt; 23)))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="comment">// Debug.Log(&quot;Hit!&quot;);</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="comment">// Debug.DrawLine(ray.origin, hitInfo.point);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="comment">// if (hitInfo.collider.gameObject.CompareTag(&quot;AstralBody&quot;))</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="comment">// {</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="comment">// outlineCatcher.AddTarget(hitInfo.collider.gameObject);</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="comment">// selectedGameObjects.Add(hitInfo.collider.gameObject);</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a> = hitInfo.collider.gameObject;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a65db83d206236938a1457608830a61db">outlineCatcher</a>.<a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">AddTarget</a>(<a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="comment">// }</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a65db83d206236938a1457608830a61db">outlineCatcher</a>.<a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">RemoveTarget</a>(<a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="comment">// selectedGameObjects.ForEach(o =&gt; outlineCatcher.RemoveTarget(o));</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">// selectedGameObjects.Clear();</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">// Debug.DrawLine(ray.origin, hitInfo.point);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FocusOn()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0) &amp;&amp; <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                _cameraController.<a class="code" href="class_custom_camera_1_1_camera_controller.html#aae9db4da3405bae9dcd46441d1cb24f4">FocusOn</a>(<a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a>.transform);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">isLocked</a>                      = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                _cameraController.<a class="code" href="class_custom_camera_1_1_camera_controller.html#a3580fb0fa8edc8d7305f684262c548e0">IsFollowing</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>.<a class="code" href="class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html#a80a5910b8407665ef6746b9f43d73bf0">astralBody</a> = <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">selectedGameObject</a>.GetComponent&lt;<a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>&gt;();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>.enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> CancelFocus()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (Input.GetMouseButtonDown(1))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">isLocked</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                _cameraController.<a class="code" href="class_custom_camera_1_1_camera_controller.html#a358e0eca7c902c98c1a9e7eab6833cf5">ExitFocus</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                _cameraController.<a class="code" href="class_custom_camera_1_1_camera_controller.html#a3580fb0fa8edc8d7305f684262c548e0">IsFollowing</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>.enabled    = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">astralBodyEditorUI</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_camera_1_1_camera_controller_html"><div class="ttname"><a href="class_custom_camera_1_1_camera_controller.html">CustomCamera.CameraController</a></div><div class="ttdoc">相机控制</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00010">CameraController.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_camera_1_1_camera_controller_html_a3580fb0fa8edc8d7305f684262c548e0"><div class="ttname"><a href="class_custom_camera_1_1_camera_controller.html#a3580fb0fa8edc8d7305f684262c548e0">CustomCamera.CameraController.IsFollowing</a></div><div class="ttdeci">bool? IsFollowing</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00063">CameraController.cs:64</a></div></div>
+<div class="ttc" id="aclass_custom_camera_1_1_camera_controller_html_a358e0eca7c902c98c1a9e7eab6833cf5"><div class="ttname"><a href="class_custom_camera_1_1_camera_controller.html#a358e0eca7c902c98c1a9e7eab6833cf5">CustomCamera.CameraController.ExitFocus</a></div><div class="ttdeci">void ExitFocus()</div><div class="ttdoc">退出聚焦</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00213">CameraController.cs:213</a></div></div>
+<div class="ttc" id="aclass_custom_camera_1_1_camera_controller_html_aae9db4da3405bae9dcd46441d1cb24f4"><div class="ttname"><a href="class_custom_camera_1_1_camera_controller.html#aae9db4da3405bae9dcd46441d1cb24f4">CustomCamera.CameraController.FocusOn</a></div><div class="ttdeci">void FocusOn(Transform target)</div><div class="ttdoc">聚焦</div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00202">CameraController.cs:202</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html">CustomPostProcessing.OutlineCatcher</a></div><div class="ttdoc">描边抓取</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00008">OutlineCatcher.cs:9</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a2346eec7fe1c2f11205be4b719156c7e"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">CustomPostProcessing.OutlineCatcher.RemoveTarget</a></div><div class="ttdeci">void RemoveTarget(GameObject target)</div><div class="ttdoc">移除描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00107">OutlineCatcher.cs:107</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a24efc1b8eb0f78534b4692782162f422"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">CustomPostProcessing.OutlineCatcher.AddTarget</a></div><div class="ttdeci">void AddTarget(GameObject target)</div><div class="ttdoc">新增描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00097">OutlineCatcher.cs:97</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html">CustomUI.AstralBodyEditor.AstralBodyEditorUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_u_i_8cs_source.html#l00011">AstralBodyEditorUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i_html_a80a5910b8407665ef6746b9f43d73bf0"><div class="ttname"><a href="class_custom_u_i_1_1_astral_body_editor_1_1_astral_body_editor_u_i.html#a80a5910b8407665ef6746b9f43d73bf0">CustomUI.AstralBodyEditor.AstralBodyEditorUI.astralBody</a></div><div class="ttdeci">AstralBody astralBody</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_u_i_8cs_source.html#l00035">AstralBodyEditorUI.cs:36</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html">CustomUI.SelectorUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00010">SelectorUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_a24f28ddaf8537e177a2406d5fda6020d"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#a24f28ddaf8537e177a2406d5fda6020d">CustomUI.SelectorUI.astralBodyEditorUI</a></div><div class="ttdeci">AstralBodyEditorUI astralBodyEditorUI</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00013">SelectorUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_a3edda81811292b8740b142c1075c5a37"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#a3edda81811292b8740b142c1075c5a37">CustomUI.SelectorUI.selectedGameObject</a></div><div class="ttdeci">GameObject selectedGameObject</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00017">SelectorUI.cs:17</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_a58f02efc3e19e7821c5bb1bee1db20dc"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#a58f02efc3e19e7821c5bb1bee1db20dc">CustomUI.SelectorUI.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00033">SelectorUI.cs:33</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_a65db83d206236938a1457608830a61db"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#a65db83d206236938a1457608830a61db">CustomUI.SelectorUI.outlineCatcher</a></div><div class="ttdeci">OutlineCatcher outlineCatcher</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00014">SelectorUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_aafeff44686697c901b0829708fd028ef"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#aafeff44686697c901b0829708fd028ef">CustomUI.SelectorUI._isLocked</a></div><div class="ttdeci">bool _isLocked</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00012">SelectorUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_selector_u_i_html_af6a53949889d515c96eaa9cd27555356"><div class="ttname"><a href="class_custom_u_i_1_1_selector_u_i.html#af6a53949889d515c96eaa9cd27555356">CustomUI.SelectorUI.isLocked</a></div><div class="ttdeci">bool isLocked</div><div class="ttdef"><b>Definition:</b> <a href="_selector_u_i_8cs_source.html#l00021">SelectorUI.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a2c1bc733911849829b72baa6ee33d8e7"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a2c1bc733911849829b72baa6ee33d8e7">GameManagers.GameManager.GetMainCameraController</a></div><div class="ttdeci">CameraController GetMainCameraController()</div><div class="ttdoc">获取主相机控制器</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00097">GameManager.cs:97</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a630d5bc034889e5ea896ccdacc923caa"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a630d5bc034889e5ea896ccdacc923caa">GameManagers.GameManager.mainCamera</a></div><div class="ttdeci">Camera mainCamera</div><div class="ttdoc">主相机</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00045">GameManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="anamespace_custom_camera_html"><div class="ttname"><a href="namespace_custom_camera.html">CustomCamera</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_controller_8cs_source.html#l00005">CameraController.cs:6</a></div></div>
+<div class="ttc" id="anamespace_custom_post_processing_html"><div class="ttname"><a href="namespace_custom_post_processing.html">CustomPostProcessing</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_mixer_8cs_source.html#l00004">CameraMixer.cs:5</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_astral_body_editor_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_astral_body_editor.html">CustomUI.AstralBodyEditor</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="_selector_u_i_8cs.html">SelectorUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="SpacePhysic.AstralBody.FixedUpdate" name="SpacePhysic.AstralBody.FixedUpdate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#ab3b52523388b29f29e81d13039100dc9" title="计算受力" alt="" coords="256,5,481,47"/>
+</map>

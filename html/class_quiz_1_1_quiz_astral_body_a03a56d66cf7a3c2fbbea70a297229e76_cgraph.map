@@ -1,0 +1,9 @@
+<map id="Quiz.QuizAstralBody.UpdateQuizAstralBody" name="Quiz.QuizAstralBody.UpdateQuizAstralBody">
+<area shape="rect" id="node1" title="更新天体数据" alt="" coords="5,127,195,168"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a02741a5f2ab9b583440a9ebba2e2d685" title="获取轨道圆锥曲线" alt="" coords="244,93,433,135"/>
+<area shape="rect" id="node7" href="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0" title=" " alt="" coords="243,159,435,200"/>
+<area shape="rect" id="node3" href="$interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213" title=" " alt="" coords="499,5,685,47"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html#a7a61c09595bedc638b0268d8277e8873" title=" " alt="" coords="483,71,701,98"/>
+<area shape="rect" id="node5" href="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4" title=" " alt="" coords="499,123,685,164"/>
+<area shape="rect" id="node6" href="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb" title=" " alt="" coords="499,188,685,229"/>
+</map>

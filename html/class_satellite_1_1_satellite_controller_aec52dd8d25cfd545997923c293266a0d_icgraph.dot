@@ -1,0 +1,11 @@
+digraph "Satellite.SatelliteController.SetCurDirVelocity"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Satellite.SatelliteController.\lSetCurDirVelocity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="设置速度"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CustomUI.Satellite.Satellite\lControllerUI.ChangeSpeed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#af7105a204967ce93b7b0f9eaefd0448f",tooltip=" "];
+}

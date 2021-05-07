@@ -1,0 +1,33 @@
+digraph "CustomUI.Satellite.SatelliteControllerUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.Satellite.Satellite\lControllerUI\n|+ Slider slider\l|+ void ChangeSpeed()\l+ void Pause()\l+ void Continue()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +satelliteController" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Satellite.SatelliteController\n|+ float angularSpeed\l+ float speed\l|+ void SetCurDirVelocity\l(float newSpeed)\l+ void SeparateControl()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite_controller.html",tooltip="卫星控制器"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +satellite" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{Satellite.Satellite\n|+ List\< SatellitePart\l \> satelliteParts\l|+ float GetMass()\l+ Transform GetTransform()\l+ Vector3 GetVelocity()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite.html",tooltip="卫星整体"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +satelliteCore" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{Satellite.SatelliteCore\n||+ override float GetMass()\l# void Awake()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite_core.html",tooltip="卫星核心"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{SatelliteEngine\n|+ int engineStage\l|+ void SetCurDirVelocity\l(float speed)\l# void Awake()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite_engine.html",tooltip="卫星引擎"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{SatellitePart\n|+ List\< SatellitePart\l \> connectedPartList\l+ string satelliteName\l+ SatelliteType PartType\l|+ void Push(Vector3 dir)\l+ void Rotate(Vector3 dir)\l+ void GenerateJoint()\l+ void GetPartName()\l+ void Separate(string\l partName)\l+ void Separate(bool\l separateAll)\l# override void SetMass()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite_part.html",tooltip="卫星部件"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{AstralBody\n|+ List\< AstralBody \>\l affectedPlanets\l+ float affectRadius\l+ Vector3 angularVelocity\l+ List\< AstralBody \>\l banAffectedPlanets\l+ SphereCollider defaultCollider\l+ bool enableAffect\l+ bool enableTracing\l+ Vector3 oriVelocity\l+ SphereCollider triggerCollider\l+ UnityEvent\< Vector3\l \> velocityChangedEvent\l+ float? Mass\l+ Rigidbody astralBodyRigidbody\l+ Vector3 Force\l+ float gravity\l+ int meshNum\l+ float size\l+ double realMass\l+ double density\l+ Vector3 lastVelocity\l+ bool isLoadDone\l|+ virtual void OnCollision\lEnter(Collision other)\l+ Transform GetTransform()\l+ Vector3 GetPosition()\l+ GameObject GetGameObject()\l+ bool GetEnableTracing()\l+ virtual float GetMass()\l+ Rigidbody GetRigidbody()\l+ Vector3 GetVelocity()\l+ List\< AstralBody \>\l GetAffectedPlanets()\l+ AstralBody GetAstralBody()\l+ void ChangeVelocity\l(Vector3 velocity)\l+ void ChangeVelocity\l(double realSpeed)\l+ Vector3 CalculateForce()\l+ void SetCircleVelocity()\l+ void SetCircleVelocityMenu()\l# virtual void Start()\l# void Generate()\l# virtual void FixedUpdate()\l# virtual void SetMass()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html",tooltip="星体物理实体"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{ITraceable\n||+ Transform GetTransform()\l+ Vector3 GetPosition()\l+ GameObject GetGameObject()\l+ bool GetEnableTracing()\l+ float GetMass()\l+ Rigidbody GetRigidbody()\l+ Vector3 GetVelocity()\l+ List\< AstralBody \>\l GetAffectedPlanets()\l+ AstralBody GetAstralBody()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html",tooltip="可追踪接口"];
+  Node4 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +satellite" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +speedText" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{Text\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +orbit" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{SpacePhysic.GravityTracing\n|+ int sample\l+ float timeScale\l+ SplineComputer splineComputer\l+ bool isFreezing\l+ bool isShowOrbit\l|+ void Awake()\l+ void Dispatch()\l+ void AddTracingTarget\l(ITraceable traceable)\l+ void Freeze(bool isFreezing)\l+ void RemoveAstralBody\l(AstralBody astralBody)\l+ ConicSection GetConicSection\l(ITraceable astralBody)\l+ void DrawMathOrbit\l(ConicSection conicSection,\l int sam)\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html",tooltip="引力追踪"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+}

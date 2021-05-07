@@ -1,0 +1,7 @@
+<map id="CustomPostProcessing.CustomPostProcessingBase" name="CustomPostProcessing.CustomPostProcessingBase">
+<area shape="rect" id="node1" title="自定义后处理" alt="" coords="269,131,477,252"/>
+<area shape="rect" id="node3" href="$class_custom_camera_1_1_camera_layer_mixer.html" title="相机图像混合" alt="" coords="5,337,235,502"/>
+<area shape="rect" id="node4" href="$class_custom_post_processing_1_1_camera_mixer.html" title="相机输出混合" alt="" coords="259,322,488,517"/>
+<area shape="rect" id="node5" href="$class_custom_post_processing_1_1_outline_catcher.html" title="描边抓取" alt="" coords="512,300,741,539"/>
+<area shape="rect" id="node2" title=" " alt="" coords="318,5,429,83"/>
+</map>

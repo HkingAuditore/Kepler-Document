@@ -1,0 +1,4 @@
+<map id="SpacePhysic.GravityTracing.DrawMathOrbit" name="SpacePhysic.GravityTracing.DrawMathOrbit">
+<area shape="rect" id="node1" title="绘制轨道" alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node2" href="$class_static_classes_1_1_math_plus_1_1_conic_section.html#a1d1329131823719eec682d39c134e4c8" title="求椭圆在极坐标下角度对应的位置" alt="" coords="243,5,441,47"/>
+</map>

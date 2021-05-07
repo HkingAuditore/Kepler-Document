@@ -1,0 +1,8 @@
+<map id="SpacePhysic.ITraceable.GetRigidbody" name="SpacePhysic.ITraceable.GetRigidbody">
+<area shape="rect" id="node1" title=" " alt="" coords="776,71,963,112"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a3d63db3c84aef11ca64e85e99d32cbd3" title="增加追踪实体" alt="" coords="539,71,728,112"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_gravity_tracing.html#ac99527254282cd4e726c6b6822256583" title=" " alt="" coords="281,5,470,47"/>
+<area shape="rect" id="node4" href="$class_xml_saver_1_1_scene_load_base.html#a0048dec421f94641813fb6ed80eca811" title=" " alt="" coords="260,71,491,112"/>
+<area shape="rect" id="node6" href="$class_xml_saver_1_1_scene_load_base.html#a0a4b9b672c83faa8953a3ea9e89886de" title=" " alt="" coords="260,136,491,177"/>
+<area shape="rect" id="node5" href="$class_xml_saver_1_1_scene_load_base.html#a858d37d11500dd956eb9c45a5509dc3c" title=" " alt="" coords="5,111,212,138"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CustomPostProcessing.IRenderTexOuter" name="CustomPostProcessing.IRenderTexOuter">
+<area shape="rect" id="node1" title="RenderTexture输出接口" alt="" coords="132,5,361,97"/>
+<area shape="rect" id="node2" href="$class_custom_camera_1_1_layer_camera.html" title="层级相机管理" alt="" coords="5,226,235,303"/>
+<area shape="rect" id="node3" href="$class_custom_post_processing_1_1_outline_catcher.html" title="描边抓取" alt="" coords="259,145,488,384"/>
+</map>

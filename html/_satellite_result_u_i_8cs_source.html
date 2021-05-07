@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Satellite/SatelliteResultUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_satellite_result_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SatelliteResultUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_satellite_result_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_custom_u_i.html">CustomUI</a>.<a class="code" href="namespace_custom_u_i_1_1_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_game_managers.html">GameManagers</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_satellite.html">Satellite</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine.SceneManagement;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_satellite.html">CustomUI.Satellite</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html">SatelliteResultUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a1b9f748be8366010b71303d853e397f7">   14</a></span>&#160;        <span class="keyword">public</span> GameObject       <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a1b9f748be8366010b71303d853e397f7">panel</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">   15</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html">QuizStarsGroupUI</a> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">quizStarsGroupUI</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">   16</a></span>&#160;        <span class="keyword">public</span> Text             <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">resultText</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            StartCoroutine(WaitForCheck());</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">private</span> IEnumerator WaitForCheck()</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            yield <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keyword">new</span> WaitUntil(() =&gt; <a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">satelliteChallengeManger</a>.<a class="code" href="class_satellite_1_1_satellite_challenge_manger.html#a5265d64167601287866e3aff73461f5e">isCheckEnd</a>); <span class="comment">//Lambda表达式</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            ShowResultPanel(<a class="code" href="class_game_managers_1_1_game_manager.html">GameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">getGameManager</a>.<a class="code" href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">satelliteChallengeManger</a>.<a class="code" href="class_satellite_1_1_satellite_challenge_manger.html#afcf4bcdfef9372338425d277b498d488">satelliteResultType</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ShowResultPanel(<a class="code" href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">SatelliteResultType</a> resultType)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">switch</span> (resultType)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">SatelliteResultType</a>.Success:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">resultText</a>.text = <span class="stringliteral">&quot;\&quot;这是我个人的一小步，却是人类的一大步。\&quot;&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">quizStarsGroupUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html#afa8128f6bde19f42de8be1ca6c9a1f3b">CalculateSuccessStars</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">SatelliteResultType</a>.Crash:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">resultText</a>.text            = <span class="stringliteral">&quot;你的卫星成为了人类的新遗迹&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">quizStarsGroupUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html#a4648a7a9aa67acbaa14f48f1cf17f570">starCount</a> = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">SatelliteResultType</a>.NotOrbit:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">resultText</a>.text            = <span class="stringliteral">&quot;未能进入目标轨道&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">quizStarsGroupUI</a>.<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html#a4648a7a9aa67acbaa14f48f1cf17f570">starCount</a> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">SatelliteResultType</a>.NonResult:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(nameof(resultType), resultType, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a1b9f748be8366010b71303d853e397f7">panel</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a0ec4ad20ee3556da9cf61b8d228ef9fe">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a0ec4ad20ee3556da9cf61b8d228ef9fe">BackToLabMode</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">LoadSceneInLoadingScene</a>(<span class="stringliteral">&quot;LabMode&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#ab0d0e9d10a6a97b8f026e2373fbd5425">   60</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#ab0d0e9d10a6a97b8f026e2373fbd5425">Reload</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_game_managers_1_1_global_transfer.html">GlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">getGlobalTransfer</a>.<a class="code" href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">LoadSceneInLoadingScene</a>(SceneManager.GetActiveScene().name);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html">CustomUI.Quiz.QuizStarsGroupUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_stars_group_u_i_8cs_source.html#l00007">QuizStarsGroupUI.cs:8</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i_html_a4648a7a9aa67acbaa14f48f1cf17f570"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html#a4648a7a9aa67acbaa14f48f1cf17f570">CustomUI.Quiz.QuizStarsGroupUI.starCount</a></div><div class="ttdeci">int starCount</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_stars_group_u_i_8cs_source.html#l00014">QuizStarsGroupUI.cs:15</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i_html_afa8128f6bde19f42de8be1ca6c9a1f3b"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_stars_group_u_i.html#afa8128f6bde19f42de8be1ca6c9a1f3b">CustomUI.Quiz.QuizStarsGroupUI.CalculateSuccessStars</a></div><div class="ttdeci">void CalculateSuccessStars()</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_stars_group_u_i_8cs_source.html#l00029">QuizStarsGroupUI.cs:29</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html">CustomUI.Satellite.SatelliteResultUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00012">SatelliteResultUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html_a0ec4ad20ee3556da9cf61b8d228ef9fe"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a0ec4ad20ee3556da9cf61b8d228ef9fe">CustomUI.Satellite.SatelliteResultUI.BackToLabMode</a></div><div class="ttdeci">void BackToLabMode()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00055">SatelliteResultUI.cs:55</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html_a1b9f748be8366010b71303d853e397f7"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a1b9f748be8366010b71303d853e397f7">CustomUI.Satellite.SatelliteResultUI.panel</a></div><div class="ttdeci">GameObject panel</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00014">SatelliteResultUI.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html_a651b52e81acd5c78c47daa8292061af0"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a651b52e81acd5c78c47daa8292061af0">CustomUI.Satellite.SatelliteResultUI.resultText</a></div><div class="ttdeci">Text resultText</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00016">SatelliteResultUI.cs:16</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html_a67057f2a29de006a0491f4e46ee1100f"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a67057f2a29de006a0491f4e46ee1100f">CustomUI.Satellite.SatelliteResultUI.quizStarsGroupUI</a></div><div class="ttdeci">QuizStarsGroupUI quizStarsGroupUI</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00015">SatelliteResultUI.cs:15</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_result_u_i_html_ab0d0e9d10a6a97b8f026e2373fbd5425"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#ab0d0e9d10a6a97b8f026e2373fbd5425">CustomUI.Satellite.SatelliteResultUI.Reload</a></div><div class="ttdeci">void Reload()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_u_i_8cs_source.html#l00060">SatelliteResultUI.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html">GameManagers.GameManager</a></div><div class="ttdoc">全局管理</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00018">GameManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a53773e5b16578622241e70b2b0469402"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a53773e5b16578622241e70b2b0469402">GameManagers.GameManager.getGameManager</a></div><div class="ttdeci">static GameManager getGameManager</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00071">GameManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_game_manager_html_a684a1a83ee6be8691255692e9fbb1aae"><div class="ttname"><a href="class_game_managers_1_1_game_manager.html#a684a1a83ee6be8691255692e9fbb1aae">GameManagers.GameManager.satelliteChallengeManger</a></div><div class="ttdeci">SatelliteChallengeManger satelliteChallengeManger</div><div class="ttdoc">卫星挑战管理对象</div><div class="ttdef"><b>Definition:</b> <a href="_game_manager_8cs_source.html#l00067">GameManager.cs:67</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html">GameManagers.GlobalTransfer</a></div><div class="ttdoc">全局信息传递</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00009">GlobalTransfer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0a67c1504ad9ccb391ff92e6deab988d"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d">GameManagers.GlobalTransfer.LoadSceneInLoadingScene</a></div><div class="ttdeci">void LoadSceneInLoadingScene(string nextLoadSceneName)</div><div class="ttdoc">在Loading场景中加载新场景</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00052">GlobalTransfer.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_managers_1_1_global_transfer_html_a0b2b5712e982e961220041cef7aa4a39"><div class="ttname"><a href="class_game_managers_1_1_global_transfer.html#a0b2b5712e982e961220041cef7aa4a39">GameManagers.GlobalTransfer.getGlobalTransfer</a></div><div class="ttdeci">static GlobalTransfer getGlobalTransfer</div><div class="ttdef"><b>Definition:</b> <a href="_global_transfer_8cs_source.html#l00025">GlobalTransfer.cs:25</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_challenge_manger_html_a5265d64167601287866e3aff73461f5e"><div class="ttname"><a href="class_satellite_1_1_satellite_challenge_manger.html#a5265d64167601287866e3aff73461f5e">Satellite.SatelliteChallengeManger.isCheckEnd</a></div><div class="ttdeci">bool isCheckEnd</div><div class="ttdoc">是否检查完成</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_challenge_manger_8cs_source.html#l00045">SatelliteChallengeManger.cs:45</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_challenge_manger_html_afcf4bcdfef9372338425d277b498d488"><div class="ttname"><a href="class_satellite_1_1_satellite_challenge_manger.html#afcf4bcdfef9372338425d277b498d488">Satellite.SatelliteChallengeManger.satelliteResultType</a></div><div class="ttdeci">SatelliteResultType satelliteResultType</div><div class="ttdoc">结果</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_challenge_manger_8cs_source.html#l00051">SatelliteChallengeManger.cs:52</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_satellite_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_satellite.html">CustomUI.Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00006">SatelliteControllerUI.cs:7</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_managers_html"><div class="ttname"><a href="namespace_game_managers.html">GameManagers</a></div><div class="ttdef"><b>Definition:</b> <a href="_difficulty_8cs_source.html#l00003">Difficulty.cs:4</a></div></div>
+<div class="ttc" id="anamespace_satellite_html"><div class="ttname"><a href="namespace_satellite.html">Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_8cs_source.html#l00005">Satellite.cs:6</a></div></div>
+<div class="ttc" id="anamespace_satellite_html_a3e0270be45301ea70052372b795dfecb"><div class="ttname"><a href="namespace_satellite.html#a3e0270be45301ea70052372b795dfecb">Satellite.SatelliteResultType</a></div><div class="ttdeci">SatelliteResultType</div><div class="ttdoc">卫星结果</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_result_type_8cs_source.html#l00006">SatelliteResultType.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_ad1c59a5b444099613602ff4af557731.html">Satellite</a></li><li class="navelem"><a class="el" href="_satellite_result_u_i_8cs.html">SatelliteResultUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

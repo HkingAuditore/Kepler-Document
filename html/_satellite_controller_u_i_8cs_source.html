@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Satellite/SatelliteControllerUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_satellite_controller_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SatelliteControllerUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_satellite_controller_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_satellite.html">Satellite</a>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespace_custom_u_i_1_1_satellite.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_satellite.html">CustomUI.Satellite</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html">SatelliteControllerUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a7c28b23d407f31bb2e1f0adc0a68f1c6">   10</a></span>&#160;        <span class="keyword">public</span>  <a class="code" href="class_space_physic_1_1_gravity_tracing.html">GravityTracing</a>      <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a7c28b23d407f31bb2e1f0adc0a68f1c6">orbit</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">   11</a></span>&#160;        <span class="keyword">public</span>  <a class="code" href="class_satellite_1_1_satellite_controller.html">SatelliteController</a> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">satelliteController</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a09db87f848fb1c04fe57c1a55b19165d">   12</a></span>&#160;        <span class="keyword">public</span>  Slider              <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a09db87f848fb1c04fe57c1a55b19165d">slider</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a82c9b1c12c5a7de6cc3fc64ddbacc9f3">   13</a></span>&#160;        <span class="keyword">public</span>  Text                <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a82c9b1c12c5a7de6cc3fc64ddbacc9f3">speedText</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span>                isEditing;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FixedUpdate()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (!isEditing) <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a09db87f848fb1c04fe57c1a55b19165d">slider</a>.value = <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">satelliteController</a>.<a class="code" href="class_satellite_1_1_satellite_controller.html#a1d72d5cfaff54c58600a5e8899db1460">satellite</a>.<a class="code" href="class_satellite_1_1_satellite.html#a82630d95c2e9c227668c31e362e84003">GetVelocity</a>().magnitude;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a82c9b1c12c5a7de6cc3fc64ddbacc9f3">speedText</a>.text = (.1f * <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">satelliteController</a>.<a class="code" href="class_satellite_1_1_satellite_controller.html#a1d72d5cfaff54c58600a5e8899db1460">satellite</a>.<a class="code" href="class_satellite_1_1_satellite.html#a82630d95c2e9c227668c31e362e84003">GetVelocity</a>().magnitude).ToString(<span class="stringliteral">&quot;f2&quot;</span>) + <span class="stringliteral">&quot; km/s&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#af7105a204967ce93b7b0f9eaefd0448f">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#af7105a204967ce93b7b0f9eaefd0448f">ChangeSpeed</a>()</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (isEditing)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                Debug.Log(<span class="stringliteral">&quot;changing!&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">satelliteController</a>.<a class="code" href="class_satellite_1_1_satellite_controller.html#aec52dd8d25cfd545997923c293266a0d">SetCurDirVelocity</a>(<a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a09db87f848fb1c04fe57c1a55b19165d">slider</a>.value);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#acb472db54118ab12c4b85beaccb32e8c">   32</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#acb472db54118ab12c4b85beaccb32e8c">Pause</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a7c28b23d407f31bb2e1f0adc0a68f1c6">orbit</a>.<a class="code" href="class_space_physic_1_1_gravity_tracing.html#a53a5ce46b114fde8399fd0379aa020ca">Freeze</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            isEditing = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#add893770a0c54e569b670e3ce1a4a659">   38</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#add893770a0c54e569b670e3ce1a4a659">Continue</a>()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a7c28b23d407f31bb2e1f0adc0a68f1c6">orbit</a>.<a class="code" href="class_space_physic_1_1_gravity_tracing.html#a53a5ce46b114fde8399fd0379aa020ca">Freeze</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            isEditing = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html">CustomUI.Satellite.SatelliteControllerUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00008">SatelliteControllerUI.cs:9</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_a09db87f848fb1c04fe57c1a55b19165d"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a09db87f848fb1c04fe57c1a55b19165d">CustomUI.Satellite.SatelliteControllerUI.slider</a></div><div class="ttdeci">Slider slider</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00012">SatelliteControllerUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_a7c28b23d407f31bb2e1f0adc0a68f1c6"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a7c28b23d407f31bb2e1f0adc0a68f1c6">CustomUI.Satellite.SatelliteControllerUI.orbit</a></div><div class="ttdeci">GravityTracing orbit</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00010">SatelliteControllerUI.cs:10</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_a82c9b1c12c5a7de6cc3fc64ddbacc9f3"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a82c9b1c12c5a7de6cc3fc64ddbacc9f3">CustomUI.Satellite.SatelliteControllerUI.speedText</a></div><div class="ttdeci">Text speedText</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00013">SatelliteControllerUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_a94a116ee732e673b3355cc3605228508"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#a94a116ee732e673b3355cc3605228508">CustomUI.Satellite.SatelliteControllerUI.satelliteController</a></div><div class="ttdeci">SatelliteController satelliteController</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00011">SatelliteControllerUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_acb472db54118ab12c4b85beaccb32e8c"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#acb472db54118ab12c4b85beaccb32e8c">CustomUI.Satellite.SatelliteControllerUI.Pause</a></div><div class="ttdeci">void Pause()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00032">SatelliteControllerUI.cs:32</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_add893770a0c54e569b670e3ce1a4a659"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#add893770a0c54e569b670e3ce1a4a659">CustomUI.Satellite.SatelliteControllerUI.Continue</a></div><div class="ttdeci">void Continue()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00038">SatelliteControllerUI.cs:38</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i_html_af7105a204967ce93b7b0f9eaefd0448f"><div class="ttname"><a href="class_custom_u_i_1_1_satellite_1_1_satellite_controller_u_i.html#af7105a204967ce93b7b0f9eaefd0448f">CustomUI.Satellite.SatelliteControllerUI.ChangeSpeed</a></div><div class="ttdeci">void ChangeSpeed()</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00023">SatelliteControllerUI.cs:23</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_controller_html"><div class="ttname"><a href="class_satellite_1_1_satellite_controller.html">Satellite.SatelliteController</a></div><div class="ttdoc">卫星控制器</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_8cs_source.html#l00009">SatelliteController.cs:10</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_controller_html_a1d72d5cfaff54c58600a5e8899db1460"><div class="ttname"><a href="class_satellite_1_1_satellite_controller.html#a1d72d5cfaff54c58600a5e8899db1460">Satellite.SatelliteController.satellite</a></div><div class="ttdeci">Satellite satellite</div><div class="ttdoc">卫星</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_8cs_source.html#l00019">SatelliteController.cs:19</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_controller_html_aec52dd8d25cfd545997923c293266a0d"><div class="ttname"><a href="class_satellite_1_1_satellite_controller.html#aec52dd8d25cfd545997923c293266a0d">Satellite.SatelliteController.SetCurDirVelocity</a></div><div class="ttdeci">void SetCurDirVelocity(float newSpeed)</div><div class="ttdoc">设置速度</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_8cs_source.html#l00054">SatelliteController.cs:54</a></div></div>
+<div class="ttc" id="aclass_satellite_1_1_satellite_html_a82630d95c2e9c227668c31e362e84003"><div class="ttname"><a href="class_satellite_1_1_satellite.html#a82630d95c2e9c227668c31e362e84003">Satellite.Satellite.GetVelocity</a></div><div class="ttdeci">Vector3 GetVelocity()</div><div class="ttdoc">获取速度</div><div class="ttdef"><b>Definition:</b> <a href="_satellite_8cs_source.html#l00054">Satellite.cs:54</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_gravity_tracing_html"><div class="ttname"><a href="class_space_physic_1_1_gravity_tracing.html">SpacePhysic.GravityTracing</a></div><div class="ttdoc">引力追踪</div><div class="ttdef"><b>Definition:</b> <a href="_gravity_tracing_8cs_source.html#l00014">GravityTracing.cs:15</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_gravity_tracing_html_a53a5ce46b114fde8399fd0379aa020ca"><div class="ttname"><a href="class_space_physic_1_1_gravity_tracing.html#a53a5ce46b114fde8399fd0379aa020ca">SpacePhysic.GravityTracing.Freeze</a></div><div class="ttdeci">void Freeze(bool isFreezing)</div><div class="ttdoc">冻结</div><div class="ttdef"><b>Definition:</b> <a href="_gravity_tracing_8cs_source.html#l00128">GravityTracing.cs:128</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_satellite_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_satellite.html">CustomUI.Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_controller_u_i_8cs_source.html#l00006">SatelliteControllerUI.cs:7</a></div></div>
+<div class="ttc" id="anamespace_satellite_html"><div class="ttname"><a href="namespace_satellite.html">Satellite</a></div><div class="ttdef"><b>Definition:</b> <a href="_satellite_8cs_source.html#l00005">Satellite.cs:6</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_ad1c59a5b444099613602ff4af557731.html">Satellite</a></li><li class="navelem"><a class="el" href="_satellite_controller_u_i_8cs.html">SatelliteControllerUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

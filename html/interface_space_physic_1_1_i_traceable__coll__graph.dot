@@ -1,0 +1,8 @@
+digraph "SpacePhysic.ITraceable"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SpacePhysic.ITraceable\n||+ Transform GetTransform()\l+ Vector3 GetPosition()\l+ GameObject GetGameObject()\l+ bool GetEnableTracing()\l+ float GetMass()\l+ Rigidbody GetRigidbody()\l+ Vector3 GetVelocity()\l+ List\< AstralBody \>\l GetAffectedPlanets()\l+ AstralBody GetAstralBody()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="可追踪接口"];
+}

@@ -1,0 +1,31 @@
+digraph "SpacePhysic.AstralBody.GetVelocity"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SpacePhysic.AstralBody.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpacePhysic.AstralBody.Change\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a13a5ee93bb01019b6b62111ce696f9b2",tooltip="保持当前速度方向调整速度"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quiz.QuizAstralBody.GetQuiz\lConditionString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body.html#a4aa95a8b5358b10d4b3d7220469f6c50",tooltip="获取星球条件文本"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Quiz.QuizSolver.GetQuizSentence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_solver.html#afc4ef823ad1220a4aea4f7d2f5cf23dd",tooltip="获取问题"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CustomUI.Quiz.QuizUI.Generate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_u_i.html#ac238c7b368d3c183e8e479fc77c48d08",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Satellite.Satellite.GetVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite.html#a82630d95c2e9c227668c31e362e84003",tooltip="获取速度"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CustomUI.Quiz.VarLineUI.\lOnEditEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#adfa12854be919178096c58aa61e50ff6",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CustomUI.Quiz.VarLineUI.\lWhileInputFieldDrag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#aac47d0852e69724a11cc6c9979eeda9a",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Satellite.SatelliteEngine.\lSetCurDirVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_satellite_1_1_satellite_engine.html#abe746f09fff6ac3d0577c2c40e9fabb2",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Quiz.QuizAstralBody.Update\lHighCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body.html#a41716d9876ed4fb8cbb1913d83982d2d",tooltip="更新独立天体数据"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Quiz.QuizAstralBody.Update\lQuizAstralBody",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body.html#a03a56d66cf7a3c2fbbea70a297229e76",tooltip="更新天体数据"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Quiz.QuizAstralBody.Fixed\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body.html#a5a3cf8e859c9f5592c2a2c17f3b814a1",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+<map id="Satellite.SatelliteChallengeManger" name="Satellite.SatelliteChallengeManger">
+<area shape="rect" id="node1" title="航天挑战管理" alt="" coords="138,1086,315,1251"/>
+<area shape="rect" id="node2" title=" " alt="" coords="207,71,318,149"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="262,264,477,987"/>
+<area shape="rect" id="node5" href="$class_satellite_1_1_satellite.html" title="卫星整体" alt="" coords="5,565,187,686"/>
+<area shape="rect" id="node9" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="501,264,715,987"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="421,5,635,215"/>
+<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="15,1507,185,1599"/>
+<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="188,1351,351,1457"/>
+<area shape="rect" id="node8" href="$class_satellite_1_1_satellite_part.html" title="卫星部件" alt="" coords="346,1049,515,1288"/>
+</map>

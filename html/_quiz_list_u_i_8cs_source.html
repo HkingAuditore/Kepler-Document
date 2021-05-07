@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/Quiz/QuizListUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_quiz_list_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">QuizListUI.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_quiz_list_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_quiz.html">Quiz</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html">QuizListUI</a> : MonoBehaviour</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">   10</a></span>&#160;        <span class="keyword">public</span> RectTransform    <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#af6858a5e889d2b904aa0e46131bd4c23">   11</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html">QuizLineUI</a>       <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#af6858a5e889d2b904aa0e46131bd4c23">linePrefab</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a9d8a2a4ebcc8c6eac4392d60d0e3a794">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a9d8a2a4ebcc8c6eac4392d60d0e3a794">offset</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">   13</a></span>&#160;        <span class="keyword">public</span> List&lt;QuizLineUI&gt; <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">quizLineUis</a> = <span class="keyword">new</span> List&lt;QuizLineUI&gt;();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            GenerateLines();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> GenerateLines()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            var oriPos = <span class="keyword">new</span> Vector3(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>.position.x,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                     <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>.position.y,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                     <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>.position.z);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            Debug.Log(oriPos);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            var fileNames = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            var xmlList   = <a class="code" href="class_quiz_1_1_quiz_saver.html">QuizSaver</a>.<a class="code" href="class_quiz_1_1_quiz_saver.html#a8ae63921ac2843789d33f48f64300c65">GetFiles</a>(ref fileNames);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            var quizBaseStructs = (from xmlDocument in xmlList</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                   select <a class="code" href="class_quiz_1_1_quiz_saver.html">QuizSaver</a>.<a class="code" href="class_quiz_1_1_quiz_saver.html#a84ca11181f95abe30a8659dc75587dc6">ConvertXml2SceneBase</a>(xmlDocument,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                                        fileNames[xmlList.IndexOf(xmlDocument)]))</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;               .ToList();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>.sizeDelta = <span class="keyword">new</span> Vector2(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>.sizeDelta.x, quizBaseStructs.Count * <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a9d8a2a4ebcc8c6eac4392d60d0e3a794">offset</a> * 0.5f);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">for</span> (var i = 0; i &lt; quizBaseStructs.Count; i++)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                var quizStruct = quizBaseStructs[i];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="comment">// Debug.Log(oriPos - new Vector3(0, (i + 1) * offset, 0));</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                var line = Instantiate(<a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#af6858a5e889d2b904aa0e46131bd4c23">linePrefab</a>, oriPos - <span class="keyword">new</span> Vector3(0, (i + 1) * <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a9d8a2a4ebcc8c6eac4392d60d0e3a794">offset</a>, 0),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                       Quaternion.Euler(0, 0, 0),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                       <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">content</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                var rect = line.GetComponent&lt;RectTransform&gt;();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                rect.anchoredPosition3D = <span class="keyword">new</span> Vector3(0, rect.localPosition.y, 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">quizLineUis</a>.Add(line);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                line.quizStruct = quizStruct;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                line.name       = quizStruct.sceneName;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                line.quizListUI = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                line.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646">   51</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646">DeleteQuiz</a>(<span class="keywordtype">string</span> quizName)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_quiz_1_1_quiz_saver.html">QuizSaver</a>.<a class="code" href="class_quiz_1_1_quiz_saver.html#a52edeb1584fad4fdcd7ecc93e91cc950">DeleteFiles</a>(quizName);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">quizLineUis</a>.ForEach(q =&gt; Destroy(q.gameObject));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">quizLineUis</a>.Clear();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            GenerateLines();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_line_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html">CustomUI.Quiz.QuizLineUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_line_u_i_8cs_source.html#l00010">QuizLineUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html">CustomUI.Quiz.QuizListUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00008">QuizListUI.cs:9</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_a3a8ae3b8b9f5fa051c6c82102950e242"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a3a8ae3b8b9f5fa051c6c82102950e242">CustomUI.Quiz.QuizListUI.quizLineUis</a></div><div class="ttdeci">List&lt; QuizLineUI &gt; quizLineUis</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00013">QuizListUI.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_a9d8a2a4ebcc8c6eac4392d60d0e3a794"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#a9d8a2a4ebcc8c6eac4392d60d0e3a794">CustomUI.Quiz.QuizListUI.offset</a></div><div class="ttdeci">float offset</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00012">QuizListUI.cs:12</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_ad56b0e6c597dbaa557e79be3f30b7646"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646">CustomUI.Quiz.QuizListUI.DeleteQuiz</a></div><div class="ttdeci">void DeleteQuiz(string quizName)</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00051">QuizListUI.cs:51</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_ae36582dd74a8d218dee1bf65e912a1e3"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ae36582dd74a8d218dee1bf65e912a1e3">CustomUI.Quiz.QuizListUI.content</a></div><div class="ttdeci">RectTransform content</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00010">QuizListUI.cs:10</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_quiz_1_1_quiz_list_u_i_html_af6858a5e889d2b904aa0e46131bd4c23"><div class="ttname"><a href="class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#af6858a5e889d2b904aa0e46131bd4c23">CustomUI.Quiz.QuizListUI.linePrefab</a></div><div class="ttdeci">QuizLineUI linePrefab</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_list_u_i_8cs_source.html#l00011">QuizListUI.cs:11</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_saver_html"><div class="ttname"><a href="class_quiz_1_1_quiz_saver.html">Quiz.QuizSaver</a></div><div class="ttdoc">问题保存</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_saver_8cs_source.html#l00014">QuizSaver.cs:15</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_saver_html_a52edeb1584fad4fdcd7ecc93e91cc950"><div class="ttname"><a href="class_quiz_1_1_quiz_saver.html#a52edeb1584fad4fdcd7ecc93e91cc950">Quiz.QuizSaver.DeleteFiles</a></div><div class="ttdeci">static new void DeleteFiles(string quizName, string pathDirectory=null)</div><div class="ttdoc">删除问题存档</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_saver_8cs_source.html#l00383">QuizSaver.cs:383</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_saver_html_a84ca11181f95abe30a8659dc75587dc6"><div class="ttname"><a href="class_quiz_1_1_quiz_saver.html#a84ca11181f95abe30a8659dc75587dc6">Quiz.QuizSaver.ConvertXml2SceneBase</a></div><div class="ttdeci">static QuizBaseStruct ConvertXml2SceneBase(XmlDocument xmlDoc, string fileName)</div><div class="ttdoc">将XML转为问题</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_saver_8cs_source.html#l00295">QuizSaver.cs:295</a></div></div>
+<div class="ttc" id="aclass_quiz_1_1_quiz_saver_html_a8ae63921ac2843789d33f48f64300c65"><div class="ttname"><a href="class_quiz_1_1_quiz_saver.html#a8ae63921ac2843789d33f48f64300c65">Quiz.QuizSaver.GetFiles</a></div><div class="ttdeci">static new List&lt; XmlDocument &gt; GetFiles(ref List&lt; string &gt; fileNames, string pathDirectory=null)</div><div class="ttdoc">获取存档问题集合</div><div class="ttdef"><b>Definition:</b> <a href="_quiz_saver_8cs_source.html#l00374">QuizSaver.cs:374</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_1_1_quiz_html"><div class="ttname"><a href="namespace_custom_u_i_1_1_quiz.html">CustomUI.Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_editor_quiz_u_i_8cs_source.html#l00007">AstralBodyEditorQuizUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_quiz_html"><div class="ttname"><a href="namespace_quiz.html">Quiz</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_dict_8cs_source.html#l00006">AstralBodyDict.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="dir_a055651248895ed42efc76cb97a3ec76.html">Quiz</a></li><li class="navelem"><a class="el" href="_quiz_list_u_i_8cs.html">QuizListUI.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

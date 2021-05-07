@@ -1,0 +1,15 @@
+digraph "Quiz.QuizEditor.SaveQuiz"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Quiz.QuizEditor.SaveQuiz",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="保存问题"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quiz.QuizSaver.ConvertOrbit2Xml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_saver.html#a2085ac4d9d04a7cbd1f245edc6aa08e1",tooltip="将星体群转为XML文档"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quiz.QuizSaver.ConvertAstral\lBody2XmlElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_saver.html#ad356e58e8da0d3b295f1c4723ec09c35",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Quiz.QuizSaver.SaveXml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_saver.html#a14d27ee7243531e8b5cc0f2794ec98dc",tooltip="保存XML"];
+}

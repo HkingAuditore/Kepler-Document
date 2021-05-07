@@ -1,0 +1,6 @@
+<map id="Quiz.QuizEditor.SaveQuiz" name="Quiz.QuizEditor.SaveQuiz">
+<area shape="rect" id="node1" title="保存问题" alt="" coords="5,38,179,65"/>
+<area shape="rect" id="node2" href="$class_quiz_1_1_quiz_saver.html#a2085ac4d9d04a7cbd1f245edc6aa08e1" title="将星体群转为XML文档" alt="" coords="227,13,441,39"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_saver.html#a14d27ee7243531e8b5cc0f2794ec98dc" title="保存XML" alt="" coords="251,63,417,90"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_saver.html#ad356e58e8da0d3b295f1c4723ec09c35" title=" " alt="" coords="489,5,683,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CustomUI.Quiz.VarLineUI.WhileInputFieldDrag" name="CustomUI.Quiz.VarLineUI.WhileInputFieldDrag">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,180,177"/>
+<area shape="rect" id="node2" href="$class_custom_u_i_1_1_quiz_1_1_var_line_u_i.html#adfa12854be919178096c58aa61e50ff6" title=" " alt="" coords="228,136,403,177"/>
+<area shape="rect" id="node3" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="455,5,661,47"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7" title="调整星球速度" alt="" coords="451,71,665,112"/>
+<area shape="rect" id="node5" href="$class_space_physic_1_1_astral_body.html#aedfd2eada72ec832dde5a2d3aea31583" title="委屈位置" alt="" coords="462,136,654,177"/>
+<area shape="rect" id="node6" href="$class_space_physic_1_1_astral_body.html#a879cbf857765e818349e4069e7bd4064" title="获取坐标" alt="" coords="462,201,654,243"/>
+<area shape="rect" id="node7" href="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0" title=" " alt="" coords="462,267,654,308"/>
+</map>

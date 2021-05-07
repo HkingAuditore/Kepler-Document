@@ -1,0 +1,4 @@
+<map id="GameManagers.GlobalTimer.StartCounting" name="GameManagers.GlobalTimer.StartCounting">
+<area shape="rect" id="node1" title="开始计时" alt="" coords="200,5,391,47"/>
+<area shape="rect" id="node2" href="$class_quiz_1_1_quiz_solver.html#a4a57a62fea2cb0bce1d2b281edf52a59" title="是否加载完成" alt="" coords="5,13,152,39"/>
+</map>

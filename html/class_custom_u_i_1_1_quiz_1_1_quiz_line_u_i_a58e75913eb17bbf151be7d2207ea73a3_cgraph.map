@@ -1,0 +1,6 @@
+<map id="CustomUI.Quiz.QuizLineUI.Delete" name="CustomUI.Quiz.QuizLineUI.Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node2" href="$class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html#ad56b0e6c597dbaa557e79be3f30b7646" title=" " alt="" coords="235,5,413,47"/>
+<area shape="rect" id="node3" href="$class_quiz_1_1_quiz_saver.html#a52edeb1584fad4fdcd7ecc93e91cc950" title="删除问题存档" alt="" coords="461,13,643,39"/>
+<area shape="rect" id="node4" href="$class_xml_saver_1_1_xml_saver.html#ace394239dea50121f475e9af5e42638b" title="删除存档" alt="" coords="691,5,864,47"/>
+</map>

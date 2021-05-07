@@ -1,0 +1,5 @@
+<map id="CustomUI.Quiz.QuizStarsGroupUI" name="CustomUI.Quiz.QuizStarsGroupUI">
+<area shape="rect" id="node1" title=" " alt="" coords="5,419,224,540"/>
+<area shape="rect" id="node2" title=" " alt="" coords="54,5,165,83"/>
+<area shape="rect" id="node3" href="$class_game_managers_1_1_global_timer.html" title="全局计时器" alt="" coords="131,132,344,356"/>
+</map>

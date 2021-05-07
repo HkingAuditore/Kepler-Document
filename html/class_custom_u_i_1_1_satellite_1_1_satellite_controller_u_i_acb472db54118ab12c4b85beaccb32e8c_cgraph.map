@@ -1,0 +1,4 @@
+<map id="CustomUI.Satellite.SatelliteControllerUI.Pause" name="CustomUI.Satellite.SatelliteControllerUI.Pause">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a53a5ce46b114fde8399fd0379aa020ca" title="冻结" alt="" coords="235,5,424,47"/>
+</map>

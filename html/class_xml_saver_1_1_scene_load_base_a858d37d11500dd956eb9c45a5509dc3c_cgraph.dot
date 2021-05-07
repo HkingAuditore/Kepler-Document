@@ -1,0 +1,30 @@
+digraph "XmlSaver.SceneLoadBase.Start"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="XmlSaver.SceneLoadBase.Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GameManagers.GameManager.\lCalculateMassScales",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f",tooltip="计算质量缩放"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XmlSaver.SceneLoadBase.Generate\lAstralBodiesWithoutPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a0048dec421f94641813fb6ed80eca811",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpacePhysic.GravityTracing.\lAddTracingTarget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#a3d63db3c84aef11ca64e85e99d32cbd3",tooltip="增加追踪实体"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpacePhysic.ITraceable.Get\lEnableTracing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpacePhysic.ITraceable.Get\lRigidbody",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SpacePhysic.ITraceable.Get\lTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4",tooltip=" "];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SpacePhysic.ITraceable.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb",tooltip=" "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="XmlSaver.SceneLoadBase.Astral\lBodyDataDictProcessHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#af64d887f786cc6524c2f6a90eb2fa859",tooltip="星体数据处理委托"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="XmlSaver.SceneLoadBase.Generate\lAstralBodiesWithPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#a0a4b9b672c83faa8953a3ea9e89886de",tooltip=" "];
+  Node10 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="XmlSaver.SceneLoadBase.Load\lScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_load_base.html#add21a8421c2f0287aca508f1fa61d120",tooltip=" "];
+}

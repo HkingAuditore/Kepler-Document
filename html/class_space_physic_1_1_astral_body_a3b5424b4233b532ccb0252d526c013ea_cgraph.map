@@ -1,0 +1,4 @@
+<map id="SpacePhysic.AstralBody.SetCircleVelocity" name="SpacePhysic.AstralBody.SetCircleVelocity">
+<area shape="rect" id="node1" title="设置环绕速度" alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html#a8c43caafe4f528c08feb450cba3c5cd7" title="调整星球速度" alt="" coords="244,5,459,47"/>
+</map>

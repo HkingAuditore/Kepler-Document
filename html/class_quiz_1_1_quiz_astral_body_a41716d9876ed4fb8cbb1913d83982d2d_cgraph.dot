@@ -1,0 +1,21 @@
+digraph "Quiz.QuizAstralBody.UpdateHighCost"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Quiz.QuizAstralBody.Update\lHighCost",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="更新独立天体数据"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpacePhysic.GravityTracing.\lGetConicSection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#a02741a5f2ab9b583440a9ebba2e2d685",tooltip="获取轨道圆锥曲线"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpacePhysic.ITraceable.Get\lAffectedPlanets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpacePhysic.ITraceable.GetMass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a7a61c09595bedc638b0268d8277e8873",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpacePhysic.ITraceable.Get\lTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpacePhysic.ITraceable.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SpacePhysic.AstralBody.Get\lVelocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_astral_body.html#a49a47294cf00916a50c42a62cda119f0",tooltip=" "];
+}

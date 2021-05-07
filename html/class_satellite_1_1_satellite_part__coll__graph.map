@@ -1,0 +1,6 @@
+<map id="Satellite.SatellitePart" name="Satellite.SatellitePart">
+<area shape="rect" id="node1" title="卫星部件" alt="" coords="69,1033,239,1272"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="47,263,261,985"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,71,116,149"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="141,5,354,215"/>
+</map>

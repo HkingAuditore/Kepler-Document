@@ -1,0 +1,8 @@
+<map id="Quiz.QuizBase" name="Quiz.QuizBase">
+<area shape="rect" id="node1" title="问题管理" alt="" coords="62,1147,343,1385"/>
+<area shape="rect" id="node5" href="$class_quiz_1_1_quiz_editor.html" title="问题编辑器" alt="" coords="5,1449,192,1629"/>
+<area shape="rect" id="node6" href="$class_quiz_1_1_quiz_solver.html" title="解题管理" alt="" coords="216,1435,397,1644"/>
+<area shape="rect" id="node2" href="$class_xml_saver_1_1_scene_load_base.html" title=" " alt="" coords="62,639,343,1097"/>
+<area shape="rect" id="node3" href="$class_xml_saver_1_1_scene_load_base.html" title="存档加载管理" alt="" coords="62,132,343,576"/>
+<area shape="rect" id="node4" title=" " alt="" coords="147,5,258,83"/>
+</map>

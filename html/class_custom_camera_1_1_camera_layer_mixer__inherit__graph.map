@@ -1,0 +1,5 @@
+<map id="CustomCamera.CameraLayerMixer" name="CustomCamera.CameraLayerMixer">
+<area shape="rect" id="node1" title="相机图像混合" alt="" coords="5,285,235,451"/>
+<area shape="rect" id="node2" href="$class_custom_post_processing_1_1_custom_post_processing_base.html" title="自定义后处理" alt="" coords="25,131,215,237"/>
+<area shape="rect" id="node3" title=" " alt="" coords="65,5,175,83"/>
+</map>

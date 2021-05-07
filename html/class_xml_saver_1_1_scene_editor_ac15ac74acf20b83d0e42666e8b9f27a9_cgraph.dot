@@ -1,0 +1,13 @@
+digraph "XmlSaver.SceneEditor.SaveScene"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="XmlSaver.SceneEditor.Save\lScene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="保存场景"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XmlSaver.XmlSaver.Convert\lOrbit2Xml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_xml_saver.html#a004492bfe0f6e4074241457f1817778e",tooltip="将星体群转为XML文档"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XmlSaver.XmlSaver.SaveXml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_xml_saver.html#a51890e4e8f1a1d320f35a980aadbec6a",tooltip="保存XML"];
+}

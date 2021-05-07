@@ -1,0 +1,12 @@
+digraph "CustomUI.Quiz.VarLineUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.Quiz.VarLineUI\n|+ GameObject add\l+ Sprite editableImage\l+ bool enableInput\l+ string headerString\l+ InputField inputField\l+ bool isQuiz\l+ GameObject minus\l+ ShowPropertyType property\l+ Sprite readOnlyImage\l+ InputField scientificCounting\lInputField\l+ Toggle toggle\l+ string unitString\l+ AstralBody target\l|+ void Generate()\l+ void ChangePublicity()\l+ void OnEditEnd()\l+ void OnInputFieldDrag()\l+ void WhileInputFieldDrag()\l+ void WhileAddClicking\l(bool isAdd)\l+ void OnDragEnd()\l+ void OnClickEnd()\l+ void OnInputting()\l+ void OnInputCancel()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +header\n+unit" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Text\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

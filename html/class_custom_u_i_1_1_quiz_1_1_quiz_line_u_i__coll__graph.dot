@@ -1,0 +1,22 @@
+digraph "CustomUI.Quiz.QuizLineUI"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CustomUI.Quiz.QuizLineUI\n|+ string name\l|+ void OnClick()\l+ void Delete()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +quizName\n+quizType" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Text\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +quizListUI" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{CustomUI.Quiz.QuizListUI\n|+ RectTransform content\l+ float offset\l+ List\< QuizLineUI \>\l quizLineUis\l|+ void DeleteQuiz(string\l quizName)\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_list_u_i.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node1 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +linePrefab" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +quizStruct" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{Quiz.QuizBaseStruct\n|+ QuizType quizType\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_base_struct.html",tooltip="问题信息存储"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{SceneBaseStruct\< QuizAstral\lBody \>\n|+ string sceneName\l+ List\< AstralBodyDataDict\l\< T \> \> astralBodyStructList\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_base_struct.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="orange",fontsize="10",style="solid",label=" \< QuizAstralBody \>" ,fontname="Helvetica"];
+  Node7 [label="{XmlSaver.SceneBaseStruct\< T \>\n|+ string sceneName\l+ List\< AstralBodyDataDict\l\< T \> \> astralBodyStructList\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_scene_base_struct.html",tooltip="场景信息存储"];
+}

@@ -1,0 +1,4 @@
+<map id="CustomUI.LabModeUI.ToMain" name="CustomUI.LabModeUI.ToMain">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,200,39"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d" title="在Loading场景中加载新场景" alt="" coords="248,5,453,47"/>
+</map>

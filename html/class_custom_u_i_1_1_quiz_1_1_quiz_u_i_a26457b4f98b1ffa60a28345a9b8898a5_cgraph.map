@@ -1,0 +1,5 @@
+<map id="CustomUI.Quiz.QuizUI.OnValueChange" name="CustomUI.Quiz.QuizUI.OnValueChange">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_game_manager.html#abeec4915d581418a152b1a07848333cd" title="获取缩放系数" alt="" coords="260,13,497,39"/>
+<area shape="rect" id="node3" href="$class_game_managers_1_1_game_manager.html#ab809f66044771ece537c01978381610f" title="计算质量缩放" alt="" coords="545,5,752,47"/>
+</map>
