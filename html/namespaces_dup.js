@@ -13,6 +13,7 @@ var namespaces_dup =
     [ "Quiz", "namespace_quiz.html", "namespace_quiz" ],
     [ "Satellite", "namespace_satellite.html", "namespace_satellite" ],
     [ "SpacePhysic", "namespace_space_physic.html", "namespace_space_physic" ],
+    [ "Spaceship", "namespace_spaceship.html", "namespace_spaceship" ],
     [ "StaticClasses", "namespace_static_classes.html", "namespace_static_classes" ],
     [ "TTS", "namespace_t_t_s.html", "namespace_t_t_s" ],
     [ "XmlSaver", "namespace_xml_saver.html", "namespace_xml_saver" ]

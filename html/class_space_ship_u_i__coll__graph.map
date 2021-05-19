@@ -1,0 +1,6 @@
+<map id="SpaceShipUI" name="SpaceShipUI">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1093,215,1273"/>
+<area shape="rect" id="node2" title=" " alt="" coords="33,71,144,149"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="127,264,341,1031"/>
+<area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="169,5,382,215"/>
+</map>

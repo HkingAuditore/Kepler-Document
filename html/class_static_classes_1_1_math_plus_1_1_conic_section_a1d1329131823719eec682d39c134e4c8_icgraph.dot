@@ -7,5 +7,7 @@ digraph "StaticClasses.MathPlus.ConicSection.GetPolarPos"
   rankdir="RL";
   Node1 [label="StaticClasses.MathPlus.Conic\lSection.GetPolarPos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="求椭圆在极坐标下角度对应的位置"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="SpacePhysic.GravityTracing.\lDrawMathOrbit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#a9dfecb92e6e1f810bf76157ca19f5e44",tooltip="绘制轨道"];
+  Node2 [label="CustomUI.ConstandOrbit.Draw\lMathOrbit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpacePhysic.GravityTracing.\lDrawMathOrbit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_physic_1_1_gravity_tracing.html#a9dfecb92e6e1f810bf76157ca19f5e44",tooltip="绘制轨道"];
 }

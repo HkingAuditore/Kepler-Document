@@ -1,6 +1,6 @@
 <map id="CustomUI.AstralBodyEditor.StarStyleSettingUI" name="CustomUI.AstralBodyEditor.StarStyleSettingUI">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1049,191,1156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1093,191,1200"/>
 <area shape="rect" id="node2" title=" " alt="" coords="21,71,132,149"/>
-<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="115,264,329,987"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="115,264,329,1031"/>
 <area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="157,5,370,215"/>
 </map>

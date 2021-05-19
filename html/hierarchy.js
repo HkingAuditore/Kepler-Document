@@ -51,6 +51,8 @@ var hierarchy =
       [ "CustomUI.AstralBodyEditor.PositionEditorUI", "class_custom_u_i_1_1_astral_body_editor_1_1_position_editor_u_i.html", null ],
       [ "CustomUI.AstralBodyEditor.StarStyleSettingUI", "class_custom_u_i_1_1_astral_body_editor_1_1_star_style_setting_u_i.html", null ],
       [ "CustomUI.AstralBodyEditor.VelocityEditorUI", "class_custom_u_i_1_1_astral_body_editor_1_1_velocity_editor_u_i.html", null ],
+      [ "CustomUI.ConstandOrbit", "class_custom_u_i_1_1_constand_orbit.html", null ],
+      [ "CustomUI.FreeSelectorUI", "class_custom_u_i_1_1_free_selector_u_i.html", null ],
       [ "CustomUI.GlobalTimerUI", "class_custom_u_i_1_1_global_timer_u_i.html", null ],
       [ "CustomUI.Lab.LabSceneLineUI", "class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html", null ],
       [ "CustomUI.Lab.LabSceneListUI", "class_custom_u_i_1_1_lab_1_1_lab_scene_list_u_i.html", null ],
@@ -82,6 +84,7 @@ var hierarchy =
         [ "CustomUI.Tutorial.SatelliteTutorialUI", "class_custom_u_i_1_1_tutorial_1_1_satellite_tutorial_u_i.html", null ]
       ] ],
       [ "CustomUI.UIManager", "class_custom_u_i_1_1_u_i_manager.html", null ],
+      [ "CustomUI.VR.VRSelectorUI", "class_custom_u_i_1_1_v_r_1_1_v_r_selector_u_i.html", null ],
       [ "CustomUI.VectorUI", "class_custom_u_i_1_1_vector_u_i.html", null ],
       [ "DeferredFogEffect", "class_deferred_fog_effect.html", null ],
       [ "DepthOfFieldEffect", "class_depth_of_field_effect.html", null ],
@@ -92,14 +95,22 @@ var hierarchy =
       [ "GameManagers.GlobalTransfer", "class_game_managers_1_1_global_transfer.html", null ],
       [ "Init.Init", "class_init_1_1_init.html", null ],
       [ "Loading.LoadingManager", "class_loading_1_1_loading_manager.html", null ],
+      [ "PointerLine", "class_pointer_line.html", null ],
       [ "Quiz.Transformer", "class_quiz_1_1_transformer.html", null ],
       [ "Satellite.Satellite", "class_satellite_1_1_satellite.html", null ],
       [ "Satellite.SatelliteChallengeManger", "class_satellite_1_1_satellite_challenge_manger.html", null ],
       [ "Satellite.SatelliteController", "class_satellite_1_1_satellite_controller.html", null ],
       [ "SpacePhysic.AstralBody", "class_space_physic_1_1_astral_body.html", null ],
       [ "SpacePhysic.GravityTracing", "class_space_physic_1_1_gravity_tracing.html", null ],
+      [ "SpaceShipUI", "class_space_ship_u_i.html", null ],
+      [ "SpaceShipVrTransformer", "class_space_ship_vr_transformer.html", null ],
+      [ "Spaceship.SpaceshipController", "class_spaceship_1_1_spaceship_controller.html", null ],
+      [ "Spaceship.SpaceshipMover", "class_spaceship_1_1_spaceship_mover.html", null ],
+      [ "SpaceshipPropertyUI", "class_spaceship_property_u_i.html", null ],
       [ "TTS.VoiceGenerator", "class_t_t_s_1_1_voice_generator.html", null ],
       [ "TangentSpaceVisualizer", "class_tangent_space_visualizer.html", null ],
+      [ "VRCamera", "class_v_r_camera.html", null ],
+      [ "VirtualRealityTest", "class_virtual_reality_test.html", null ],
       [ "XmlSaver.SceneLoadBase< T >", "class_xml_saver_1_1_scene_load_base.html", null ],
       [ "XmlSaver.XmlSaver< T >", "class_xml_saver_1_1_xml_saver.html", null ]
     ] ],
@@ -128,6 +139,7 @@ var hierarchy =
     [ "ShaderGUI", null, [
       [ "Editor.MyLightingShaderGUI", "class_editor_1_1_my_lighting_shader_g_u_i.html", null ]
     ] ],
+    [ "CustomUI.VR.StarInfoMap", "class_custom_u_i_1_1_v_r_1_1_star_info_map.html", null ],
     [ "XmlSaver.XmlSaver< AstralBody >", "class_xml_saver_1_1_xml_saver.html", [
       [ "XmlSaver.SceneSaver", "class_xml_saver_1_1_scene_saver.html", null ]
     ] ],

@@ -1,4 +1,5 @@
 <map id="CustomUI.TestModeUI.Back" name="CustomUI.TestModeUI.Back">
 <area shape="rect" id="node1" title=" " alt="" coords="5,13,192,39"/>
-<area shape="rect" id="node2" href="$class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d" title="在Loading场景中加载新场景" alt="" coords="240,5,445,47"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_global_transfer.html#a96550d206f25a2d8d89af6c365617a55" title="在Loading场景中加载新场景" alt="" coords="240,5,445,47"/>
+<area shape="rect" id="node3" href="$class_game_managers_1_1_global_transfer.html#a85c796df61ccc5a26711da6d748bc60d" title=" " alt="" coords="493,5,699,47"/>
 </map>

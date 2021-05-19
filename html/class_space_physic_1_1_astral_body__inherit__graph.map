@@ -1,10 +1,10 @@
 <map id="SpacePhysic.AstralBody" name="SpacePhysic.AstralBody">
-<area shape="rect" id="node1" title="星体物理实体" alt="" coords="113,263,328,985"/>
-<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_astral_body.html" title="问题中的星体" alt="" coords="5,1033,220,1448"/>
-<area shape="rect" id="node5" href="$class_satellite_1_1_satellite_part.html" title="卫星部件" alt="" coords="244,1121,413,1360"/>
+<area shape="rect" id="node1" title="星体物理实体" alt="" coords="113,263,328,1029"/>
+<area shape="rect" id="node4" href="$class_quiz_1_1_quiz_astral_body.html" title="问题中的星体" alt="" coords="5,1077,220,1492"/>
+<area shape="rect" id="node5" href="$class_satellite_1_1_satellite_part.html" title="卫星部件" alt="" coords="244,1165,413,1404"/>
 <area shape="rect" id="node2" title=" " alt="" coords="72,71,183,149"/>
 <area shape="rect" id="node3" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="207,5,421,215"/>
-<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="150,1496,313,1603"/>
-<area shape="rect" id="node8" href="$class_satellite_1_1_satellite_parachute.html" title="卫星降落伞" alt="" coords="337,1511,515,1588"/>
-<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="146,1651,317,1743"/>
+<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="150,1540,313,1647"/>
+<area shape="rect" id="node8" href="$class_satellite_1_1_satellite_parachute.html" title="卫星降落伞" alt="" coords="337,1555,515,1632"/>
+<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="146,1695,317,1787"/>
 </map>

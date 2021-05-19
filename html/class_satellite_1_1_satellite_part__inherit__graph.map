@@ -1,9 +1,9 @@
 <map id="Satellite.SatellitePart" name="Satellite.SatellitePart">
-<area shape="rect" id="node1" title="卫星部件" alt="" coords="103,1033,273,1272"/>
-<area shape="rect" id="node5" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="9,1320,172,1427"/>
-<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_parachute.html" title="卫星降落伞" alt="" coords="196,1335,375,1412"/>
-<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="81,263,295,985"/>
+<area shape="rect" id="node1" title="卫星部件" alt="" coords="103,1077,273,1316"/>
+<area shape="rect" id="node5" href="$class_satellite_1_1_satellite_engine.html" title="卫星引擎" alt="" coords="9,1364,172,1471"/>
+<area shape="rect" id="node7" href="$class_satellite_1_1_satellite_parachute.html" title="卫星降落伞" alt="" coords="196,1379,375,1456"/>
+<area shape="rect" id="node2" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="81,263,295,1029"/>
 <area shape="rect" id="node3" title=" " alt="" coords="39,71,150,149"/>
 <area shape="rect" id="node4" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="175,5,388,215"/>
-<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="5,1475,176,1567"/>
+<area shape="rect" id="node6" href="$class_satellite_1_1_satellite_core.html" title="卫星核心" alt="" coords="5,1519,176,1611"/>
 </map>

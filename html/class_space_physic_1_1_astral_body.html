@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">“宇宙画板”虚拟实验平台
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -99,12 +99,14 @@ $(document).ready(function(){initNavTree('class_space_physic_1_1_astral_body.htm
 <div class="dynheader">
 类 SpacePhysic.AstralBody 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_space_physic_1_1_astral_body__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_space_physic_1_1_astral_body__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <div class="dynheader">
 SpacePhysic.AstralBody 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_space_physic_1_1_astral_body__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_space_physic_1_1_astral_body__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -179,6 +181,10 @@ Public 属性</h2></td></tr>
 <tr class="memitem:afc82baf1b48f372644f10d4f68f07aae"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space_physic_1_1_astral_body.html#afc82baf1b48f372644f10d4f68f07aae">velocityChangedEvent</a></td></tr>
 <tr class="memdesc:afc82baf1b48f372644f10d4f68f07aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度变化事件  <a href="class_space_physic_1_1_astral_body.html#afc82baf1b48f372644f10d4f68f07aae">更多...</a><br /></td></tr>
 <tr class="separator:afc82baf1b48f372644f10d4f68f07aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8523abdb1c3cf94dd88a23f0de797c78"><td class="memItemLeft" align="right" valign="top">UnityEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space_physic_1_1_astral_body.html#a8523abdb1c3cf94dd88a23f0de797c78">astralBodyDestroyEvent</a> = new UnityEvent()</td></tr>
+<tr class="separator:a8523abdb1c3cf94dd88a23f0de797c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583f596480f50ef8e9f474f040cb1e27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space_physic_1_1_astral_body.html#a583f596480f50ef8e9f474f040cb1e27">isUseScaler</a> = true</td></tr>
+<tr class="separator:a583f596480f50ef8e9f474f040cb1e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
@@ -243,11 +249,11 @@ Protected 成员函数</h2></td></tr>
 <p>计算受力 </p>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00439">439</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00452">452</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a>, <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00121">SpacePhysic.AstralBody.Force</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a>, <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00123">SpacePhysic.AstralBody.Force</a>.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00236">SpacePhysic.AstralBody.FixedUpdate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00241">SpacePhysic.AstralBody.FixedUpdate()</a>.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -280,9 +286,9 @@ Protected 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00385">385</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00398">398</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a>, <a class="el" href="_game_manager_8cs_source.html#l00071">GameManagers.GameManager.getGameManager</a>, <a class="el" href="_game_manager_8cs_source.html#l00175">GameManagers.GameManager.GetK()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00326">SpacePhysic.AstralBody.GetVelocity()</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a>, <a class="el" href="_game_manager_8cs_source.html#l00071">GameManagers.GameManager.getGameManager</a>, <a class="el" href="_game_manager_8cs_source.html#l00175">GameManagers.GameManager.GetK()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00332">SpacePhysic.AstralBody.GetVelocity()</a>.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -315,11 +321,11 @@ Protected 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00364">364</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00377">377</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00076">SpacePhysic.AstralBody.velocityChangedEvent</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00076">SpacePhysic.AstralBody.velocityChangedEvent</a>.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>, <a class="el" href="_astral_body_8cs_source.html#l00467">SpacePhysic.AstralBody.SetCircleVelocity()</a> , 以及 <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>, <a class="el" href="_astral_body_8cs_source.html#l00480">SpacePhysic.AstralBody.SetCircleVelocity()</a> , 以及 <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -353,9 +359,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>被 <a class="el" href="class_quiz_1_1_quiz_astral_body.html#a5a3cf8e859c9f5592c2a2c17f3b814a1">Quiz.QuizAstralBody</a> 重载.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00236">236</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00241">241</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00439">SpacePhysic.AstralBody.CalculateForce()</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00452">SpacePhysic.AstralBody.CalculateForce()</a>.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -387,11 +393,11 @@ Protected 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00224">224</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00228">228</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00036">SpacePhysic.AstralBody.affectRadius</a>, <a class="el" href="_astral_body_8cs_source.html#l00041">SpacePhysic.AstralBody.angularVelocity</a>, <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a>, <a class="el" href="_astral_body_8cs_source.html#l00364">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_astral_body_8cs_source.html#l00051">SpacePhysic.AstralBody.defaultCollider</a>, <a class="el" href="_astral_body_8cs_source.html#l00066">SpacePhysic.AstralBody.oriVelocity</a>, <a class="el" href="_astral_body_8cs_source.html#l00405">SpacePhysic.AstralBody.SetMass()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00071">SpacePhysic.AstralBody.triggerCollider</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00036">SpacePhysic.AstralBody.affectRadius</a>, <a class="el" href="_astral_body_8cs_source.html#l00041">SpacePhysic.AstralBody.angularVelocity</a>, <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a>, <a class="el" href="_astral_body_8cs_source.html#l00377">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_astral_body_8cs_source.html#l00051">SpacePhysic.AstralBody.defaultCollider</a>, <a class="el" href="_astral_body_8cs_source.html#l00056">SpacePhysic.AstralBody.enableAffect</a>, <a class="el" href="_astral_body_8cs_source.html#l00066">SpacePhysic.AstralBody.oriVelocity</a>, <a class="el" href="_astral_body_8cs_source.html#l00418">SpacePhysic.AstralBody.SetMass()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00071">SpacePhysic.AstralBody.triggerCollider</a>.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00094">Quiz.QuizAstralBody.Start()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00218">SpacePhysic.AstralBody.Start()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00094">Quiz.QuizAstralBody.Start()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00222">SpacePhysic.AstralBody.Start()</a>.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -422,7 +428,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#af984b78fd839b5b3d34758ca05353213">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00332">332</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00338">338</a> 行定义.</p>
 
 <p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a>.</p>
 
@@ -445,9 +451,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#a2923e80653f97deda6311bdd8f154250">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00337">337</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00343">343</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00313">SpacePhysic.AstralBody.GetMass()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00319">SpacePhysic.AstralBody.GetMass()</a>.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -473,7 +479,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#ac1691c3526225e0c42f1cfc696605730">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00307">307</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00313">313</a> 行定义.</p>
 
 <p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00061">SpacePhysic.AstralBody.enableTracing</a>.</p>
 
@@ -499,7 +505,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#a4ee40158431b4a5b980d8a7b84cc5efc">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00301">301</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00307">307</a> 行定义.</p>
 
 </div>
 </div>
@@ -530,9 +536,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>被 <a class="el" href="class_satellite_1_1_satellite_core.html#ad0435299bbb5e69fbe5cde2c84f40d14">Satellite.SatelliteCore</a> 重载.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00313">313</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00319">319</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00337">SpacePhysic.AstralBody.GetAstralBody()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00089">SpacePhysic.AstralBody.Mass</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00343">SpacePhysic.AstralBody.GetAstralBody()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00091">SpacePhysic.AstralBody.Mass</a>.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -561,7 +567,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#a68b217c21b2a26e2a508c62a9f5ceb91">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00292">292</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00298">298</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>.</p>
 <div class="dynheader">
@@ -589,9 +595,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#aa78b28ab82f702a832d0004bd13eb227">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00319">319</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00325">325</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a>.</p>
 
 </div>
 </div>
@@ -615,7 +621,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#a53c8890effec964fa2245908e79016c4">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00283">283</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00289">289</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>.</p>
 <div class="dynheader">
@@ -643,9 +649,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>实现了 <a class="el" href="interface_space_physic_1_1_i_traceable.html#a8c908476fbe6acf4aaf2e7594537dddb">SpacePhysic.ITraceable</a>.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00326">326</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00332">332</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00385">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_quiz_astral_body_8cs_source.html#l00226">Quiz.QuizAstralBody.GetQuizConditionString()</a>, <a class="el" href="_satellite_8cs_source.html#l00054">Satellite.Satellite.GetVelocity()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>, <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>, <a class="el" href="_quiz_astral_body_8cs_source.html#l00171">Quiz.QuizAstralBody.UpdateHighCost()</a> , 以及 <a class="el" href="_quiz_astral_body_8cs_source.html#l00143">Quiz.QuizAstralBody.UpdateQuizAstralBody()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00398">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_quiz_astral_body_8cs_source.html#l00226">Quiz.QuizAstralBody.GetQuizConditionString()</a>, <a class="el" href="_satellite_8cs_source.html#l00054">Satellite.Satellite.GetVelocity()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a>, <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>, <a class="el" href="_quiz_astral_body_8cs_source.html#l00171">Quiz.QuizAstralBody.UpdateHighCost()</a> , 以及 <a class="el" href="_quiz_astral_body_8cs_source.html#l00143">Quiz.QuizAstralBody.UpdateQuizAstralBody()</a>.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -678,9 +684,9 @@ Protected 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00252">252</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00258">258</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00089">SpacePhysic.AstralBody.Mass</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00091">SpacePhysic.AstralBody.Mass</a>.</p>
 
 </div>
 </div>
@@ -701,9 +707,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>设置环绕速度 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00467">467</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00480">480</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00364">SpacePhysic.AstralBody.ChangeVelocity()</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00377">SpacePhysic.AstralBody.ChangeVelocity()</a>.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_astral_body_editor_u_i_8cs_source.html#l00147">CustomUI.AstralBodyEditor.AstralBodyEditorUI.SetVelocityInCircle()</a>.</p>
 <div class="dynheader">
@@ -734,7 +740,7 @@ Protected 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00477">477</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00490">490</a> 行定义.</p>
 
 <p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00031">SpacePhysic.AstralBody.affectedPlanets</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00066">SpacePhysic.AstralBody.oriVelocity</a>.</p>
 
@@ -765,11 +771,11 @@ Protected 成员函数</h2></td></tr>
 
 <p>被 <a class="el" href="class_satellite_1_1_satellite_part.html#aac06b6421953acb277428b05c60e728c">Satellite.SatellitePart</a> 重载.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00405">405</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00418">418</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00109">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00089">SpacePhysic.AstralBody.Mass</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00111">SpacePhysic.AstralBody.astralBodyRigidbody</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00091">SpacePhysic.AstralBody.Mass</a>.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -803,9 +809,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>被 <a class="el" href="class_quiz_1_1_quiz_astral_body.html#a5c4a08f896e60482463982c87c812143">Quiz.QuizAstralBody</a> 重载.</p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00218">218</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00222">222</a> 行定义.</p>
 
-<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00208">SpacePhysic.AstralBody.isLoadDone</a>.</p>
+<p class="reference">引用了 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00212">SpacePhysic.AstralBody.isLoadDone</a>.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -831,7 +837,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00031">31</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00439">SpacePhysic.AstralBody.CalculateForce()</a>, <a class="el" href="_quiz_base_8cs_source.html#l00112">Quiz.QuizBase.GenerateAstralBodiesWithoutPrefab()</a>, <a class="el" href="_quiz_base_8cs_source.html#l00085">Quiz.QuizBase.GenerateAstralBodiesWithPrefab()</a>, <a class="el" href="_astral_body_8cs_source.html#l00332">SpacePhysic.AstralBody.GetAffectedPlanets()</a>, <a class="el" href="_astral_body_8cs_source.html#l00467">SpacePhysic.AstralBody.SetCircleVelocity()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00477">SpacePhysic.AstralBody.SetCircleVelocityMenu()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00452">SpacePhysic.AstralBody.CalculateForce()</a>, <a class="el" href="_quiz_base_8cs_source.html#l00112">Quiz.QuizBase.GenerateAstralBodiesWithoutPrefab()</a>, <a class="el" href="_quiz_base_8cs_source.html#l00085">Quiz.QuizBase.GenerateAstralBodiesWithPrefab()</a>, <a class="el" href="_astral_body_8cs_source.html#l00338">SpacePhysic.AstralBody.GetAffectedPlanets()</a>, <a class="el" href="_astral_body_8cs_source.html#l00480">SpacePhysic.AstralBody.SetCircleVelocity()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00490">SpacePhysic.AstralBody.SetCircleVelocityMenu()</a>.</p>
 
 </div>
 </div>
@@ -851,7 +857,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00036">36</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
 
 </div>
 </div>
@@ -871,7 +877,23 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00041">41</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
+
+</div>
+</div>
+<a id="a8523abdb1c3cf94dd88a23f0de797c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8523abdb1c3cf94dd88a23f0de797c78">&#9670;&nbsp;</a></span>astralBodyDestroyEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEvent SpacePhysic.AstralBody.astralBodyDestroyEvent = new UnityEvent()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00078">78</a> 行定义.</p>
 
 </div>
 </div>
@@ -909,7 +931,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00051">51</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
 
 </div>
 </div>
@@ -929,6 +951,8 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00056">56</a> 行定义.</p>
 
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
+
 </div>
 </div>
 <a id="a22e288231a0e6c8abbe6e38413d90529"></a>
@@ -947,7 +971,23 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00061">61</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00307">SpacePhysic.AstralBody.GetEnableTracing()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00313">SpacePhysic.AstralBody.GetEnableTracing()</a>.</p>
+
+</div>
+</div>
+<a id="a583f596480f50ef8e9f474f040cb1e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583f596480f50ef8e9f474f040cb1e27">&#9670;&nbsp;</a></span>isUseScaler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpacePhysic.AstralBody.isUseScaler = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00153">153</a> 行定义.</p>
 
 </div>
 </div>
@@ -967,7 +1007,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00066">66</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00477">SpacePhysic.AstralBody.SetCircleVelocityMenu()</a> , 以及 <a class="el" href="_quiz_astral_body_8cs_source.html#l00189">Quiz.QuizAstralBody.UpdateQuizAstralBodyPer()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00490">SpacePhysic.AstralBody.SetCircleVelocityMenu()</a> , 以及 <a class="el" href="_quiz_astral_body_8cs_source.html#l00189">Quiz.QuizAstralBody.UpdateQuizAstralBodyPer()</a>.</p>
 
 </div>
 </div>
@@ -987,7 +1027,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00071">71</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1047,7 @@ Protected 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00076">76</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00364">SpacePhysic.AstralBody.ChangeVelocity()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00377">SpacePhysic.AstralBody.ChangeVelocity()</a>.</p>
 
 </div>
 </div>
@@ -1034,9 +1074,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>星体的刚体 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00108">108</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00110">110</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00439">SpacePhysic.AstralBody.CalculateForce()</a>, <a class="el" href="_astral_body_8cs_source.html#l00364">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_astral_body_8cs_source.html#l00236">SpacePhysic.AstralBody.FixedUpdate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00224">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00319">SpacePhysic.AstralBody.GetRigidbody()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00032">Satellite.SatellitePart.Push()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00037">Satellite.SatellitePart.Rotate()</a>, <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00027">Satellite.SatellitePart.SetMass()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00405">SpacePhysic.AstralBody.SetMass()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00452">SpacePhysic.AstralBody.CalculateForce()</a>, <a class="el" href="_astral_body_8cs_source.html#l00377">SpacePhysic.AstralBody.ChangeVelocity()</a>, <a class="el" href="_astral_body_8cs_source.html#l00241">SpacePhysic.AstralBody.FixedUpdate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00228">SpacePhysic.AstralBody.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00325">SpacePhysic.AstralBody.GetRigidbody()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00032">Satellite.SatellitePart.Push()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00037">Satellite.SatellitePart.Rotate()</a>, <a class="el" href="_satellite_engine_8cs_source.html#l00017">Satellite.SatelliteEngine.SetCurDirVelocity()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00027">Satellite.SatellitePart.SetMass()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00418">SpacePhysic.AstralBody.SetMass()</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1102,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>密度 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00184">184</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00188">188</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_quiz_u_i_8cs_source.html#l00054">CustomUI.Quiz.QuizUI.OnValueChange()</a> , 以及 <a class="el" href="_quiz_base_8cs_source.html#l00039">Quiz.QuizBase.Start()</a>.</p>
 
@@ -1090,9 +1130,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>受力 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00121">121</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00123">123</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00439">SpacePhysic.AstralBody.CalculateForce()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_astral_body_8cs_source.html#l00452">SpacePhysic.AstralBody.CalculateForce()</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1158,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>表面重力加速度 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00126">126</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00128">128</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00226">Quiz.QuizAstralBody.GetQuizConditionString()</a>.</p>
 
@@ -1144,9 +1184,9 @@ Protected 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00208">208</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00212">212</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00094">Quiz.QuizAstralBody.Start()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00218">SpacePhysic.AstralBody.Start()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00094">Quiz.QuizAstralBody.Start()</a> , 以及 <a class="el" href="_astral_body_8cs_source.html#l00222">SpacePhysic.AstralBody.Start()</a>.</p>
 
 </div>
 </div>
@@ -1172,9 +1212,9 @@ Protected 成员函数</h2></td></tr>
 
 <p>质量（缩放后） </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00088">88</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00090">90</a> 行定义.</p>
 
-<p class="reference">被这些函数引用 <a class="el" href="_quiz_u_i_8cs_source.html#l00029">CustomUI.Quiz.QuizUI.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00313">SpacePhysic.AstralBody.GetMass()</a>, <a class="el" href="_astral_body_8cs_source.html#l00252">SpacePhysic.AstralBody.OnCollisionEnter()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00027">Satellite.SatellitePart.SetMass()</a>, <a class="el" href="_astral_body_8cs_source.html#l00405">SpacePhysic.AstralBody.SetMass()</a> , 以及 <a class="el" href="_quiz_base_8cs_source.html#l00039">Quiz.QuizBase.Start()</a>.</p>
+<p class="reference">被这些函数引用 <a class="el" href="_quiz_u_i_8cs_source.html#l00029">CustomUI.Quiz.QuizUI.Generate()</a>, <a class="el" href="_astral_body_8cs_source.html#l00319">SpacePhysic.AstralBody.GetMass()</a>, <a class="el" href="_astral_body_8cs_source.html#l00258">SpacePhysic.AstralBody.OnCollisionEnter()</a>, <a class="el" href="_satellite_part_8cs_source.html#l00027">Satellite.SatellitePart.SetMass()</a>, <a class="el" href="_astral_body_8cs_source.html#l00418">SpacePhysic.AstralBody.SetMass()</a> , 以及 <a class="el" href="_quiz_base_8cs_source.html#l00039">Quiz.QuizBase.Start()</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1240,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>使用星球样式 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00139">139</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00141">141</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_star_style_setting_u_i_8cs_source.html#l00018">CustomUI.AstralBodyEditor.StarStyleSettingUI.ChangeStyle()</a> , 以及 <a class="el" href="_quiz_base_8cs_source.html#l00112">Quiz.QuizBase.GenerateAstralBodiesWithoutPrefab()</a>.</p>
 
@@ -1228,7 +1268,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>真实质量 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00167">167</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00171">171</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00226">Quiz.QuizAstralBody.GetQuizConditionString()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a> , 以及 <a class="el" href="_quiz_u_i_8cs_source.html#l00054">CustomUI.Quiz.QuizUI.OnValueChange()</a>.</p>
 
@@ -1256,7 +1296,7 @@ Protected 成员函数</h2></td></tr>
 
 <p>星球半径 </p>
 
-<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00154">154</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_astral_body_8cs_source.html">AstralBody.cs</a> 第 <a class="el" href="_astral_body_8cs_source.html#l00158">158</a> 行定义.</p>
 
 <p class="reference">被这些函数引用 <a class="el" href="_quiz_astral_body_8cs_source.html#l00226">Quiz.QuizAstralBody.GetQuizConditionString()</a>, <a class="el" href="_var_line_u_i_8cs_source.html#l00282">CustomUI.Quiz.VarLineUI.OnEditEnd()</a> , 以及 <a class="el" href="_quiz_u_i_8cs_source.html#l00054">CustomUI.Quiz.QuizUI.OnValueChange()</a>.</p>
 

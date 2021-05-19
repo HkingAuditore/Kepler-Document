@@ -1,8 +1,8 @@
 <map id="CustomUI.Tutorial.SatelliteTutorialUI" name="CustomUI.Tutorial.SatelliteTutorialUI">
-<area shape="rect" id="node1" title=" " alt="" coords="169,1100,364,1192"/>
-<area shape="rect" id="node2" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_u_i.html" title=" " alt="" coords="89,827,286,1051"/>
+<area shape="rect" id="node1" title=" " alt="" coords="169,1159,364,1251"/>
+<area shape="rect" id="node2" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_u_i.html" title=" " alt="" coords="89,885,286,1109"/>
 <area shape="rect" id="node3" title=" " alt="" coords="111,5,222,83"/>
-<area shape="rect" id="node4" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_manager_u_i.html" title=" " alt="" coords="71,599,304,764"/>
+<area shape="rect" id="node4" href="$class_custom_u_i_1_1_tutorial_1_1_tutorial_manager_u_i.html" title=" " alt="" coords="71,657,304,823"/>
 <area shape="rect" id="node5" href="$class_t_t_s_1_1_voice_generator.html" title="语音合成" alt="" coords="134,132,343,268"/>
-<area shape="rect" id="node6" href="$class_custom_u_i_1_1_lab_mode_u_i.html" title=" " alt="" coords="289,292,489,575"/>
+<area shape="rect" id="node6" href="$class_custom_u_i_1_1_lab_mode_u_i.html" title=" " alt="" coords="289,292,489,633"/>
 </map>

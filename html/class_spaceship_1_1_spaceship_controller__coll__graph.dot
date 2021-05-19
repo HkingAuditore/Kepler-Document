@@ -1,0 +1,13 @@
+digraph "Spaceship.SpaceshipController"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spaceship.SpaceshipController\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +spaceshipMover" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Spaceship.SpaceshipMover\n|+ Transform avatar\l+ List\< ParticleSystem\l \> particleSystems\l+ float maxForwardSpeed\l+ float forwardAcc\l+ float forwardDamp\l+ float maxUpSpeed\l+ float upAcc\l+ float upDamp\l+ float maxRotateSpeed\l+ float rotateAcc\l+ float rotateDamp\l+ float avatarUpAngle\l+ float avatarRotateAngle\l+ float avatarAngleInterpolation\l+ Vector4 inputVector\l+ Rigidbody mRigidbody\l~ Vector3 moveDirection\l~ float nowForwardSpeed\l~ float nowUpSpeed\l~ float nowRotateSpeed\l~ float nowRotateAngle\l|+ void WaitForInputFinish()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship_1_1_spaceship_mover.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+}

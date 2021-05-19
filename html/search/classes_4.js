@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emissiveoscillator_1286',['EmissiveOscillator',['../class_emissive_oscillator.html',1,'']]]
+  ['emissiveoscillator_1380',['EmissiveOscillator',['../class_emissive_oscillator.html',1,'']]]
 ];

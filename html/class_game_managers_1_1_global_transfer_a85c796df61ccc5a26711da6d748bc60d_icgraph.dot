@@ -1,0 +1,55 @@
+digraph "GameManagers.GlobalTransfer.StartXR"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="GameManagers.GlobalTransfer.\lStartXR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GameManagers.GlobalTransfer.\lLoadSceneInLoadingScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_global_transfer.html#a96550d206f25a2d8d89af6c365617a55",tooltip="在Loading场景中加载新场景"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CustomUI.Quiz.ResultUI.Back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_result_u_i.html#a428d94a0af83f0ccae3a0952c8b2f020",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CustomUI.TestModeUI.Back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_test_mode_u_i.html#af289391fc25d74c3624fb8a66226538f",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CustomUI.Satellite.Satellite\lResultUI.BackToLabMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#a0ec4ad20ee3556da9cf61b8d228ef9fe",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CustomUI.Satellite.Satellite\lUI.BackToLabMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_u_i.html#aaa3188a75f4f2a2c911dcb4a74cc21dc",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CustomUI.PhysicSceneUI.Back\lToMain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_physic_scene_u_i.html#a9256136931bac4afc309bc4691955000",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CustomUI.Quiz.QuizEditUI.\lBackToTestMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_edit_u_i.html#a40e3c0662516ad140b7c5d4588bcfe2b",tooltip=" "];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CustomUI.Quiz.QuizTestUI.\lBackToTestMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_test_u_i.html#a02e4c88699a323e283d80ac15cf0b8eb",tooltip=" "];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CustomUI.MainUI.LoadLabScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_main_u_i.html#ac0d588b53b6403af5bb7f8834e282602",tooltip=" "];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CustomUI.MainUI.LoadTestMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_main_u_i.html#abc3e1c7602bf017e513d74b03d4e6af1",tooltip=" "];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CustomUI.Lab.LabSceneLine\lUI.OnClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_lab_1_1_lab_scene_line_u_i.html#a0a61ad5fd5b250be9321e61bea240832",tooltip=" "];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="CustomUI.Quiz.QuizLineUI.\lOnClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_line_u_i.html#a894b5ca9aab4f5db14135f3f544dbe4f",tooltip=" "];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="SpaceShipUI.Quit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_ship_u_i.html#ae26c22fcaff74d17010450142a5e4bec",tooltip=" "];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CustomUI.Satellite.Satellite\lResultUI.Reload",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_satellite_1_1_satellite_result_u_i.html#ab0d0e9d10a6a97b8f026e2373fbd5425",tooltip=" "];
+  Node2 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="SpaceShipUI.Reload",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_space_ship_u_i.html#ab3188b3d7bb399426f4a806d34cb0ac4",tooltip=" "];
+  Node2 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="CustomUI.Quiz.QuizEditor\lUI.ReloadScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_editor_u_i.html#af93afe3be1c58c27c4b2e87684cd75c1",tooltip=" "];
+  Node2 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="CustomUI.Quiz.ResultUI.Restart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_result_u_i.html#aa899d0c576fa3eb364b6fe39dc7dcfb4",tooltip=" "];
+  Node2 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="CustomUI.TestModeUI.ToEditMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_test_mode_u_i.html#a59fe0887ae83c98fbe49b59e4ad4614a",tooltip=" "];
+  Node2 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="CustomUI.LabModeUI.ToFree\lTravel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_lab_mode_u_i.html#a427a69074236019787a5c13598fb7128",tooltip=" "];
+  Node2 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="CustomUI.LabModeUI.ToLab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_lab_mode_u_i.html#aada4e2e96cdfcbfbea28322515450a19",tooltip=" "];
+  Node2 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="CustomUI.LabModeUI.ToMain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_lab_mode_u_i.html#a0ee0f699378eb49ed6f9c555e769836b",tooltip=" "];
+  Node2 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="CustomUI.LabModeUI.ToSatellite\lChallenge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_lab_mode_u_i.html#a8680a2fefaca2eca5ee077383cc0eb87",tooltip=" "];
+  Node2 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="CustomUI.Quiz.QuizEditor\lUI.ToTestMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_u_i_1_1_quiz_1_1_quiz_editor_u_i.html#a70edfd237acdf54d51f75fd4a4504381",tooltip=" "];
+}

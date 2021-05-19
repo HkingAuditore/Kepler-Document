@@ -55,6 +55,12 @@ var annotated_dup =
         [ "TutorialManagerUI", "class_custom_u_i_1_1_tutorial_1_1_tutorial_manager_u_i.html", "class_custom_u_i_1_1_tutorial_1_1_tutorial_manager_u_i" ],
         [ "TutorialUI", "class_custom_u_i_1_1_tutorial_1_1_tutorial_u_i.html", "class_custom_u_i_1_1_tutorial_1_1_tutorial_u_i" ]
       ] ],
+      [ "VR", "namespace_custom_u_i_1_1_v_r.html", [
+        [ "StarInfoMap", "class_custom_u_i_1_1_v_r_1_1_star_info_map.html", "class_custom_u_i_1_1_v_r_1_1_star_info_map" ],
+        [ "VRSelectorUI", "class_custom_u_i_1_1_v_r_1_1_v_r_selector_u_i.html", "class_custom_u_i_1_1_v_r_1_1_v_r_selector_u_i" ]
+      ] ],
+      [ "ConstandOrbit", "class_custom_u_i_1_1_constand_orbit.html", "class_custom_u_i_1_1_constand_orbit" ],
+      [ "FreeSelectorUI", "class_custom_u_i_1_1_free_selector_u_i.html", "class_custom_u_i_1_1_free_selector_u_i" ],
       [ "GlobalTimerUI", "class_custom_u_i_1_1_global_timer_u_i.html", "class_custom_u_i_1_1_global_timer_u_i" ],
       [ "LabModeUI", "class_custom_u_i_1_1_lab_mode_u_i.html", "class_custom_u_i_1_1_lab_mode_u_i" ],
       [ "LengthUI", "class_custom_u_i_1_1_length_u_i.html", "class_custom_u_i_1_1_length_u_i" ],
@@ -115,6 +121,10 @@ var annotated_dup =
       [ "IOrbitCalculator", "interface_space_physic_1_1_i_orbit_calculator.html", "interface_space_physic_1_1_i_orbit_calculator" ],
       [ "ITraceable", "interface_space_physic_1_1_i_traceable.html", "interface_space_physic_1_1_i_traceable" ]
     ] ],
+    [ "Spaceship", "namespace_spaceship.html", [
+      [ "SpaceshipController", "class_spaceship_1_1_spaceship_controller.html", "class_spaceship_1_1_spaceship_controller" ],
+      [ "SpaceshipMover", "class_spaceship_1_1_spaceship_mover.html", "class_spaceship_1_1_spaceship_mover" ]
+    ] ],
     [ "StaticClasses", "namespace_static_classes.html", [
       [ "MathPlus", "namespace_static_classes_1_1_math_plus.html", [
         [ "ConicSection", "class_static_classes_1_1_math_plus_1_1_conic_section.html", "class_static_classes_1_1_math_plus_1_1_conic_section" ]
@@ -138,5 +148,11 @@ var annotated_dup =
     [ "DepthOfFieldEffect", "class_depth_of_field_effect.html", "class_depth_of_field_effect" ],
     [ "EmissiveOscillator", "class_emissive_oscillator.html", null ],
     [ "GPUInstancingTest", "class_g_p_u_instancing_test.html", "class_g_p_u_instancing_test" ],
-    [ "TangentSpaceVisualizer", "class_tangent_space_visualizer.html", "class_tangent_space_visualizer" ]
+    [ "PointerLine", "class_pointer_line.html", "class_pointer_line" ],
+    [ "SpaceshipPropertyUI", "class_spaceship_property_u_i.html", "class_spaceship_property_u_i" ],
+    [ "SpaceShipUI", "class_space_ship_u_i.html", "class_space_ship_u_i" ],
+    [ "SpaceShipVrTransformer", "class_space_ship_vr_transformer.html", "class_space_ship_vr_transformer" ],
+    [ "TangentSpaceVisualizer", "class_tangent_space_visualizer.html", "class_tangent_space_visualizer" ],
+    [ "VirtualRealityTest", "class_virtual_reality_test.html", "class_virtual_reality_test" ],
+    [ "VRCamera", "class_v_r_camera.html", "class_v_r_camera" ]
 ];

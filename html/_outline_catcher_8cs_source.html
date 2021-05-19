@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">“宇宙画板”虚拟实验平台
-   &#160;<span id="projectnumber">0.8</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -87,106 +87,113 @@ $(document).ready(function(){initNavTree('_outline_catcher_8cs_source.html','');
 <div class="title">OutlineCatcher.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_outline_catcher_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_post_processing.html">CustomPostProcessing</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_post_processing_1_1_outline_catcher.html">OutlineCatcher</a> : <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html">CustomPostProcessingBase</a>, <a class="code" href="interface_custom_post_processing_1_1_i_render_tex_outer.html">IRenderTexOuter</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">   13</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">backgroundColor</a> = Color.white;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">   18</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">edgeColor</a> = Color.black;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        [Header(<span class="stringliteral">&quot;Material Setting&quot;</span>)] [Range(0, 1)]</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">edgeOnly</a> = 1f;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">   29</a></span>&#160;        [Range(0.3f, 1)] <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">edgeSize</a> = 0.5f;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">   34</a></span>&#160;        <span class="keyword">public</span> Camera <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">   36</a></span>&#160;        <span class="keyword">public</span>  Shader        <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">outlineShader</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span> Material      _outlineMaterial;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span> RenderTexture _outlineTexture;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> RenderTexture _renderResultRT;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">private</span> Material outlineMaterial</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">get</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                _outlineMaterial = <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a3dd8d009ba38047bce7f53bc038cbff1">GenerateMaterial</a>(<a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">outlineShader</a>, ref _outlineMaterial);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> _outlineMaterial;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>.orthographicSize = <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a10a322f94776c5079471489710a33c52">mainCamera</a>.orthographicSize;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>.depthTextureMode = DepthTextureMode.Depth;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDestroy()</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (_renderResultRT != <span class="keyword">null</span>) RenderTexture.ReleaseTemporary(_renderResultRT);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        [ImageEffectOpaque]</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnRenderImage(RenderTexture src, RenderTexture dest)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (outlineMaterial != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                outlineMaterial.SetFloat(<span class="stringliteral">&quot;_EdgeOnly&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">edgeOnly</a>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                outlineMaterial.SetFloat(<span class="stringliteral">&quot;_EdgeSize&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">edgeSize</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                outlineMaterial.SetColor(<span class="stringliteral">&quot;_EdgeColor&quot;</span>,       <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">edgeColor</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                outlineMaterial.SetColor(<span class="stringliteral">&quot;_BackgroundColor&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">backgroundColor</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                Graphics.Blit(src, dest, outlineMaterial);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">if</span> (_renderResultRT == <span class="keyword">null</span>) _renderResultRT = RenderTexture.GetTemporary(dest.width, dest.height);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                Graphics.Blit(src, _renderResultRT, outlineMaterial);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                Graphics.Blit(src, dest);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                _renderResultRT = dest;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">   86</a></span>&#160;        <span class="keyword">public</span> RenderTexture <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">GetRenderResult</a>()</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> _renderResultRT;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        #region 选择逻辑</span></div>
+<a href="_outline_catcher_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_post_processing.html">CustomPostProcessing</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_post_processing_1_1_outline_catcher.html">OutlineCatcher</a> : <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html">CustomPostProcessingBase</a>, <a class="code" href="interface_custom_post_processing_1_1_i_render_tex_outer.html">IRenderTexOuter</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">   14</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">backgroundColor</a> = Color.white;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">   19</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">edgeColor</a> = Color.black;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        [Header(<span class="stringliteral">&quot;Material Setting&quot;</span>)] [Range(0, 1)]</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">edgeOnly</a> = 1f;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">   30</a></span>&#160;        [Range(0.3f, 1)] <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">edgeSize</a> = 0.5f;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">   35</a></span>&#160;        <span class="keyword">public</span> Camera <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">   37</a></span>&#160;        <span class="keyword">public</span>  Shader        <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">outlineShader</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span> Material      _outlineMaterial;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> RenderTexture _outlineTexture;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> RenderTexture _renderResultRT;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">private</span> Material outlineMaterial</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                _outlineMaterial = <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a3dd8d009ba38047bce7f53bc038cbff1">GenerateMaterial</a>(<a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">outlineShader</a>, ref _outlineMaterial);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">return</span> _outlineMaterial;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            this.outlineCamera.fieldOfView = <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a10a322f94776c5079471489710a33c52">mainCamera</a>.fieldOfView;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            this.outlineCamera.orthographicSize= <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a10a322f94776c5079471489710a33c52">mainCamera</a>.orthographicSize;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>.orthographicSize = <a class="code" href="class_custom_post_processing_1_1_custom_post_processing_base.html#a10a322f94776c5079471489710a33c52">mainCamera</a>.orthographicSize;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">outlineCamera</a>.depthTextureMode = DepthTextureMode.Depth;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDestroy()</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (_renderResultRT != <span class="keyword">null</span>) RenderTexture.ReleaseTemporary(_renderResultRT);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        [ImageEffectOpaque]</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnRenderImage(RenderTexture src, RenderTexture dest)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (outlineMaterial != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                outlineMaterial.SetFloat(<span class="stringliteral">&quot;_EdgeOnly&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">edgeOnly</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                outlineMaterial.SetFloat(<span class="stringliteral">&quot;_EdgeSize&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">edgeSize</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                outlineMaterial.SetColor(<span class="stringliteral">&quot;_EdgeColor&quot;</span>,       <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">edgeColor</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                outlineMaterial.SetColor(<span class="stringliteral">&quot;_BackgroundColor&quot;</span>, <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">backgroundColor</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                Graphics.Blit(src, dest, outlineMaterial);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">if</span> (_renderResultRT == <span class="keyword">null</span>) _renderResultRT = RenderTexture.GetTemporary(dest.width, dest.height);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                Graphics.Blit(src, _renderResultRT, outlineMaterial);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                Graphics.Blit(src, dest);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                _renderResultRT = dest;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">   97</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">AddTarget</a>(GameObject target)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            target.layer = LayerMask.NameToLayer(<span class="stringliteral">&quot;Outline&quot;</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">  107</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">RemoveTarget</a>(GameObject target)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            target.layer = 23;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">   93</a></span>&#160;        <span class="keyword">public</span> RenderTexture <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">GetRenderResult</a>()</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> _renderResultRT;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">        #region 选择逻辑</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">  104</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">AddTarget</a>(GameObject target)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            target.layer = LayerMask.NameToLayer(<span class="stringliteral">&quot;Outline&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">  114</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">RemoveTarget</a>(GameObject target)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            target.layer = 23;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="ttc" id="aclass_custom_post_processing_1_1_custom_post_processing_base_html"><div class="ttname"><a href="class_custom_post_processing_1_1_custom_post_processing_base.html">CustomPostProcessing.CustomPostProcessingBase</a></div><div class="ttdoc">自定义后处理</div><div class="ttdef"><b>Definition:</b> <a href="_custom_post_processing_base_8cs_source.html#l00009">CustomPostProcessingBase.cs:10</a></div></div>
 <div class="ttc" id="aclass_custom_post_processing_1_1_custom_post_processing_base_html_a10a322f94776c5079471489710a33c52"><div class="ttname"><a href="class_custom_post_processing_1_1_custom_post_processing_base.html#a10a322f94776c5079471489710a33c52">CustomPostProcessing.CustomPostProcessingBase.mainCamera</a></div><div class="ttdeci">Camera mainCamera</div><div class="ttdoc">主相机</div><div class="ttdef"><b>Definition:</b> <a href="_custom_post_processing_base_8cs_source.html#l00014">CustomPostProcessingBase.cs:14</a></div></div>
 <div class="ttc" id="aclass_custom_post_processing_1_1_custom_post_processing_base_html_a3dd8d009ba38047bce7f53bc038cbff1"><div class="ttname"><a href="class_custom_post_processing_1_1_custom_post_processing_base.html#a3dd8d009ba38047bce7f53bc038cbff1">CustomPostProcessing.CustomPostProcessingBase.GenerateMaterial</a></div><div class="ttdeci">Material GenerateMaterial(Shader shader, ref Material targetMaterial)</div><div class="ttdef"><b>Definition:</b> <a href="_custom_post_processing_base_8cs_source.html#l00021">CustomPostProcessingBase.cs:21</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html">CustomPostProcessing.OutlineCatcher</a></div><div class="ttdoc">描边抓取</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00008">OutlineCatcher.cs:9</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a12dc0b31f94471ea0b8cd1e65990661e"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">CustomPostProcessing.OutlineCatcher.outlineShader</a></div><div class="ttdeci">Shader outlineShader</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00036">OutlineCatcher.cs:36</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a2346eec7fe1c2f11205be4b719156c7e"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">CustomPostProcessing.OutlineCatcher.RemoveTarget</a></div><div class="ttdeci">void RemoveTarget(GameObject target)</div><div class="ttdoc">移除描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00107">OutlineCatcher.cs:107</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a24efc1b8eb0f78534b4692782162f422"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">CustomPostProcessing.OutlineCatcher.AddTarget</a></div><div class="ttdeci">void AddTarget(GameObject target)</div><div class="ttdoc">新增描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00097">OutlineCatcher.cs:97</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a2c9199f246dcece4f0bb9df9e3135ac7"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">CustomPostProcessing.OutlineCatcher.backgroundColor</a></div><div class="ttdeci">Color backgroundColor</div><div class="ttdoc">背景颜色</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00013">OutlineCatcher.cs:13</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a42c9af470a2932efb4e07a2bd1893b7f"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">CustomPostProcessing.OutlineCatcher.edgeSize</a></div><div class="ttdeci">float edgeSize</div><div class="ttdoc">描边尺寸</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00029">OutlineCatcher.cs:29</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a5916629e2e2bef94f3bde07792e2f518"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">CustomPostProcessing.OutlineCatcher.edgeColor</a></div><div class="ttdeci">Color edgeColor</div><div class="ttdoc">描边颜色</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00018">OutlineCatcher.cs:18</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a65d473ea194a6fdad5f40183b78a60b4"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">CustomPostProcessing.OutlineCatcher.GetRenderResult</a></div><div class="ttdeci">RenderTexture GetRenderResult()</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00086">OutlineCatcher.cs:86</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_aa9dd127048a696f5f3101f17fe79f184"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">CustomPostProcessing.OutlineCatcher.outlineCamera</a></div><div class="ttdeci">Camera outlineCamera</div><div class="ttdoc">描边相机</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00034">OutlineCatcher.cs:34</a></div></div>
-<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_ab85e9064c07bf3fe0f10dcb4829404c8"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">CustomPostProcessing.OutlineCatcher.edgeOnly</a></div><div class="ttdeci">float edgeOnly</div><div class="ttdoc">描边范围</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00024">OutlineCatcher.cs:24</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html">CustomPostProcessing.OutlineCatcher</a></div><div class="ttdoc">描边抓取</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00009">OutlineCatcher.cs:10</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a12dc0b31f94471ea0b8cd1e65990661e"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a12dc0b31f94471ea0b8cd1e65990661e">CustomPostProcessing.OutlineCatcher.outlineShader</a></div><div class="ttdeci">Shader outlineShader</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00037">OutlineCatcher.cs:37</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a2346eec7fe1c2f11205be4b719156c7e"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a2346eec7fe1c2f11205be4b719156c7e">CustomPostProcessing.OutlineCatcher.RemoveTarget</a></div><div class="ttdeci">void RemoveTarget(GameObject target)</div><div class="ttdoc">移除描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00114">OutlineCatcher.cs:114</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a24efc1b8eb0f78534b4692782162f422"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a24efc1b8eb0f78534b4692782162f422">CustomPostProcessing.OutlineCatcher.AddTarget</a></div><div class="ttdeci">void AddTarget(GameObject target)</div><div class="ttdoc">新增描边对象</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00104">OutlineCatcher.cs:104</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a2c9199f246dcece4f0bb9df9e3135ac7"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a2c9199f246dcece4f0bb9df9e3135ac7">CustomPostProcessing.OutlineCatcher.backgroundColor</a></div><div class="ttdeci">Color backgroundColor</div><div class="ttdoc">背景颜色</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00014">OutlineCatcher.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a42c9af470a2932efb4e07a2bd1893b7f"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a42c9af470a2932efb4e07a2bd1893b7f">CustomPostProcessing.OutlineCatcher.edgeSize</a></div><div class="ttdeci">float edgeSize</div><div class="ttdoc">描边尺寸</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00030">OutlineCatcher.cs:30</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a5916629e2e2bef94f3bde07792e2f518"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a5916629e2e2bef94f3bde07792e2f518">CustomPostProcessing.OutlineCatcher.edgeColor</a></div><div class="ttdeci">Color edgeColor</div><div class="ttdoc">描边颜色</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00019">OutlineCatcher.cs:19</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_a65d473ea194a6fdad5f40183b78a60b4"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#a65d473ea194a6fdad5f40183b78a60b4">CustomPostProcessing.OutlineCatcher.GetRenderResult</a></div><div class="ttdeci">RenderTexture GetRenderResult()</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00093">OutlineCatcher.cs:93</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_aa9dd127048a696f5f3101f17fe79f184"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#aa9dd127048a696f5f3101f17fe79f184">CustomPostProcessing.OutlineCatcher.outlineCamera</a></div><div class="ttdeci">Camera outlineCamera</div><div class="ttdoc">描边相机</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00035">OutlineCatcher.cs:35</a></div></div>
+<div class="ttc" id="aclass_custom_post_processing_1_1_outline_catcher_html_ab85e9064c07bf3fe0f10dcb4829404c8"><div class="ttname"><a href="class_custom_post_processing_1_1_outline_catcher.html#ab85e9064c07bf3fe0f10dcb4829404c8">CustomPostProcessing.OutlineCatcher.edgeOnly</a></div><div class="ttdeci">float edgeOnly</div><div class="ttdoc">描边范围</div><div class="ttdef"><b>Definition:</b> <a href="_outline_catcher_8cs_source.html#l00025">OutlineCatcher.cs:25</a></div></div>
 <div class="ttc" id="ainterface_custom_post_processing_1_1_i_render_tex_outer_html"><div class="ttname"><a href="interface_custom_post_processing_1_1_i_render_tex_outer.html">CustomPostProcessing.IRenderTexOuter</a></div><div class="ttdoc">RenderTexture输出接口</div><div class="ttdef"><b>Definition:</b> <a href="_i_render_tex_outer_8cs_source.html#l00008">IRenderTexOuter.cs:9</a></div></div>
 <div class="ttc" id="anamespace_custom_post_processing_html"><div class="ttname"><a href="namespace_custom_post_processing.html">CustomPostProcessing</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_mixer_8cs_source.html#l00004">CameraMixer.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -7,5 +7,7 @@ digraph "CustomUI.Quiz.QuizEditorUI.ToTestMode"
   rankdir="LR";
   Node1 [label="CustomUI.Quiz.QuizEditor\lUI.ToTestMode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="GameManagers.GlobalTransfer.\lLoadSceneInLoadingScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_global_transfer.html#a0a67c1504ad9ccb391ff92e6deab988d",tooltip="在Loading场景中加载新场景"];
+  Node2 [label="GameManagers.GlobalTransfer.\lLoadSceneInLoadingScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_global_transfer.html#a96550d206f25a2d8d89af6c365617a55",tooltip="在Loading场景中加载新场景"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GameManagers.GlobalTransfer.\lStartXR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_managers_1_1_global_transfer.html#a85c796df61ccc5a26711da6d748bc60d",tooltip=" "];
 }

@@ -1,7 +1,7 @@
 <map id="CustomUI.LengthUI" name="CustomUI.LengthUI">
-<area shape="rect" id="node1" title=" " alt="" coords="92,1064,320,1156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="92,1108,320,1200"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,71,116,149"/>
-<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="99,264,313,987"/>
-<area shape="rect" id="node3" title=" " alt="" coords="337,587,384,664"/>
+<area shape="rect" id="node4" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="99,264,313,1031"/>
+<area shape="rect" id="node3" title=" " alt="" coords="337,609,384,686"/>
 <area shape="rect" id="node5" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="141,5,354,215"/>
 </map>

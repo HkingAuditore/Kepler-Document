@@ -4,7 +4,7 @@ digraph "CustomUI.LabModeUI"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{CustomUI.LabModeUI\n|+ GameObject difficultyPanel\l+ GameObject sceneListPanel\l+ GameObject satellitePanel\l+ int satelliteSceneIndex\l|+ void ToLab()\l+ void ToSatelliteChallenge\l(int difficulty)\l+ void ToMain()\l+ void ShowDifficultyPanel()\l+ void CloseDifficultyPanel()\l+ void ShowScenesListPanel()\l+ void CloseScenesListPanel()\l+ void ShowSatellitePanel()\l+ void CloseSatellitePanel()\l+ void SetSatelliteIndex\l(int index)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [label="{CustomUI.LabModeUI\n|+ GameObject difficultyPanel\l+ GameObject sceneListPanel\l+ GameObject satellitePanel\l+ GameObject modePanel\l+ int satelliteSceneIndex\l|+ void ToLab()\l+ void ToSatelliteChallenge\l(int difficulty)\l+ void ToMain()\l+ void ShowDifficultyPanel()\l+ void CloseDifficultyPanel()\l+ void ShowScenesListPanel()\l+ void CloseScenesListPanel()\l+ void ShowSatellitePanel()\l+ void CloseSatellitePanel()\l+ void SetSatelliteIndex\l(int index)\l+ void ShowModePanel()\l+ void CloseModePanel()\l+ void ToFreeTravel()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
   Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

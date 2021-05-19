@@ -1,0 +1,4 @@
+<map id="GameManagers.GlobalTransfer.LoadSceneInLoadingScene" name="GameManagers.GlobalTransfer.LoadSceneInLoadingScene">
+<area shape="rect" id="node1" title="在Loading场景中加载新场景" alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$class_game_managers_1_1_global_transfer.html#a85c796df61ccc5a26711da6d748bc60d" title=" " alt="" coords="259,5,464,47"/>
+</map>

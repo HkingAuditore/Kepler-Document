@@ -1,4 +1,5 @@
 <map id="StaticClasses.MathPlus.ConicSection.GetPolarPos" name="StaticClasses.MathPlus.ConicSection.GetPolarPos">
-<area shape="rect" id="node1" title="求椭圆在极坐标下角度对应的位置" alt="" coords="243,5,441,47"/>
-<area shape="rect" id="node2" href="$class_space_physic_1_1_gravity_tracing.html#a9dfecb92e6e1f810bf76157ca19f5e44" title="绘制轨道" alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node1" title="求椭圆在极坐标下角度对应的位置" alt="" coords="252,39,451,80"/>
+<area shape="rect" id="node2" href="$class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd" title=" " alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node3" href="$class_space_physic_1_1_gravity_tracing.html#a9dfecb92e6e1f810bf76157ca19f5e44" title="绘制轨道" alt="" coords="10,71,199,112"/>
 </map>

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/CustomUI/ConstandOrbit.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_constand_orbit_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConstandOrbit.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_constand_orbit_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> Dreamteck.Splines;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_space_physic.html">SpacePhysic</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_static_classes.html">StaticClasses</a>.<a class="code" href="namespace_static_classes_1_1_math_plus.html">MathPlus</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_custom_u_i.html">CustomUI</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_constand_orbit.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_custom_u_i_1_1_constand_orbit.html">ConstandOrbit</a> : MonoBehaviour</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">   12</a></span>&#160;        <span class="keyword">public</span> SplineComputer <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">splineComputer</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_constand_orbit.html#abed47327b0c5fce2c8fb403981bf0c27">   13</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_space_physic_1_1_astral_body.html">AstralBody</a>     <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#abed47327b0c5fce2c8fb403981bf0c27">astralBody</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_constand_orbit.html#a8645015b7f85efb9b6e17df39a1a10ec">   14</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_space_physic_1_1_gravity_tracing.html">GravityTracing</a> <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#a8645015b7f85efb9b6e17df39a1a10ec">orbit</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">private</span> Vector3 ConvertV2ToV3(Vector2 vector2)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(vector2.x, 0, vector2.y);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FixedUpdate()</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd">DrawMathOrbit</a>(<a class="code" href="class_custom_u_i_1_1_constand_orbit.html#a8645015b7f85efb9b6e17df39a1a10ec">orbit</a>.<a class="code" href="class_space_physic_1_1_gravity_tracing.html#a02741a5f2ab9b583440a9ebba2e2d685">GetConicSection</a>(<a class="code" href="class_custom_u_i_1_1_constand_orbit.html#abed47327b0c5fce2c8fb403981bf0c27">astralBody</a>), 20);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd">   26</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd">DrawMathOrbit</a>(<a class="code" href="class_static_classes_1_1_math_plus_1_1_conic_section.html">ConicSection</a> conicSection, <span class="keywordtype">int</span> sam)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (conicSection != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                var points = <span class="keyword">new</span> List&lt;SplinePoint&gt;();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                var step   = 360f / sam;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">for</span> (var i = 0; i &lt; sam; i++)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    points.Add(<span class="keyword">new</span> SplinePoint(ConvertV2ToV3(conicSection.<a class="code" href="class_static_classes_1_1_math_plus_1_1_conic_section.html#a1d1329131823719eec682d39c134e4c8">GetPolarPos</a>(i * step))));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                points.Add(<span class="keyword">new</span> SplinePoint(ConvertV2ToV3(conicSection.<a class="code" href="class_static_classes_1_1_math_plus_1_1_conic_section.html#a1d1329131823719eec682d39c134e4c8">GetPolarPos</a>(360))));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">splineComputer</a>.SetPoints(points.ToArray());</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">splineComputer</a>.Close();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">splineComputer</a>.SetPoints(<span class="keyword">new</span>[]</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                         {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                             <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0)),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                             <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0)),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                             <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0)),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                             <span class="keyword">new</span> SplinePoint(<span class="keyword">new</span> Vector3(0, 0, 0))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                         });</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">splineComputer</a>.Close();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// mathOrbitDrawer.positionCount = sam + 1;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// mathOrbitDrawer.SetPositions(points.ToArray());</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="ttc" id="aclass_custom_u_i_1_1_constand_orbit_html"><div class="ttname"><a href="class_custom_u_i_1_1_constand_orbit.html">CustomUI.ConstandOrbit</a></div><div class="ttdef"><b>Definition:</b> <a href="_constand_orbit_8cs_source.html#l00010">ConstandOrbit.cs:11</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_constand_orbit_html_a8645015b7f85efb9b6e17df39a1a10ec"><div class="ttname"><a href="class_custom_u_i_1_1_constand_orbit.html#a8645015b7f85efb9b6e17df39a1a10ec">CustomUI.ConstandOrbit.orbit</a></div><div class="ttdeci">GravityTracing orbit</div><div class="ttdef"><b>Definition:</b> <a href="_constand_orbit_8cs_source.html#l00014">ConstandOrbit.cs:14</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_constand_orbit_html_a8a6de8bb38f581918f496db466dfa1cd"><div class="ttname"><a href="class_custom_u_i_1_1_constand_orbit.html#a8a6de8bb38f581918f496db466dfa1cd">CustomUI.ConstandOrbit.DrawMathOrbit</a></div><div class="ttdeci">void DrawMathOrbit(ConicSection conicSection, int sam)</div><div class="ttdef"><b>Definition:</b> <a href="_constand_orbit_8cs_source.html#l00026">ConstandOrbit.cs:26</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_constand_orbit_html_abed47327b0c5fce2c8fb403981bf0c27"><div class="ttname"><a href="class_custom_u_i_1_1_constand_orbit.html#abed47327b0c5fce2c8fb403981bf0c27">CustomUI.ConstandOrbit.astralBody</a></div><div class="ttdeci">AstralBody astralBody</div><div class="ttdef"><b>Definition:</b> <a href="_constand_orbit_8cs_source.html#l00013">ConstandOrbit.cs:13</a></div></div>
+<div class="ttc" id="aclass_custom_u_i_1_1_constand_orbit_html_aeb929424159d0d8d6c7b69e430753daa"><div class="ttname"><a href="class_custom_u_i_1_1_constand_orbit.html#aeb929424159d0d8d6c7b69e430753daa">CustomUI.ConstandOrbit.splineComputer</a></div><div class="ttdeci">SplineComputer splineComputer</div><div class="ttdef"><b>Definition:</b> <a href="_constand_orbit_8cs_source.html#l00012">ConstandOrbit.cs:12</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_astral_body_html"><div class="ttname"><a href="class_space_physic_1_1_astral_body.html">SpacePhysic.AstralBody</a></div><div class="ttdoc">星体物理实体</div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_8cs_source.html#l00016">AstralBody.cs:17</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_gravity_tracing_html"><div class="ttname"><a href="class_space_physic_1_1_gravity_tracing.html">SpacePhysic.GravityTracing</a></div><div class="ttdoc">引力追踪</div><div class="ttdef"><b>Definition:</b> <a href="_gravity_tracing_8cs_source.html#l00014">GravityTracing.cs:15</a></div></div>
+<div class="ttc" id="aclass_space_physic_1_1_gravity_tracing_html_a02741a5f2ab9b583440a9ebba2e2d685"><div class="ttname"><a href="class_space_physic_1_1_gravity_tracing.html#a02741a5f2ab9b583440a9ebba2e2d685">SpacePhysic.GravityTracing.GetConicSection</a></div><div class="ttdeci">ConicSection GetConicSection(ITraceable astralBody)</div><div class="ttdoc">获取轨道圆锥曲线</div><div class="ttdef"><b>Definition:</b> <a href="_gravity_tracing_8cs_source.html#l00299">GravityTracing.cs:299</a></div></div>
+<div class="ttc" id="aclass_static_classes_1_1_math_plus_1_1_conic_section_html"><div class="ttname"><a href="class_static_classes_1_1_math_plus_1_1_conic_section.html">StaticClasses.MathPlus.ConicSection</a></div><div class="ttdoc">圆锥曲线</div><div class="ttdef"><b>Definition:</b> <a href="_conic_section_8cs_source.html#l00009">ConicSection.cs:10</a></div></div>
+<div class="ttc" id="aclass_static_classes_1_1_math_plus_1_1_conic_section_html_a1d1329131823719eec682d39c134e4c8"><div class="ttname"><a href="class_static_classes_1_1_math_plus_1_1_conic_section.html#a1d1329131823719eec682d39c134e4c8">StaticClasses.MathPlus.ConicSection.GetPolarPos</a></div><div class="ttdeci">Vector2 GetPolarPos(float ag)</div><div class="ttdoc">求椭圆在极坐标下角度对应的位置</div><div class="ttdef"><b>Definition:</b> <a href="_conic_section_8cs_source.html#l00229">ConicSection.cs:229</a></div></div>
+<div class="ttc" id="anamespace_custom_u_i_html"><div class="ttname"><a href="namespace_custom_u_i.html">CustomUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_astral_body_add_u_i_8cs_source.html#l00007">AstralBodyAddUI.cs:8</a></div></div>
+<div class="ttc" id="anamespace_space_physic_html"><div class="ttname"><a href="namespace_space_physic.html">SpacePhysic</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_type_8cs_source.html#l00001">ActionType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_static_classes_1_1_math_plus_html"><div class="ttname"><a href="namespace_static_classes_1_1_math_plus.html">StaticClasses.MathPlus</a></div><div class="ttdef"><b>Definition:</b> <a href="_conic_section_8cs_source.html#l00004">ConicSection.cs:5</a></div></div>
+<div class="ttc" id="anamespace_static_classes_html"><div class="ttname"><a href="namespace_static_classes.html">StaticClasses</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_object_plus_8cs_source.html#l00004">GameObjectPlus.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_37d0d4afcf8acf075c0422661b00847f.html">CustomUI</a></li><li class="navelem"><a class="el" href="_constand_orbit_8cs.html">ConstandOrbit.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

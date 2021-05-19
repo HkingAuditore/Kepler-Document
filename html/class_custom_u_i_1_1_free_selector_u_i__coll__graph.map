@@ -1,0 +1,8 @@
+<map id="CustomUI.FreeSelectorUI" name="CustomUI.FreeSelectorUI">
+<area shape="rect" id="node1" title=" " alt="" coords="80,663,313,784"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,83"/>
+<area shape="rect" id="node5" href="$class_custom_post_processing_1_1_custom_post_processing_base.html" title="自定义后处理" alt="" coords="82,132,271,239"/>
+<area shape="rect" id="node3" title=" " alt="" coords="336,369,383,446"/>
+<area shape="rect" id="node4" href="$class_custom_post_processing_1_1_outline_catcher.html" title="描边抓取" alt="" coords="82,288,311,527"/>
+<area shape="rect" id="node6" href="$interface_custom_post_processing_1_1_i_render_tex_outer.html" title="RenderTexture输出接口" alt="" coords="295,147,525,224"/>
+</map>

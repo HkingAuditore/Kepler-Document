@@ -5,7 +5,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="XmlSaver.AstralBodyDataDict\l\< QuizAstralBody \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_xml_saver_1_1_astral_body_data_dict.html",tooltip=" "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Quiz.QuizAstralBodyDataDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quiz_1_1_quiz_astral_body_data_dict.html",tooltip="问题星体数据存储"];
+  Node0 [label="StaticClasses.MathPlus.Conic\lSection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_static_classes_1_1_math_plus_1_1_conic_section.html",tooltip="圆锥曲线"];
 }

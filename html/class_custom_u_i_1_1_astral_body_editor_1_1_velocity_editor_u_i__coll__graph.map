@@ -1,8 +1,8 @@
 <map id="CustomUI.AstralBodyEditor.VelocityEditorUI" name="CustomUI.AstralBodyEditor.VelocityEditorUI">
-<area shape="rect" id="node1" title=" " alt="" coords="27,1248,212,1369"/>
-<area shape="rect" id="node2" title=" " alt="" coords="144,71,255,149"/>
-<area shape="rect" id="node4" href="$class_custom_u_i_1_1_vector_u_i.html" title=" " alt="" coords="149,1049,330,1185"/>
-<area shape="rect" id="node5" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="267,264,482,987"/>
-<area shape="rect" id="node3" title=" " alt="" coords="72,587,119,664"/>
-<area shape="rect" id="node6" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="280,5,493,215"/>
+<area shape="rect" id="node1" title=" " alt="" coords="32,1292,218,1413"/>
+<area shape="rect" id="node2" title=" " alt="" coords="150,71,260,149"/>
+<area shape="rect" id="node4" href="$class_custom_u_i_1_1_vector_u_i.html" title=" " alt="" coords="154,1093,336,1229"/>
+<area shape="rect" id="node5" href="$class_space_physic_1_1_astral_body.html" title="星体物理实体" alt="" coords="272,264,487,1031"/>
+<area shape="rect" id="node3" title=" " alt="" coords="78,609,124,686"/>
+<area shape="rect" id="node6" href="$interface_space_physic_1_1_i_traceable.html" title="可追踪接口" alt="" coords="285,5,498,215"/>
 </map>

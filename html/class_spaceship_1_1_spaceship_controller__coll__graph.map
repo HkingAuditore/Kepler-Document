@@ -1,0 +1,5 @@
+<map id="Spaceship.SpaceshipController" name="Spaceship.SpaceshipController">
+<area shape="rect" id="node1" title=" " alt="" coords="5,580,208,657"/>
+<area shape="rect" id="node2" title=" " alt="" coords="46,5,157,83"/>
+<area shape="rect" id="node3" href="$class_spaceship_1_1_spaceship_mover.html" title=" " alt="" coords="123,132,322,517"/>
+</map>

@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>“宇宙画板”虚拟实验平台: G:/Kepler/Kepler/Assets/Scripts/Spaceship/SpaceshipMover.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LOGO_small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">“宇宙画板”虚拟实验平台
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_spaceship_mover_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpaceshipMover.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_spaceship_mover_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spaceship.html">Spaceship</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html">    6</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spaceship_1_1_spaceship_mover.html">SpaceshipMover</a> : MonoBehaviour</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">    8</a></span>&#160;        <span class="keyword">public</span> Transform            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">avatar</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#aa21b716ea0695fc6c179ef1cb59da49d">    9</a></span>&#160;        <span class="keyword">public</span> List&lt;ParticleSystem&gt; <a class="code" href="class_spaceship_1_1_spaceship_mover.html#aa21b716ea0695fc6c179ef1cb59da49d">particleSystems</a>;       <span class="comment">//船体</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#ae0c89c599aa640211d8b323570a3529f">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>                <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ae0c89c599aa640211d8b323570a3529f">maxForwardSpeed</a> = 10f; <span class="comment">//最大前进速度</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a21e7aaa3c1fdd3630fc2789a4a724df7">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>                <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a21e7aaa3c1fdd3630fc2789a4a724df7">forwardAcc</a>     = 5f;  <span class="comment">//前进加速度</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a18686a0496c23e0771de81262eae487f">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>                <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a18686a0496c23e0771de81262eae487f">forwardDamp</a>     = 5f;  <span class="comment">//前进阻尼</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">   14</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">maxUpSpeed</a> = 10f; <span class="comment">//最大上升速度</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a20755d947267252b3985dd2d2dbbd2bd">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a20755d947267252b3985dd2d2dbbd2bd">upAcc</a>      = 5f;  <span class="comment">//最大上升加速度</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#aa956dd6f09e87b21b87357274d3fca46">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#aa956dd6f09e87b21b87357274d3fca46">upDamp</a>     = 5f;  <span class="comment">//上升阻尼</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">maxRotateSpeed</a> = 10f; <span class="comment">//最大旋转速度</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a2bef06bb05a3fbd15fd330e0811a249c">   19</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a2bef06bb05a3fbd15fd330e0811a249c">rotateAcc</a>      = 5f;  <span class="comment">//旋转加速度</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a9776f610332fa4a2dfebef40f0cc2900">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a9776f610332fa4a2dfebef40f0cc2900">rotateDamp</a>     = 5f;  <span class="comment">//旋转阻尼</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a40e55516d9eb9089b90e4bdd75b3dace">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a40e55516d9eb9089b90e4bdd75b3dace">avatarUpAngle</a>            = 5f; <span class="comment">//船体上升倾角</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#ad94463966b3fdd2a364b71fe938dc232">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ad94463966b3fdd2a364b71fe938dc232">avatarRotateAngle</a>        = 5f; <span class="comment">//船体旋转倾角</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a92b254b4d9009ff48b89840fdc4fd71b">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a92b254b4d9009ff48b89840fdc4fd71b">avatarAngleInterpolation</a> = 5f; <span class="comment">//倾角转动差值</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">internal</span> Vector3 moveDirection;   <span class="comment">//移动向量</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span>   nowForwardSpeed; <span class="comment">//当前前向移动速度</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span>   nowUpSpeed;      <span class="comment">//当前上升速度</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span>   nowRotateSpeed;  <span class="comment">//当前旋转速度</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span>   nowRotateAngle;  <span class="comment">//当前飞船转角</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">   32</a></span>&#160;        <span class="keyword">public</span> Vector4 <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">private</span> Rigidbody m_rigidbody;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">   36</a></span>&#160;        <span class="keyword">public</span> Rigidbody <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">get</span> =&gt; m_rigidbody;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keyword">private</span> <span class="keyword">set</span> =&gt; m_rigidbody = value;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Start is called before the first frame update</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>    = GetComponent&lt;Rigidbody&gt;();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            nowRotateAngle = transform.rotation.eulerAngles.y;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// Update is called once per frame</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#aa21b716ea0695fc6c179ef1cb59da49d">particleSystems</a>.ForEach(p =&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                        ParticleSystem.EmissionModule emissionModule = p.emission;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                        emissionModule.rateOverTime = <span class="keyword">new</span> ParticleSystem.MinMaxCurve(1000 * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                    });</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FixedUpdate()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">// Debug.Log(&quot;Rotation&quot; + nowRotateAngle);</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="comment">// Debug.DrawLine(this.transform.position,</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="comment">//                this.transform.position + m_rigidbody.velocity,</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">//                Color.cyan);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#afe4bccd082482d6651db745c3a4c9f56">WaitForInputFinish</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">avatar</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="comment">//船体倾角模拟</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">avatar</a>.localRotation = Quaternion.Lerp(<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">avatar</a>.localRotation,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                       Quaternion.Euler(<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a40e55516d9eb9089b90e4bdd75b3dace">avatarUpAngle</a> * -(nowUpSpeed / <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">maxUpSpeed</a>),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                        0,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                        <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ad94463966b3fdd2a364b71fe938dc232">avatarRotateAngle</a> *</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                        -(nowRotateSpeed / <a class="code" href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">maxRotateSpeed</a>)),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                       <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a92b254b4d9009ff48b89840fdc4fd71b">avatarAngleInterpolation</a> * Time.deltaTime);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">if</span>(_timer &gt; 4f &amp;&amp; this.inputVector.magnitude &lt;= .0005)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    FaceToVelocity();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            OnMove();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FaceToVelocity()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            transform.rotation = Quaternion.Slerp(transform.rotation,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                      Quaternion.LookRotation(<a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.velocity),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                       .5f * Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            nowRotateAngle = this.transform.localEulerAngles.y;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnMove()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">//旋转计算</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.y &gt; <span class="keywordtype">float</span>.Epsilon || <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.y &lt; -<span class="keywordtype">float</span>.Epsilon)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                nowRotateSpeed += <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a2bef06bb05a3fbd15fd330e0811a249c">rotateAcc</a> * Time.fixedDeltaTime * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.y;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                nowRotateSpeed = Mathf.Lerp(nowRotateSpeed, 0, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a9776f610332fa4a2dfebef40f0cc2900">rotateDamp</a> * Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            nowRotateSpeed = Mathf.Clamp(nowRotateSpeed, -<a class="code" href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">maxRotateSpeed</a>, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">maxRotateSpeed</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            nowRotateAngle = nowRotateAngle + nowRotateSpeed;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.MoveRotation(Quaternion.Lerp(</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                     transform.rotation,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                     Quaternion.Euler(0, nowRotateAngle, 0),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                     <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a9776f610332fa4a2dfebef40f0cc2900">rotateDamp</a> * Time.fixedDeltaTime)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                    );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">//移动计算</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            Vector3 forceDir = transform.forward;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">float</span>     k        = 1;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x &gt; <span class="keywordtype">float</span>.Epsilon )</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="comment">//nowForwardSpeed += forwardAcc * Time.fixedDeltaTime * input.z;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                nowForwardSpeed = Mathf.Lerp(nowForwardSpeed, nowForwardSpeed + <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a21e7aaa3c1fdd3630fc2789a4a724df7">forwardAcc</a> * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                             Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            }            </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x &lt; -<span class="keywordtype">float</span>.Epsilon)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.velocity.magnitude &gt; <span class="keywordtype">float</span>.Epsilon)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    k        = Mathf.Lerp(1f, 100f, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.velocity.magnitude / 30f);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    forceDir = <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.velocity.normalized;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    nowForwardSpeed = Mathf.Lerp(nowForwardSpeed, nowForwardSpeed + <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a21e7aaa3c1fdd3630fc2789a4a724df7">forwardAcc</a> * k * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                                 Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }           </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                nowForwardSpeed = Mathf.Lerp(nowForwardSpeed, 0, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a18686a0496c23e0771de81262eae487f">forwardDamp</a> * Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }            </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            nowForwardSpeed = Mathf.Clamp(nowForwardSpeed, -<a class="code" href="class_spaceship_1_1_spaceship_mover.html#ae0c89c599aa640211d8b323570a3529f">maxForwardSpeed</a>, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ae0c89c599aa640211d8b323570a3529f">maxForwardSpeed</a>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">mRigidbody</a>.AddForce(forceDir * k * (5 * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.x));</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.z &gt; <span class="keywordtype">float</span>.Epsilon || <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.z &lt; -<span class="keywordtype">float</span>.Epsilon)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                nowUpSpeed = Mathf.Lerp(nowUpSpeed, nowUpSpeed + <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a20755d947267252b3985dd2d2dbbd2bd">upAcc</a> * <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">inputVector</a>.z, Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                nowUpSpeed = Mathf.Lerp(nowUpSpeed, 0, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#aa956dd6f09e87b21b87357274d3fca46">upDamp</a> * Time.fixedDeltaTime);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            nowUpSpeed = Mathf.Clamp(nowUpSpeed, -<a class="code" href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">maxUpSpeed</a>, <a class="code" href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">maxUpSpeed</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="comment">// moveDirection = transform.up * nowUpSpeed + transform.forward * nowForwardSpeed;</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">// m_rigidbody.MovePosition(transform.position + moveDirection);</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">private</span> Vector3 RotateRound(Vector3 position, Vector3 center, Vector3 axis, <span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">return</span> Quaternion.AngleAxis(angle, axis) * (position - center) + center;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">float</span> _timer = 0f;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_spaceship_1_1_spaceship_mover.html#afe4bccd082482d6651db745c3a4c9f56">  166</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spaceship_1_1_spaceship_mover.html#afe4bccd082482d6651db745c3a4c9f56">WaitForInputFinish</a>()</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">if</span>(this.inputVector.magnitude &lt;= .0005)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                _timer += Time.fixedDeltaTime;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                _timer = 0f;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }            </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html">Spaceship.SpaceshipMover</a></div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00006">SpaceshipMover.cs:7</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a18686a0496c23e0771de81262eae487f"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a18686a0496c23e0771de81262eae487f">Spaceship.SpaceshipMover.forwardDamp</a></div><div class="ttdeci">float forwardDamp</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00012">SpaceshipMover.cs:12</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a20755d947267252b3985dd2d2dbbd2bd"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a20755d947267252b3985dd2d2dbbd2bd">Spaceship.SpaceshipMover.upAcc</a></div><div class="ttdeci">float upAcc</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00015">SpaceshipMover.cs:15</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a21e7aaa3c1fdd3630fc2789a4a724df7"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a21e7aaa3c1fdd3630fc2789a4a724df7">Spaceship.SpaceshipMover.forwardAcc</a></div><div class="ttdeci">float forwardAcc</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00011">SpaceshipMover.cs:11</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a2bef06bb05a3fbd15fd330e0811a249c"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a2bef06bb05a3fbd15fd330e0811a249c">Spaceship.SpaceshipMover.rotateAcc</a></div><div class="ttdeci">float rotateAcc</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00019">SpaceshipMover.cs:19</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a40e55516d9eb9089b90e4bdd75b3dace"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a40e55516d9eb9089b90e4bdd75b3dace">Spaceship.SpaceshipMover.avatarUpAngle</a></div><div class="ttdeci">float avatarUpAngle</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00022">SpaceshipMover.cs:22</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a53ae3d56a9ee50642b0216b0f78c9389"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a53ae3d56a9ee50642b0216b0f78c9389">Spaceship.SpaceshipMover.inputVector</a></div><div class="ttdeci">Vector4 inputVector</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00032">SpaceshipMover.cs:32</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a61ad9f21313e8615de6d183edb0b3d0b"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a61ad9f21313e8615de6d183edb0b3d0b">Spaceship.SpaceshipMover.maxUpSpeed</a></div><div class="ttdeci">float maxUpSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00014">SpaceshipMover.cs:14</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a88e19dab48a8f95473f271b7213d7ce7"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a88e19dab48a8f95473f271b7213d7ce7">Spaceship.SpaceshipMover.avatar</a></div><div class="ttdeci">Transform avatar</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00008">SpaceshipMover.cs:8</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a92b254b4d9009ff48b89840fdc4fd71b"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a92b254b4d9009ff48b89840fdc4fd71b">Spaceship.SpaceshipMover.avatarAngleInterpolation</a></div><div class="ttdeci">float avatarAngleInterpolation</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00024">SpaceshipMover.cs:24</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_a9776f610332fa4a2dfebef40f0cc2900"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#a9776f610332fa4a2dfebef40f0cc2900">Spaceship.SpaceshipMover.rotateDamp</a></div><div class="ttdeci">float rotateDamp</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00020">SpaceshipMover.cs:20</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_aa21b716ea0695fc6c179ef1cb59da49d"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#aa21b716ea0695fc6c179ef1cb59da49d">Spaceship.SpaceshipMover.particleSystems</a></div><div class="ttdeci">List&lt; ParticleSystem &gt; particleSystems</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00009">SpaceshipMover.cs:9</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_aa956dd6f09e87b21b87357274d3fca46"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#aa956dd6f09e87b21b87357274d3fca46">Spaceship.SpaceshipMover.upDamp</a></div><div class="ttdeci">float upDamp</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00016">SpaceshipMover.cs:16</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_ac1a983e9f216f709fe97ef10c8737e77"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#ac1a983e9f216f709fe97ef10c8737e77">Spaceship.SpaceshipMover.mRigidbody</a></div><div class="ttdeci">Rigidbody mRigidbody</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00036">SpaceshipMover.cs:37</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_acae45b9c315062e4fee14b4a74ff3e84"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#acae45b9c315062e4fee14b4a74ff3e84">Spaceship.SpaceshipMover.maxRotateSpeed</a></div><div class="ttdeci">float maxRotateSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00018">SpaceshipMover.cs:18</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_ad94463966b3fdd2a364b71fe938dc232"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#ad94463966b3fdd2a364b71fe938dc232">Spaceship.SpaceshipMover.avatarRotateAngle</a></div><div class="ttdeci">float avatarRotateAngle</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00023">SpaceshipMover.cs:23</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_ae0c89c599aa640211d8b323570a3529f"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#ae0c89c599aa640211d8b323570a3529f">Spaceship.SpaceshipMover.maxForwardSpeed</a></div><div class="ttdeci">float maxForwardSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00010">SpaceshipMover.cs:10</a></div></div>
+<div class="ttc" id="aclass_spaceship_1_1_spaceship_mover_html_afe4bccd082482d6651db745c3a4c9f56"><div class="ttname"><a href="class_spaceship_1_1_spaceship_mover.html#afe4bccd082482d6651db745c3a4c9f56">Spaceship.SpaceshipMover.WaitForInputFinish</a></div><div class="ttdeci">void WaitForInputFinish()</div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_mover_8cs_source.html#l00166">SpaceshipMover.cs:166</a></div></div>
+<div class="ttc" id="anamespace_spaceship_html"><div class="ttname"><a href="namespace_spaceship.html">Spaceship</a></div><div class="ttdef"><b>Definition:</b> <a href="_spaceship_controller_8cs_source.html#l00004">SpaceshipController.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9f5587aa956954f1413833a374f91571.html">Kepler</a></li><li class="navelem"><a class="el" href="dir_2055359202869e9ce1ff81c26d7a8d4e.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3f95b8aa2ed72793ee32a6ca22f28313.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_05602fc3403fecf6cf2f66a3ff693166.html">Spaceship</a></li><li class="navelem"><a class="el" href="_spaceship_mover_8cs.html">SpaceshipMover.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
